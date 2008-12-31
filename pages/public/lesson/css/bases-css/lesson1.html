@@ -4,15 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leçon 1 - HTML + CSS : Première Connexion</title>
-    <link rel="stylesheet" href="../../../../../assets/CSS/lesson-styles.css">
+    <title>Leçon 1 - HTML + CSS : première connexion</title>
+    <link rel="stylesheet" href="../../../../../assets/css/reset-variable.css">
+    <link rel="stylesheet" href="../../../../../assets/css/lesson-styles.css">
 </head>
 
-<body>
+<body data-lesson-id="css-lesson-1">
+
+    <!-- Bouton toggle thème (copier sur CHAQUE page) -->
+    <button id="theme-toggle" class="theme-toggle" aria-label="Changer de thème">
+        <span class="icon-light">☀️</span>
+        <span class="icon-dark">🌙</span>
+    </button>
 
     <!-- ===== EN-TÊTE DE LA PAGE ===== -->
     <header>
-        <h1>📚 Leçon 1 - HTML + CSS : Première Connexion</h1>
+        <h1>🧠 Leçon 1 - HTML + CSS : première connexion</h1>
     </header>
 
     <!-- ===== CONTENU PRINCIPAL ===== -->
@@ -48,8 +55,8 @@
             <div class="info-box">
                 <p><strong>📌 Rappel important :</strong></p>
                 <ul style="margin-bottom: 0;">
-                    <li><strong>HTML</strong> = structure</li>
-                    <li><strong>CSS</strong> = apparence</li>
+                    <li>HTML = structure</li>
+                    <li>CSS = apparence</li>
                 </ul>
             </div>
         </section>
@@ -61,18 +68,16 @@
             <h3>HTML seul</h3>
             <pre><code>&lt;h1&gt;Titre&lt;/h1&gt;
 &lt;p&gt;Paragraphe&lt;/p&gt;</code></pre>
-
             <p>👉 Fonctionne, mais très basique.</p>
 
             <h3>HTML + CSS</h3>
             <pre><code>h1 {
   color: red;
 }</code></pre>
-
             <p>👉 Même contenu, meilleur rendu.</p>
         </section>
 
-        <!-- Section : Lier CSS à HTML -->
+        <!-- Section : Lier un fichier CSS -->
         <section>
             <h2>🔗 3. Lier un fichier CSS à HTML (méthode propre)</h2>
 
@@ -89,7 +94,7 @@ style.css</code></pre>
             </div>
         </section>
 
-        <!-- Section : Structure règle CSS -->
+        <!-- Section : Structure d'une règle CSS -->
         <section>
             <h2>🧩 4. Structure d'une règle CSS</h2>
 
@@ -108,7 +113,7 @@ style.css</code></pre>
             </ul>
         </section>
 
-        <!-- Section : id et class -->
+        <!-- Section : Cibler avec id et class -->
         <section>
             <h2>🆔 5. Cibler avec <code>id</code> et <code>class</code></h2>
 
@@ -127,7 +132,7 @@ style.css</code></pre>
             <pre><code>&lt;p class="important"&gt;Attention&lt;/p&gt;</code></pre>
 
             <div class="info-box">
-                <p><strong>📌 Symboles à retenir :</strong></p>
+                <p><strong>📌 À retenir :</strong></p>
                 <ul style="margin-bottom: 0;">
                     <li><code>#</code> → id</li>
                     <li><code>.</code> → class</li>
@@ -149,9 +154,9 @@ style.css</code></pre>
 
         <!-- Section : Exemple complet -->
         <section>
-            <h2>💻 7. Exemple complet</h2>
+            <h2>🧱 7. Exemple complet</h2>
 
-            <h3>📄 index.html</h3>
+            <h3><code>index.html</code></h3>
             <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;
@@ -165,7 +170,7 @@ style.css</code></pre>
 &lt;/body&gt;
 &lt;/html&gt;</code></pre>
 
-            <h3>🎨 style.css</h3>
+            <h3><code>style.css</code></h3>
             <pre><code>#titre {
   color: blue;
 }
@@ -190,10 +195,10 @@ style.css</code></pre>
             <details class="reponses">
                 <summary>🔍 Voir les réponses</summary>
                 <div style="margin-top: 1rem;">
-                    <p><strong>1.</strong> Le CSS gère l'apparence</p>
+                    <p><strong>1.</strong> CSS</p>
                     <p><strong>2.</strong> <code>&lt;link rel="stylesheet" href="style.css"&gt;</code></p>
-                    <p><strong>3.</strong> Le point <code>.</code> cible une class</p>
-                    <p><strong>4.</strong> Le dièse <code>#</code> cible un id</p>
+                    <p><strong>3.</strong> <code>.</code> (point)</p>
+                    <p><strong>4.</strong> <code>#</code> (dièse)</p>
                 </div>
             </details>
         </section>
@@ -204,7 +209,7 @@ style.css</code></pre>
     <nav class="nav-lecons">
         <div class="conteneur-nav-lecons">
 
-            <!-- Bouton Précédent (désactivé pour la leçon 1 CSS) -->
+            <!-- Bouton Précédent (désactivé pour la leçon 1) -->
             <a href="#" class="btn-nav precedent desactive">
                 <span class="fleche">←</span>
                 <div class="info-nav">
@@ -222,7 +227,7 @@ style.css</code></pre>
             <a href="lesson2.html" class="btn-nav suivant">
                 <div class="info-nav">
                     <span class="label">Suivant</span>
-                    <span class="titre-lecon">Sélecteurs CSS</span>
+                    <span class="titre-lecon">Les Sélecteurs CSS (Bases)</span>
                 </div>
                 <span class="fleche">→</span>
             </a>
@@ -236,15 +241,15 @@ style.css</code></pre>
             <h2>📝 Résumé rapide</h2>
             <ul>
                 <li><strong>CSS</strong> = Cascading Style Sheets</li>
-                <li><strong>HTML</strong> = structure, <strong>CSS</strong> = apparence</li>
-                <li>On relie CSS avec <code>&lt;link rel="stylesheet" href="style.css"&gt;</code></li>
-                <li><strong>#</strong> pour les id, <strong>.</strong> pour les class</li>
-                <li>Une règle CSS = sélecteur + propriétés + valeurs</li>
+                <li><strong>HTML</strong> = structure / <strong>CSS</strong> = apparence</li>
+                <li><strong>&lt;link rel="stylesheet" href="style.css"&gt;</strong> → relie HTML et CSS</li>
+                <li><strong>#</strong> → cible un id</li>
+                <li><strong>.</strong> → cible une class</li>
             </ul>
 
             <div class="footer-motivation">
-                <p>🎉 <strong>Félicitations !</strong> Tu viens de franchir un cap important.</p>
-                <p>Tu maîtrises maintenant la connexion HTML-CSS ! 💪</p>
+                <p>🎉 <strong>Félicitations !</strong> Tu viens de franchir un <strong>cap important</strong>.</p>
+                <p>Continue comme ça, tu es sur la bonne voie ! 💪</p>
             </div>
         </div>
 
@@ -252,6 +257,9 @@ style.css</code></pre>
             <p>© 2026 - Cours HTML & CSS pour débutants | Créé avec ❤️</p>
         </div>
     </footer>
+
+    <script src="../../../../../assets/js/lesson-progress.js"></script>
+    <script src="../../../../../assets/js/theme-toggle.js"></script>
 
 </body>
 

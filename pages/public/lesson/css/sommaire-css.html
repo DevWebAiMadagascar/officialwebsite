@@ -1,15 +1,176 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sommaire - Cours CSS</title>
+    <link rel="stylesheet" href="../../../../assets/css/reset-variable.css">
+    <link rel="stylesheet" href="../../../../assets/css/lesson-styles.css">
 </head>
 
-<body>
-    contenue sommaire CSS
+<body data-lesson-id="sommaire-css">
+
+    <!-- Bouton toggle thème -->
+    <button id="theme-toggle" class="theme-toggle" aria-label="Changer de thème">
+        <span class="icon-light">☀️</span>
+        <span class="icon-dark">🌙</span>
+    </button>
+
+    <!-- ===== EN-TÊTE DE LA PAGE ===== -->
+    <header>
+        <h1>📚 Sommaire - Cours CSS</h1>
+        <p style="text-align: center; font-size: 1.1rem; margin-top: 1rem;">
+            Bienvenue dans le cours CSS ! Choisis une leçon ci-dessous pour commencer.
+        </p>
+    </header>
+
+    <!-- ===== CONTENU PRINCIPAL ===== -->
+    <main>
+
+        <!-- Section : Introduction -->
+        <section>
+            <h2>🎯 À propos de ce cours</h2>
+            <p>Ce cours CSS est conçu pour les débutants qui souhaitent apprendre à styliser leurs pages web. Chaque
+                leçon est progressive et inclut des exercices pratiques.</p>
+
+            <div class="info-box">
+                <p><strong>💡 Conseil :</strong> Suis les leçons dans l'ordre pour une meilleure compréhension !</p>
+            </div>
+        </section>
+
+        <!-- Section : Liste des leçons -->
+        <section>
+            <h2>📖 Liste des leçons</h2>
+
+            <div style="display: grid; gap: 1.5rem; margin-top: 2rem;">
+
+                <!-- Leçon 1 -->
+                <a href="bases-css/lesson1.html"
+                    style="display: block; padding: 1.5rem; border: 2px solid var(--border-color); border-radius: 8px; text-decoration: none; color: inherit; transition: all 0.3s ease;">
+                    <h3 style="margin: 0 0 0.5rem 0; color: var(--primary-color);">Leçon 1 - Introduction au CSS</h3>
+                    <p style="margin: 0; opacity: 0.8;">Découvre ce qu'est le CSS et comment l'utiliser dans tes pages
+                        web.</p>
+                </a>
+
+                <!-- Leçon 2 -->
+                <a href="bases-css/lesson2.html"
+                    style="display: block; padding: 1.5rem; border: 2px solid var(--border-color); border-radius: 8px; text-decoration: none; color: inherit; transition: all 0.3s ease;">
+                    <h3 style="margin: 0 0 0.5rem 0; color: var(--primary-color);">Leçon 2 - Sélecteurs CSS</h3>
+                    <p style="margin: 0; opacity: 0.8;">Apprends à cibler précisément les éléments HTML que tu veux
+                        styliser.</p>
+                </a>
+
+                <!-- Leçon 3 -->
+                <a href="bases-css/lesson3.html"
+                    style="display: block; padding: 1.5rem; border: 2px solid var(--border-color); border-radius: 8px; text-decoration: none; color: inherit; transition: all 0.3s ease;">
+                    <h3 style="margin: 0 0 0.5rem 0; color: var(--primary-color);">Leçon 3 - Box Model</h3>
+                    <p style="margin: 0; opacity: 0.8;">Comprends le modèle de boîte CSS : margin, border, padding et
+                        content.</p>
+                </a>
+
+                <!-- Leçon 4 -->
+                <a href="bases-css/lesson4.html"
+                    style="display: block; padding: 1.5rem; border: 2px solid var(--border-color); border-radius: 8px; text-decoration: none; color: inherit; transition: all 0.3s ease;">
+                    <h3 style="margin: 0 0 0.5rem 0; color: var(--primary-color);">Leçon 4 - Propriétés de texte</h3>
+                    <p style="margin: 0; opacity: 0.8;">Maîtrise la mise en forme du texte : police, taille, couleur et
+                        alignement.</p>
+                </a>
+
+                <!-- Leçon 5 -->
+                <a href="bases-css/lesson5.html"
+                    style="display: block; padding: 1.5rem; border: 2px solid var(--border-color); border-radius: 8px; text-decoration: none; color: inherit; transition: all 0.3s ease;">
+                    <h3 style="margin: 0 0 0.5rem 0; color: var(--primary-color);">Leçon 5 - Couleurs et unités CSS</h3>
+                    <p style="margin: 0; opacity: 0.8;">Apprends les différentes façons de définir les couleurs et les
+                        unités de mesure.</p>
+                </a>
+
+                <!-- Leçon 6 -->
+                <a href="bases-css/lesson6.html"
+                    style="display: block; padding: 1.5rem; border: 2px solid var(--border-color); border-radius: 8px; text-decoration: none; color: inherit; transition: all 0.3s ease;">
+                    <h3 style="margin: 0 0 0.5rem 0; color: var(--primary-color);">Leçon 6 - Display et positionnement
+                        CSS</h3>
+                    <p style="margin: 0; opacity: 0.8;">Découvre comment les éléments s'affichent et se positionnent sur
+                        la page.</p>
+                </a>
+
+                <!-- Leçon 7 -->
+                <a href="bases-css/lesson7.html"
+                    style="display: block; padding: 1.5rem; border: 2px solid var(--border-color); border-radius: 8px; text-decoration: none; color: inherit; transition: all 0.3s ease;">
+                    <h3 style="margin: 0 0 0.5rem 0; color: var(--primary-color);">Leçon 7 - Flexbox (bases)</h3>
+                    <p style="margin: 0; opacity: 0.8;">Maîtrise Flexbox, l'outil le plus utilisé pour le layout
+                        moderne.</p>
+                </a>
+
+                <!-- Leçon 8 -->
+                <a href="sommaire-css.html"
+                    style="display: block; padding: 1.5rem; border: 2px solid var(--border-color); border-radius: 8px; text-decoration: none; color: inherit; transition: all 0.3s ease;">
+                    <h3 style="margin: 0 0 0.5rem 0; color: var(--primary-color);">Leçon 8 - À venir</h3>
+                    <p style="margin: 0; opacity: 0.8;">Cette leçon sera bientôt disponible.</p>
+                </a>
+
+            </div>
+        </section>
+
+        <!-- Section : Progression -->
+        <section style="margin-top: 3rem;">
+            <h2>📊 Ta progression</h2>
+            <div class="info-box">
+                <p><strong>Leçons complétées :</strong> <span id="progress-count">0</span> / 7</p>
+                <div
+                    style="width: 100%; height: 20px; background-color: var(--code-bg); border-radius: 10px; margin-top: 1rem; overflow: hidden;">
+                    <div id="progress-bar"
+                        style="height: 100%; background: linear-gradient(90deg, var(--primary-color), #4CAF50); width: 0%; transition: width 0.5s ease;">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===== PIED DE PAGE ===== -->
+    <footer>
+        <div class="footer-content">
+            <h2>💪 Prêt à commencer ?</h2>
+            <p style="text-align: center;">Commence par la première leçon et progresse à ton rythme !</p>
+
+            <div style="text-align: center; margin-top: 2rem;">
+                <a href="bases-css/lesson1.html"
+                    style="display: inline-block; padding: 1rem 2rem; background-color: var(--primary-color); color: white; text-decoration: none; border-radius: 5px; font-weight: bold; transition: all 0.3s ease;">
+                    🚀 Commencer la Leçon 1
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-credits">
+            <p>© 2026 - Cours HTML & CSS pour débutants | Créé avec ❤️</p>
+        </div>
+    </footer>
+
+    <script src="../../../../assets/js/theme-toggle.js"></script>
+    <script>
+        // Calcul de la progression
+        function updateProgress() {
+            const totalLessons = 7;
+            let completedCount = 0;
+
+            // Vérifie le localStorage pour les leçons complétées
+            for (let i = 1; i <= totalLessons; i++) {
+                if (localStorage.getItem(`css-lesson-${i}-completed`) === 'true') {
+                    completedCount++;
+                }
+            }
+
+            // Met à jour l'affichage
+            document.getElementById('progress-count').textContent = completedCount;
+            const percentage = (completedCount / totalLessons) * 100;
+            document.getElementById('progress-bar').style.width = percentage + '%';
+        }
+
+        // Lance la mise à jour au chargement
+        updateProgress();
+    </script>
+
 </body>
 
 </html>

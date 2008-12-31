@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leçon 6 - display et positionnement CSS</title>
+    <link rel="stylesheet" href="../../../../../assets/css/reset-variable.css">
+    <link rel="stylesheet" href="../../../../../assets/css/lesson-styles.css">
+</head>
+
+<body data-lesson-id="css-lesson-6">
+
+    <!-- Bouton toggle thème (copier sur CHAQUE page) -->
+    <button id="theme-toggle" class="theme-toggle" aria-label="Changer de thème">
+        <span class="icon-light">☀️</span>
+        <span class="icon-dark">🌙</span>
+    </button>
+
+    <!-- ===== EN-TÊTE DE LA PAGE ===== -->
+    <header>
+        <h1>🧠 Leçon 6 - <code>display</code> et positionnement CSS</h1>
+    </header>
+
+    <!-- ===== CONTENU PRINCIPAL ===== -->
+    <main>
+
+        <!-- Section : Objectifs -->
+        <section>
+            <h2>🎯 Objectif de la leçon</h2>
+            <p>À la fin de cette leçon, tu comprendras :</p>
+            <ul>
+                <li>Comment les éléments s'affichent par défaut</li>
+                <li>Comment changer leur comportement avec <code>display</code></li>
+                <li>Les bases du <strong>positionnement</strong> en CSS</li>
+            </ul>
+        </section>
+
+        <!-- Section : display -->
+        <section>
+            <h2>📐 1. <code>display</code> : comment un élément s'affiche</h2>
+
+            <h3>🔹 <code>display: block</code></h3>
+            <p>Caractéristiques :</p>
+            <ul>
+                <li>Prend <strong>toute la largeur</strong></li>
+                <li>Va à la <strong>ligne suivante</strong></li>
+            </ul>
+
+            <p><strong>Exemples :</strong></p>
+            <ul>
+                <li><code>&lt;div&gt;</code></li>
+                <li><code>&lt;p&gt;</code></li>
+                <li><code>&lt;h1&gt;</code></li>
+            </ul>
+
+            <pre><code>div {
+  display: block;
+}</code></pre>
+
+            <h3>🔹 <code>display: inline</code></h3>
+            <p>Caractéristiques :</p>
+            <ul>
+                <li>Prend seulement la <strong>taille du contenu</strong></li>
+                <li>Ne va pas à la ligne</li>
+            </ul>
+
+            <p><strong>Exemples :</strong></p>
+            <ul>
+                <li><code>&lt;span&gt;</code></li>
+                <li><code>&lt;a&gt;</code></li>
+            </ul>
+
+            <pre><code>span {
+  display: inline;
+}</code></pre>
+
+            <div class="info-box">
+                <p><strong>⚠️ Attention :</strong> Impossible de définir <code>width</code> et <code>height</code>.</p>
+            </div>
+
+            <h3>🔹 <code>display: inline-block</code></h3>
+            <p>Caractéristiques :</p>
+            <ul>
+                <li>Comme <code>inline</code></li>
+                <li>MAIS accepte <code>width</code>, <code>height</code>, <code>margin</code>, <code>padding</code></li>
+            </ul>
+
+            <pre><code>button {
+  display: inline-block;
+}</code></pre>
+
+            <div class="info-box">
+                <p><strong>👉 Important :</strong> Très utilisé pour boutons, cartes simples.</p>
+            </div>
+
+            <h3>🔹 <code>display: none</code></h3>
+            <p>L'élément <strong>disparaît complètement</strong></p>
+
+            <pre><code>.menu {
+  display: none;
+}</code></pre>
+
+            <div class="info-box">
+                <p><strong>📌 À retenir :</strong> Il ne prend <strong>aucune place</strong>.</p>
+            </div>
+        </section>
+
+        <!-- Section : position -->
+        <section>
+            <h2>📍 2. Positionnement : <code>position</code></h2>
+
+            <h3>🔹 <code>position: static</code> (par défaut)</h3>
+            <p>Position normale dans le flux</p>
+
+            <pre><code>div {
+  position: static;
+}</code></pre>
+
+            <h3>🔹 <code>position: relative</code></h3>
+            <p>Se déplace <strong>par rapport à sa position normale</strong></p>
+
+            <pre><code>.box {
+  position: relative;
+  top: 10px;
+  left: 20px;
+}</code></pre>
+
+            <div class="info-box">
+                <p><strong>📌 À retenir :</strong> Garde sa place dans la page.</p>
+            </div>
+
+            <h3>🔹 <code>position: absolute</code></h3>
+            <p>Se positionne par rapport au <strong>parent positionné</strong></p>
+
+            <pre><code>.parent {
+  position: relative;
+}
+
+.child {
+  position: absolute;
+  top: 0;
+  right: 0;
+}</code></pre>
+
+            <div class="info-box">
+                <p><strong>📌 À retenir :</strong> Sort du flux normal.</p>
+            </div>
+
+            <h3>🔹 <code>position: fixed</code></h3>
+            <p>Caractéristiques :</p>
+            <ul>
+                <li>Fixé par rapport à l'écran</li>
+                <li>Ne bouge pas au scroll</li>
+            </ul>
+
+            <pre><code>.navbar {
+  position: fixed;
+  top: 0;
+}</code></pre>
+        </section>
+
+        <!-- Section : Erreurs fréquentes -->
+        <section>
+            <h2>❌ 3. Erreurs fréquentes</h2>
+
+            <ul style="list-style: none; padding-left: 0;">
+                <li>❌ Utiliser <code>absolute</code> sans parent <code>relative</code></li>
+                <li>❌ Tout positionner avec <code>top/left</code></li>
+                <li>❌ Confondre <code>display: none</code> et <code>visibility: hidden</code></li>
+            </ul>
+        </section>
+
+        <!-- Section : Exemple concret -->
+        <section>
+            <h2>🧱 4. Exemple concret</h2>
+
+            <pre><code>.card {
+  display: inline-block;
+  width: 200px;
+  padding: 20px;
+  border: 1px solid #000;
+}
+
+.badge {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}</code></pre>
+        </section>
+
+        <!-- Section : Mini pratique -->
+        <section class="quiz-section">
+            <h2>✍️ 5. Mini pratique</h2>
+            <p>Réponds :</p>
+
+            <ol>
+                <li>Quel <code>display</code> permet largeur + hauteur sans aller à la ligne ?</li>
+                <li>Quel <code>display</code> cache complètement un élément ?</li>
+                <li>Quelle position est par défaut ?</li>
+                <li>Quelle position est liée au parent positionné ?</li>
+                <li>Quelle position reste fixe au scroll ?</li>
+            </ol>
+
+            <details class="reponses">
+                <summary>🔍 Voir les réponses</summary>
+                <div style="margin-top: 1rem;">
+                    <p><strong>1.</strong> <code>display: inline-block</code></p>
+                    <p><strong>2.</strong> <code>display: none</code></p>
+                    <p><strong>3.</strong> <code>position: static</code></p>
+                    <p><strong>4.</strong> <code>position: absolute</code></p>
+                    <p><strong>5.</strong> <code>position: fixed</code></p>
+                </div>
+            </details>
+        </section>
+
+    </main>
+
+    <!-- ===== NAVIGATION ENTRE LEÇONS ===== -->
+    <nav class="nav-lecons">
+        <div class="conteneur-nav-lecons">
+
+            <!-- Bouton Précédent -->
+            <a href="lesson5.html" class="btn-nav precedent">
+                <span class="fleche">←</span>
+                <div class="info-nav">
+                    <span class="label">Précédent</span>
+                    <span class="titre-lecon">Couleurs et Unités</span>
+                </div>
+            </a>
+
+            <!-- Bouton Sommaire -->
+            <a href="../sommaire-css.html" class="btn-sommaire">
+                📋 Sommaire
+            </a>
+
+            <!-- Bouton Suivant -->
+            <a href="lesson7.html" class="btn-nav suivant">
+                <div class="info-nav">
+                    <span class="label">Suivant</span>
+                    <span class="titre-lecon">Flexbox (bases)</span>
+                </div>
+                <span class="fleche">→</span>
+            </a>
+
+        </div>
+    </nav>
+
+    <!-- ===== PIED DE PAGE / RÉSUMÉ ===== -->
+    <footer>
+        <div class="footer-content">
+            <h2>📝 Résumé rapide</h2>
+            <ul>
+                <li><strong>display: block</strong> → prend toute la largeur, va à la ligne</li>
+                <li><strong>display: inline</strong> → taille du contenu, pas de width/height</li>
+                <li><strong>display: inline-block</strong> → comme inline + width/height acceptés</li>
+                <li><strong>display: none</strong> → élément invisible et sans place</li>
+                <li><strong>position: static</strong> → position par défaut</li>
+                <li><strong>position: relative</strong> → déplacement par rapport à sa position</li>
+                <li><strong>position: absolute</strong> → par rapport au parent positionné</li>
+                <li><strong>position: fixed</strong> → fixé à l'écran, ne bouge pas au scroll</li>
+            </ul>
+
+            <div class="footer-motivation">
+                <p>🎉 <strong>Bravo !</strong> Tu es maintenant sur des notions <strong>très importantes pour le layout</strong>.</p>
+                <p>Continue comme ça, tu progresses super bien ! 💪</p>
+            </div>
+        </div>
+
+        <div class="footer-credits">
+            <p>© 2026 - Cours HTML & CSS pour débutants | Créé avec ❤️</p>
+        </div>
+    </footer>
+
+    <script src="../../../../../assets/js/lesson-progress.js"></script>
+    <script src="../../../../../assets/js/theme-toggle.js"></script>
+
+</body>
+
+</html>

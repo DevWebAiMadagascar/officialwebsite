@@ -4,15 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leçon 3 - Propriétés CSS de Texte</title>
-    <link rel="stylesheet" href="../../../../../assets/CSS/lesson-styles.css">
+    <title>Leçon 3 - Propriétés CSS de texte</title>
+    <link rel="stylesheet" href="../../../../../assets/css/reset-variable.css">
+    <link rel="stylesheet" href="../../../../../assets/css/lesson-styles.css">
 </head>
 
-<body>
+<body data-lesson-id="css-lesson-3">
+
+    <!-- Bouton toggle thème (copier sur CHAQUE page) -->
+    <button id="theme-toggle" class="theme-toggle" aria-label="Changer de thème">
+        <span class="icon-light">☀️</span>
+        <span class="icon-dark">🌙</span>
+    </button>
 
     <!-- ===== EN-TÊTE DE LA PAGE ===== -->
     <header>
-        <h1>📚 Leçon 3 - Propriétés CSS de Texte</h1>
+        <h1>🧠 Leçon 3 - Propriétés CSS de texte</h1>
     </header>
 
     <!-- ===== CONTENU PRINCIPAL ===== -->
@@ -131,7 +138,7 @@
 
         <!-- Section : Exemple complet -->
         <section>
-            <h2>💻 8. Exemple complet</h2>
+            <h2>🧱 8. Exemple complet</h2>
 
             <pre><code>body {
   font-family: Arial, sans-serif;
@@ -197,7 +204,7 @@ p {
             <a href="lesson4.html" class="btn-nav suivant">
                 <div class="info-nav">
                     <span class="label">Suivant</span>
-                    <span class="titre-lecon">Box Model</span>
+                    <span class="titre-lecon">Le Box Model CSS</span>
                 </div>
                 <span class="fleche">→</span>
             </a>
@@ -228,6 +235,9 @@ p {
             <p>© 2026 - Cours HTML & CSS pour débutants | Créé avec ❤️</p>
         </div>
     </footer>
+
+    <script src="../../../../../assets/js/lesson-progress.js"></script>
+    <script src="../../../../../assets/js/theme-toggle.js"></script>
 
 </body>
 

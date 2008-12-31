@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leçon 7 - Flexbox (bases)</title>
+    <link rel="stylesheet" href="../../../../../assets/css/reset-variable.css">
+    <link rel="stylesheet" href="../../../../../assets/css/lesson-styles.css">
+</head>
+
+<body data-lesson-id="css-lesson-7">
+
+    <!-- Bouton toggle thème (copier sur CHAQUE page) -->
+    <button id="theme-toggle" class="theme-toggle" aria-label="Changer de thème">
+        <span class="icon-light">☀️</span>
+        <span class="icon-dark">🌙</span>
+    </button>
+
+    <!-- ===== EN-TÊTE DE LA PAGE ===== -->
+    <header>
+        <h1>🧠 Leçon 7 - Flexbox (bases)</h1>
+    </header>
+
+    <!-- ===== CONTENU PRINCIPAL ===== -->
+    <main>
+
+        <!-- Section : Objectifs -->
+        <section>
+            <h2>🎯 Objectif de la leçon</h2>
+            <p>À la fin de cette leçon, tu comprendras :</p>
+            <ul>
+                <li>Comment aligner des éléments <strong>facilement</strong></li>
+                <li>La logique <strong>conteneur / éléments</strong></li>
+                <li>Les propriétés Flexbox essentielles</li>
+                <li>Résoudre les problèmes d'alignement classiques</li>
+            </ul>
+        </section>
+
+        <!-- Section : Qu'est-ce que Flexbox -->
+        <section>
+            <h2>📦 1. Qu'est-ce que Flexbox ?</h2>
+
+            <p><strong>Flexbox</strong> est un mode de mise en page CSS conçu pour :</p>
+            <ul>
+                <li>Aligner</li>
+                <li>Répartir</li>
+                <li>Organiser des éléments</li>
+            </ul>
+
+            <div class="info-box">
+                <p><strong>👉 Idéal pour :</strong></p>
+                <ul>
+                    <li>Menus</li>
+                    <li>Cartes</li>
+                    <li>Alignements horizontaux / verticaux</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Section : Conteneur flex -->
+        <section>
+            <h2>🧱 2. Conteneur flex</h2>
+
+            <p>Pour activer Flexbox :</p>
+
+            <pre><code>.container {
+  display: flex;
+}</code></pre>
+
+            <div class="info-box">
+                <p><strong>📌 À retenir :</strong> Les enfants deviennent des <strong>flex items</strong>.</p>
+            </div>
+        </section>
+
+        <!-- Section : Axe principal et secondaire -->
+        <section>
+            <h2>➡️ 3. Axe principal et secondaire</h2>
+
+            <ul>
+                <li><strong>Axe principal</strong> → <code>flex-direction</code></li>
+                <li><strong>Axe secondaire</strong> → perpendiculaire</li>
+            </ul>
+
+            <pre><code>.container {
+  flex-direction: row;    /* par défaut */
+}</code></pre>
+
+            <p><strong>Valeurs :</strong></p>
+            <ul>
+                <li><code>row</code> (horizontal)</li>
+                <li><code>column</code> (vertical)</li>
+            </ul>
+        </section>
+
+        <!-- Section : justify-content -->
+        <section>
+            <h2>📐 4. Aligner sur l'axe principal — <code>justify-content</code></h2>
+
+            <pre><code>.container {
+  justify-content: center;
+}</code></pre>
+
+            <p><strong>Valeurs courantes :</strong></p>
+            <ul>
+                <li><code>flex-start</code></li>
+                <li><code>center</code></li>
+                <li><code>flex-end</code></li>
+                <li><code>space-between</code></li>
+                <li><code>space-around</code></li>
+            </ul>
+        </section>
+
+        <!-- Section : align-items -->
+        <section>
+            <h2>📏 5. Aligner sur l'axe secondaire — <code>align-items</code></h2>
+
+            <pre><code>.container {
+  align-items: center;
+}</code></pre>
+
+            <p><strong>Valeurs :</strong></p>
+            <ul>
+                <li><code>stretch</code> (par défaut)</li>
+                <li><code>center</code></li>
+                <li><code>flex-start</code></li>
+                <li><code>flex-end</code></li>
+            </ul>
+        </section>
+
+        <!-- Section : flex-wrap -->
+        <section>
+            <h2>🔄 6. Retour à la ligne — <code>flex-wrap</code></h2>
+
+            <pre><code>.container {
+  flex-wrap: wrap;
+}</code></pre>
+
+            <div class="info-box">
+                <p><strong>📌 À retenir :</strong> Permet aux éléments de passer à la ligne.</p>
+            </div>
+        </section>
+
+        <!-- Section : Exemple complet -->
+        <section>
+            <h2>🧱 7. Exemple complet</h2>
+
+            <pre><code>.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+}</code></pre>
+        </section>
+
+        <!-- Section : Erreurs fréquentes -->
+        <section>
+            <h2>❌ 8. Erreurs fréquentes</h2>
+
+            <ul style="list-style: none; padding-left: 0;">
+                <li>❌ Oublier <code>display: flex</code></li>
+                <li>❌ Confondre <code>justify-content</code> et <code>align-items</code></li>
+                <li>❌ Utiliser Flexbox pour tout sans réfléchir</li>
+            </ul>
+        </section>
+
+        <!-- Section : Mini pratique -->
+        <section class="quiz-section">
+            <h2>✍️ Mini pratique</h2>
+            <p>Réponds :</p>
+
+            <ol>
+                <li>Quelle propriété active Flexbox ?</li>
+                <li>Quelle propriété change la direction ?</li>
+                <li>Quelle propriété aligne sur l'axe principal ?</li>
+                <li>Quelle propriété aligne sur l'axe secondaire ?</li>
+                <li>Quelle propriété permet le retour à la ligne ?</li>
+            </ol>
+
+            <details class="reponses">
+                <summary>🔍 Voir les réponses</summary>
+                <div style="margin-top: 1rem;">
+                    <p><strong>1.</strong> <code>display: flex</code></p>
+                    <p><strong>2.</strong> <code>flex-direction</code></p>
+                    <p><strong>3.</strong> <code>justify-content</code></p>
+                    <p><strong>4.</strong> <code>align-items</code></p>
+                    <p><strong>5.</strong> <code>flex-wrap</code></p>
+                </div>
+            </details>
+        </section>
+
+    </main>
+
+    <!-- ===== NAVIGATION ENTRE LEÇONS ===== -->
+    <nav class="nav-lecons">
+        <div class="conteneur-nav-lecons">
+
+            <!-- Bouton Précédent -->
+            <a href="lesson6.html" class="btn-nav precedent">
+                <span class="fleche">←</span>
+                <div class="info-nav">
+                    <span class="label">Précédent</span>
+                    <span class="titre-lecon">display et positionnement CSS</span>
+                </div>
+            </a>
+
+            <!-- Bouton Sommaire -->
+            <a href="../sommaire-css.html" class="btn-sommaire">
+                📋 Sommaire
+            </a>
+
+            <!-- Bouton Suivant -->
+            <a href="lesson8.html" class="btn-nav suivant">
+                <div class="info-nav">
+                    <span class="label">Suivant</span>
+                    <span class="titre-lecon">Leçon suivante</span>
+                </div>
+                <span class="fleche">→</span>
+            </a>
+
+        </div>
+    </nav>
+
+    <!-- ===== PIED DE PAGE / RÉSUMÉ ===== -->
+    <footer>
+        <div class="footer-content">
+            <h2>📝 Résumé rapide</h2>
+            <ul>
+                <li><strong>display: flex</strong> → active Flexbox sur le conteneur</li>
+                <li><strong>flex-direction</strong> → définit l'axe principal (row ou column)</li>
+                <li><strong>justify-content</strong> → alignement sur l'axe principal</li>
+                <li><strong>align-items</strong> → alignement sur l'axe secondaire</li>
+                <li><strong>flex-wrap</strong> → permet le retour à la ligne</li>
+                <li><strong>Logique :</strong> conteneur flex + flex items</li>
+                <li><strong>Cas d'usage :</strong> menus, cartes, alignements simples</li>
+            </ul>
+
+            <div class="footer-motivation">
+                <p>🔥 <strong>Bravo !</strong> Tu viens d'apprendre <strong>l'outil le plus utilisé du layout moderne</strong>.</p>
+                <p>Continue comme ça, tu progresses super bien ! 💪</p>
+            </div>
+        </div>
+
+        <div class="footer-credits">
+            <p>© 2026 - Cours HTML & CSS pour débutants | Créé avec ❤️</p>
+        </div>
+    </footer>
+
+    <script src="../../../../../assets/js/lesson-progress.js"></script>
+    <script src="../../../../../assets/js/theme-toggle.js"></script>
+
+</body>
+
+</html>

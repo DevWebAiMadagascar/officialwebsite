@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leçon 4 - Le Box Model CSS</title>
+    <link rel="stylesheet" href="../../../../../assets/css/reset-variable.css">
+    <link rel="stylesheet" href="../../../../../assets/css/lesson-styles.css">
+</head>
+
+<body data-lesson-id="css-lesson-4">
+
+    <!-- Bouton toggle thème (copier sur CHAQUE page) -->
+    <button id="theme-toggle" class="theme-toggle" aria-label="Changer de thème">
+        <span class="icon-light">☀️</span>
+        <span class="icon-dark">🌙</span>
+    </button>
+
+    <!-- ===== EN-TÊTE DE LA PAGE ===== -->
+    <header>
+        <h1>🧠 Leçon 4 - Le Box Model CSS</h1>
+    </header>
+
+    <!-- ===== CONTENU PRINCIPAL ===== -->
+    <main>
+
+        <!-- Section : Objectifs -->
+        <section>
+            <h2>🎯 Objectif de la leçon</h2>
+            <p>À la fin de cette leçon, tu sauras :</p>
+            <ul>
+                <li>Comprendre <strong>comment le navigateur calcule l'espace</strong> occupé par un élément HTML</li>
+                <li>Maîtriser les <strong>4 parties du Box Model</strong></li>
+                <li>Utiliser <strong>box-sizing</strong> correctement</li>
+                <li>Éviter les erreurs fréquentes</li>
+            </ul>
+            <div class="info-box">
+                <p><strong>👉 Important :</strong> C'est <strong>fondamental</strong> pour le positionnement et le design.</p>
+            </div>
+        </section>
+
+        <!-- Section : Qu'est-ce que le Box Model -->
+        <section>
+            <h2>📦 1. Qu'est-ce que le Box Model ?</h2>
+
+            <p>Chaque élément HTML est vu comme une <strong>boîte</strong>.</p>
+            <p>Cette boîte est composée de <strong>4 parties</strong> :</p>
+
+            <pre><code>┌─────────────────────┐
+│      margin         │  ← espace extérieur
+│  ┌───────────────┐ │
+│  │   border      │ │
+│  │ ┌───────────┐│ │
+│  │ │ padding   ││ │
+│  │ │ ┌───────┐││ │
+│  │ │ │content│││ │
+│  │ │ └───────┘││ │
+│  │ └───────────┘│ │
+│  └───────────────┘ │
+└─────────────────────┘</code></pre>
+        </section>
+
+        <!-- Section : Les 4 parties expliquées -->
+        <section>
+            <h2>🧩 2. Les 4 parties expliquées</h2>
+
+            <h3>📄 1. Content (Contenu)</h3>
+            <p>Le <strong>contenu réel</strong> (texte, image…)</p>
+            <pre><code>p {
+  width: 200px;
+}</code></pre>
+
+            <h3>🧣 2. Padding (Rembourrage)</h3>
+            <p>Espace <strong>entre le contenu et la bordure</strong></p>
+            <pre><code>p {
+  padding: 20px;
+}</code></pre>
+
+            <h3>🧱 3. Border (Bordure)</h3>
+            <p>Contour de l'élément</p>
+            <pre><code>p {
+  border: 2px solid black;
+}</code></pre>
+
+            <h3>🌬️ 4. Margin (Marge)</h3>
+            <p>Espace <strong>extérieur</strong> entre les éléments</p>
+            <pre><code>p {
+  margin: 30px;
+}</code></pre>
+        </section>
+
+        <!-- Section : Calcul réel de la taille -->
+        <section>
+            <h2>📐 3. Calcul réel de la taille</h2>
+
+            <pre><code>div {
+  width: 200px;
+  padding: 20px;
+  border: 5px solid black;
+}</code></pre>
+
+            <p>👉 Taille réelle :</p>
+            <ul>
+                <li>largeur = 200 + 40 + 10 = <strong>250px</strong></li>
+            </ul>
+
+            <div class="info-box">
+                <p><strong>📌 À retenir :</strong> <code>margin</code> ne fait <strong>pas partie</strong> de la taille de l'élément.</p>
+            </div>
+        </section>
+
+        <!-- Section : Raccourcis utiles -->
+        <section>
+            <h2>⚙️ 4. Raccourcis utiles</h2>
+
+            <pre><code>padding: 10px 20px;
+margin: 5px 10px;</code></pre>
+
+            <p><strong>Ordre :</strong></p>
+            <p>➡️ <strong>haut – droite – bas – gauche</strong></p>
+        </section>
+
+        <!-- Section : box-sizing -->
+        <section>
+            <h2>🛠️ 5. <code>box-sizing</code></h2>
+
+            <h3>❌ Par défaut</h3>
+            <pre><code>box-sizing: content-box;</code></pre>
+
+            <h3>✅ Recommandé</h3>
+            <pre><code>box-sizing: border-box;</code></pre>
+
+            <div class="info-box">
+                <p><strong>👉 Important :</strong> La taille inclut padding + border.</p>
+                <p><strong>📌 À retenir :</strong> Très utilisé en pratique.</p>
+            </div>
+        </section>
+
+        <!-- Section : Erreurs fréquentes -->
+        <section>
+            <h2>❌ 6. Erreurs fréquentes</h2>
+
+            <ul style="list-style: none; padding-left: 0;">
+                <li>❌ Confondre padding et margin</li>
+                <li>❌ Oublier que border ajoute de la taille</li>
+                <li>❌ Ne pas utiliser <code>box-sizing</code></li>
+            </ul>
+        </section>
+
+        <!-- Section : Mini pratique -->
+        <section class="quiz-section">
+            <h2>✍️ 7. Mini pratique</h2>
+            <p>Réponds :</p>
+
+            <ol>
+                <li>Quelle partie est l'espace extérieur ?</li>
+                <li>Quelle propriété ajoute de l'espace à l'intérieur ?</li>
+                <li>Quelle propriété dessine le contour ?</li>
+                <li>Quelle propriété permet d'inclure padding + border dans la taille ?</li>
+            </ol>
+
+            <details class="reponses">
+                <summary>🔍 Voir les réponses</summary>
+                <div style="margin-top: 1rem;">
+                    <p><strong>1.</strong> <code>margin</code></p>
+                    <p><strong>2.</strong> <code>padding</code></p>
+                    <p><strong>3.</strong> <code>border</code></p>
+                    <p><strong>4.</strong> <code>box-sizing: border-box</code></p>
+                </div>
+            </details>
+        </section>
+
+    </main>
+
+    <!-- ===== NAVIGATION ENTRE LEÇONS ===== -->
+    <nav class="nav-lecons">
+        <div class="conteneur-nav-lecons">
+
+            <!-- Bouton Précédent -->
+            <a href="lesson3.html" class="btn-nav precedent">
+                <span class="fleche">←</span>
+                <div class="info-nav">
+                    <span class="label">Précédent</span>
+                    <span class="titre-lecon">Propriétés CSS de Texte</span>
+                </div>
+            </a>
+
+            <!-- Bouton Sommaire -->
+            <a href="../sommaire-css.html" class="btn-sommaire">
+                📋 Sommaire
+            </a>
+
+            <!-- Bouton Suivant -->
+            <a href="lesson5.html" class="btn-nav suivant">
+                <div class="info-nav">
+                    <span class="label">Suivant</span>
+                    <span class="titre-lecon">Couleurs et Unités</span>
+                </div>
+                <span class="fleche">→</span>
+            </a>
+
+        </div>
+    </nav>
+
+    <!-- ===== PIED DE PAGE / RÉSUMÉ ===== -->
+    <footer>
+        <div class="footer-content">
+            <h2>📝 Résumé rapide</h2>
+            <ul>
+                <li><strong>Content</strong> → le contenu réel de l'élément</li>
+                <li><strong>Padding</strong> → espace intérieur (entre contenu et bordure)</li>
+                <li><strong>Border</strong> → bordure/contour de l'élément</li>
+                <li><strong>Margin</strong> → espace extérieur (entre les éléments)</li>
+                <li><strong>box-sizing: border-box</strong> → inclut padding + border dans la taille</li>
+            </ul>
+
+            <div class="footer-motivation">
+                <p>🎉 <strong>Bravo !</strong> Tu viens de comprendre un <strong>pilier du CSS</strong>.</p>
+                <p>Continue comme ça, tu progresses super bien ! 💪</p>
+            </div>
+        </div>
+
+        <div class="footer-credits">
+            <p>© 2026 - Cours HTML & CSS pour débutants | Créé avec ❤️</p>
+        </div>
+    </footer>
+
+    <script src="../../../../../assets/js/lesson-progress.js"></script>
+    <script src="../../../../../assets/js/theme-toggle.js"></script>
+
+</body>
+
+</html>

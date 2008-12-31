@@ -4,15 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leçon 2 - Les Sélecteurs CSS (Bases)</title>
-    <link rel="stylesheet" href="../../../../../assets/CSS/lesson-styles.css">
+    <title>Leçon 2 - Les sélecteurs CSS (bases)</title>
+    <link rel="stylesheet" href="../../../../../assets/css/reset-variable.css">
+    <link rel="stylesheet" href="../../../../../assets/css/lesson-styles.css">
 </head>
 
-<body>
+<body data-lesson-id="css-lesson-2">
+
+    <!-- Bouton toggle thème (copier sur CHAQUE page) -->
+    <button id="theme-toggle" class="theme-toggle" aria-label="Changer de thème">
+        <span class="icon-light">☀️</span>
+        <span class="icon-dark">🌙</span>
+    </button>
 
     <!-- ===== EN-TÊTE DE LA PAGE ===== -->
     <header>
-        <h1>📚 Leçon 2 - Les Sélecteurs CSS (Bases)</h1>
+        <h1>🧠 Leçon 2 - Les sélecteurs CSS (bases)</h1>
     </header>
 
     <!-- ===== CONTENU PRINCIPAL ===== -->
@@ -30,13 +37,12 @@
             </ul>
         </section>
 
-        <!-- Section : Qu'est-ce qu'un sélecteur -->
+        <!-- Section : Qu'est-ce qu'un sélecteur CSS -->
         <section>
             <h2>🎯 1. Qu'est-ce qu'un sélecteur CSS ?</h2>
 
             <p>Un <strong>sélecteur</strong> dit au navigateur :</p>
-            <blockquote
-                style="background: #f8f9fa; padding: 1rem; border-left: 4px solid #667eea; margin: 1rem 0; font-style: italic;">
+            <blockquote>
                 "Applique ce style <strong>à ces éléments précis</strong>".
             </blockquote>
 
@@ -57,8 +63,7 @@
 }</code></pre>
 
             <div class="info-box">
-                <p><strong>📌 Important :</strong> Cible <strong>toutes</strong> les balises <code>&lt;h1&gt;</code>.
-                </p>
+                <p><strong>📌 À retenir :</strong> Cible <strong>toutes</strong> les balises <code>&lt;h1&gt;</code>.</p>
             </div>
         </section>
 
@@ -76,7 +81,7 @@
                 <p><strong>📌 À retenir :</strong></p>
                 <ul style="margin-bottom: 0;">
                     <li><code>.</code> = class</li>
-                    <li>Réutilisable sur plusieurs éléments</li>
+                    <li>Réutilisable</li>
                 </ul>
             </div>
         </section>
@@ -95,7 +100,7 @@
                 <p><strong>📌 À retenir :</strong></p>
                 <ul style="margin-bottom: 0;">
                     <li><code>#</code> = id</li>
-                    <li>Unique (un seul élément par page)</li>
+                    <li>Unique</li>
                 </ul>
             </div>
         </section>
@@ -111,7 +116,7 @@
             <p>👉 Cible <strong>les <code>&lt;p&gt;</code> à l'intérieur de <code>&lt;section&gt;</code></strong></p>
 
             <div class="info-box">
-                <p><strong>📌 Important :</strong> Très utilisé pour cibler précisément.</p>
+                <p><strong>📌 À retenir :</strong> Très utilisé.</p>
             </div>
         </section>
 
@@ -140,9 +145,8 @@
 
         <!-- Section : Exemple concret -->
         <section>
-            <h2>💻 8. Exemple concret</h2>
+            <h2>🧱 8. Exemple concret</h2>
 
-            <h3>🎨 CSS</h3>
             <pre><code>.article p {
   color: gray;
 }
@@ -151,8 +155,8 @@
   text-align: center;
 }</code></pre>
 
-            <h3>📄 HTML</h3>
             <pre><code>&lt;h1 id="main-title"&gt;Blog&lt;/h1&gt;
+
 &lt;div class="article"&gt;
   &lt;p&gt;Contenu&lt;/p&gt;
 &lt;/div&gt;</code></pre>
@@ -173,10 +177,10 @@
             <details class="reponses">
                 <summary>🔍 Voir les réponses</summary>
                 <div style="margin-top: 1rem;">
-                    <p><strong>1.</strong> <code>p</code> (sélecteur par balise)</p>
-                    <p><strong>2.</strong> <code>.box</code> (sélecteur par class)</p>
-                    <p><strong>3.</strong> <code>#menu</code> (sélecteur par id)</p>
-                    <p><strong>4.</strong> <code>div p</code> (sélecteur descendant)</p>
+                    <p><strong>1.</strong> <code>p { }</code></p>
+                    <p><strong>2.</strong> <code>.box { }</code></p>
+                    <p><strong>3.</strong> <code>#menu { }</code></p>
+                    <p><strong>4.</strong> <code>div p { }</code></p>
                 </div>
             </details>
         </section>
@@ -192,7 +196,7 @@
                 <span class="fleche">←</span>
                 <div class="info-nav">
                     <span class="label">Précédent</span>
-                    <span class="titre-lecon">HTML + CSS : Première Connexion</span>
+                    <span class="titre-lecon">HTML + CSS : première connexion</span>
                 </div>
             </a>
 
@@ -218,16 +222,16 @@
         <div class="footer-content">
             <h2>📝 Résumé rapide</h2>
             <ul>
-                <li><strong>Sélecteur par balise</strong> : <code>p { }</code> → tous les éléments</li>
-                <li><strong>Sélecteur par class</strong> : <code>.nom { }</code> → réutilisable</li>
-                <li><strong>Sélecteur par id</strong> : <code>#nom { }</code> → unique</li>
-                <li><strong>Sélecteur descendant</strong> : <code>div p { }</code> → ciblage précis</li>
-                <li><strong>Sélecteur multiple</strong> : <code>h1, h2 { }</code> → plusieurs éléments</li>
+                <li><strong>Sélecteur par balise</strong> → <code>h1 { }</code></li>
+                <li><strong>Sélecteur par class</strong> → <code>.important { }</code></li>
+                <li><strong>Sélecteur par id</strong> → <code>#titre { }</code></li>
+                <li><strong>Sélecteur descendant</strong> → <code>section p { }</code></li>
+                <li><strong>Sélecteur multiple</strong> → <code>h1, h2, h3 { }</code></li>
             </ul>
 
             <div class="footer-motivation">
-                <p>🎉 <strong>Bravo !</strong> Tu maîtrises maintenant les sélecteurs CSS.</p>
-                <p>Tu es maintenant <strong>dans le vrai CSS</strong> ! 💪</p>
+                <p>🎉 <strong>Bravo !</strong> Tu es maintenant <strong>dans le vrai CSS</strong>.</p>
+                <p>Continue comme ça, tu progresses super bien ! 💪</p>
             </div>
         </div>
 
@@ -235,6 +239,9 @@
             <p>© 2026 - Cours HTML & CSS pour débutants | Créé avec ❤️</p>
         </div>
     </footer>
+
+    <script src="../../../../../assets/js/lesson-progress.js"></script>
+    <script src="../../../../../assets/js/theme-toggle.js"></script>
 
 </body>
 

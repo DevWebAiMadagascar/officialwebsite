@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leçon 5 - Couleurs et unités CSS</title>
+    <link rel="stylesheet" href="../../../../../assets/css/reset-variable.css">
+    <link rel="stylesheet" href="../../../../../assets/css/lesson-styles.css">
+</head>
+
+<body data-lesson-id="css-lesson-5">
+
+    <!-- Bouton toggle thème (copier sur CHAQUE page) -->
+    <button id="theme-toggle" class="theme-toggle" aria-label="Changer de thème">
+        <span class="icon-light">☀️</span>
+        <span class="icon-dark">🌙</span>
+    </button>
+
+    <!-- ===== EN-TÊTE DE LA PAGE ===== -->
+    <header>
+        <h1>🧠 Leçon 5 - Couleurs et unités CSS</h1>
+    </header>
+
+    <!-- ===== CONTENU PRINCIPAL ===== -->
+    <main>
+
+        <!-- Section : Objectifs -->
+        <section>
+            <h2>🎯 Objectif de la leçon</h2>
+            <p>À la fin de cette leçon, tu comprendras :</p>
+            <ul>
+                <li>Comment définir des <strong>couleurs</strong> en CSS</li>
+                <li>Les <strong>unités de mesure</strong> les plus utilisées</li>
+                <li>Quand utiliser chaque unité</li>
+            </ul>
+        </section>
+
+        <!-- Section : Les couleurs -->
+        <section>
+            <h2>🎨 1. Les couleurs en CSS</h2>
+
+            <h3>🔹 Nom de couleur</h3>
+            <pre><code>p {
+  color: red;
+}</code></pre>
+
+            <div class="info-box">
+                <p><strong>📌 À retenir :</strong> Simple, mais limité.</p>
+            </div>
+
+            <h3>🔹 Code hexadécimal (le plus utilisé)</h3>
+            <pre><code>h1 {
+  color: #ff0000;
+}</code></pre>
+
+            <div class="info-box">
+                <p><strong>📌 À retenir :</strong> Format : <code>#RRGGBB</code></p>
+            </div>
+
+            <h3>🔹 RGB</h3>
+            <pre><code>div {
+  color: rgb(0, 0, 255);
+}</code></pre>
+
+            <div class="info-box">
+                <p><strong>📌 À retenir :</strong> Rouge, Vert, Bleu (0 → 255)</p>
+            </div>
+
+            <h3>🔹 RGBA (avec transparence)</h3>
+            <pre><code>div {
+  background-color: rgba(0, 0, 0, 0.5);
+}</code></pre>
+
+            <div class="info-box">
+                <p><strong>📌 À retenir :</strong> <code>a</code> = opacité (0 → 1)</p>
+            </div>
+        </section>
+
+        <!-- Section : Unités de mesure -->
+        <section>
+            <h2>📏 2. Unités de mesure CSS</h2>
+
+            <h3>🔹 <code>px</code> (pixels)</h3>
+            <pre><code>p {
+  font-size: 16px;
+}</code></pre>
+
+            <div class="info-box">
+                <p><strong>📌 À retenir :</strong> Fixe, précis. Très utilisé.</p>
+            </div>
+
+            <h3>🔹 <code>%</code> (pourcentage)</h3>
+            <pre><code>div {
+  width: 50%;
+}</code></pre>
+
+            <div class="info-box">
+                <p><strong>📌 À retenir :</strong> Par rapport au parent</p>
+            </div>
+
+            <h3>🔹 <code>em</code></h3>
+            <pre><code>p {
+  font-size: 1.2em;
+}</code></pre>
+
+            <div class="info-box">
+                <p><strong>📌 À retenir :</strong> Relatif à la taille du parent</p>
+            </div>
+
+            <h3>🔹 <code>rem</code></h3>
+            <pre><code>p {
+  font-size: 1.2rem;
+}</code></pre>
+
+            <div class="info-box">
+                <p><strong>📌 À retenir :</strong> Relatif à la taille de <code>&lt;html&gt;</code>. Plus prévisible que <code>em</code>.</p>
+            </div>
+
+            <h3>🔹 <code>vh</code> / <code>vw</code></h3>
+            <pre><code>section {
+  height: 100vh;
+}</code></pre>
+
+            <div class="info-box">
+                <p><strong>📌 À retenir :</strong> <code>vh</code> = hauteur écran, <code>vw</code> = largeur écran</p>
+            </div>
+        </section>
+
+        <!-- Section : Quelle unité choisir -->
+        <section>
+            <h2>⚖️ 3. Quelle unité choisir ?</h2>
+
+            <table style="width: 100%; border-collapse: collapse; margin: 1rem 0;">
+                <thead>
+                    <tr>
+                        <th style="border: 1px solid var(--border-color); padding: 0.75rem; text-align: left; background-color: var(--code-bg);">Besoin</th>
+                        <th style="border: 1px solid var(--border-color); padding: 0.75rem; text-align: left; background-color: var(--code-bg);">Unité</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="border: 1px solid var(--border-color); padding: 0.75rem;">Texte</td>
+                        <td style="border: 1px solid var(--border-color); padding: 0.75rem;"><code>rem</code></td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid var(--border-color); padding: 0.75rem;">Tailles fixes</td>
+                        <td style="border: 1px solid var(--border-color); padding: 0.75rem;"><code>px</code></td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid var(--border-color); padding: 0.75rem;">Responsive</td>
+                        <td style="border: 1px solid var(--border-color); padding: 0.75rem;"><code>%</code> / <code>vw</code> / <code>vh</code></td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid var(--border-color); padding: 0.75rem;">Espacement</td>
+                        <td style="border: 1px solid var(--border-color); padding: 0.75rem;"><code>rem</code></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Section : Erreurs fréquentes -->
+        <section>
+            <h2>❌ 4. Erreurs fréquentes</h2>
+
+            <ul style="list-style: none; padding-left: 0;">
+                <li>❌ Tout en <code>px</code></li>
+                <li>❌ Mélanger sans comprendre</li>
+                <li>❌ Oublier la lisibilité</li>
+                <li>❌ Abuser des couleurs flashy</li>
+            </ul>
+        </section>
+
+        <!-- Section : Exemple complet -->
+        <section>
+            <h2>🧱 5. Exemple complet</h2>
+
+            <pre><code>body {
+  font-size: 16px;
+}
+
+h1 {
+  color: #333;
+  font-size: 2rem;
+}
+
+.card {
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 1.5rem;
+  width: 80%;
+}</code></pre>
+        </section>
+
+        <!-- Section : Mini pratique -->
+        <section class="quiz-section">
+            <h2>✍️ Mini pratique</h2>
+            <p>Réponds :</p>
+
+            <ol>
+                <li>Quel format de couleur est le plus courant ?</li>
+                <li>Quelle unité est relative à la taille du parent ?</li>
+                <li>Quelle unité est relative à <code>&lt;html&gt;</code> ?</li>
+                <li>Quelle unité correspond à la hauteur de l'écran ?</li>
+                <li>Quelle unité est recommandée pour le texte ?</li>
+            </ol>
+
+            <details class="reponses">
+                <summary>🔍 Voir les réponses</summary>
+                <div style="margin-top: 1rem;">
+                    <p><strong>1.</strong> Code hexadécimal (<code>#RRGGBB</code>)</p>
+                    <p><strong>2.</strong> <code>em</code></p>
+                    <p><strong>3.</strong> <code>rem</code></p>
+                    <p><strong>4.</strong> <code>vh</code></p>
+                    <p><strong>5.</strong> <code>rem</code></p>
+                </div>
+            </details>
+        </section>
+
+    </main>
+
+    <!-- ===== NAVIGATION ENTRE LEÇONS ===== -->
+    <nav class="nav-lecons">
+        <div class="conteneur-nav-lecons">
+
+            <!-- Bouton Précédent -->
+            <a href="lesson4.html" class="btn-nav precedent">
+                <span class="fleche">←</span>
+                <div class="info-nav">
+                    <span class="label">Précédent</span>
+                    <span class="titre-lecon">Leçon précédente</span>
+                </div>
+            </a>
+
+            <!-- Bouton Sommaire -->
+            <a href="../sommaire-css.html" class="btn-sommaire">
+                📋 Sommaire
+            </a>
+
+            <!-- Bouton Suivant -->
+            <a href="lesson6.html" class="btn-nav suivant">
+                <div class="info-nav">
+                    <span class="label">Suivant</span>
+                    <span class="titre-lecon">display et positionnement CSS</span>
+                </div>
+                <span class="fleche">→</span>
+            </a>
+
+        </div>
+    </nav>
+
+    <!-- ===== PIED DE PAGE / RÉSUMÉ ===== -->
+    <footer>
+        <div class="footer-content">
+            <h2>📝 Résumé rapide</h2>
+            <ul>
+                <li><strong>Couleurs :</strong> nom, hexadécimal (<code>#RRGGBB</code>), RGB, RGBA</li>
+                <li><strong>px</strong> → valeur fixe, précise</li>
+                <li><strong>%</strong> → relatif au parent</li>
+                <li><strong>em</strong> → relatif à la taille du parent</li>
+                <li><strong>rem</strong> → relatif à <code>&lt;html&gt;</code>, plus prévisible</li>
+                <li><strong>vh / vw</strong> → hauteur/largeur de l'écran</li>
+                <li><strong>Recommandation :</strong> utiliser <code>rem</code> pour le texte et l'espacement</li>
+            </ul>
+
+            <div class="footer-motivation">
+                <p>🎉 <strong>Bravo !</strong> Tu maîtrises maintenant <strong>les bases visuelles du CSS</strong>.</p>
+                <p>Continue comme ça, tu progresses super bien ! 💪</p>
+            </div>
+        </div>
+
+        <div class="footer-credits">
+            <p>© 2026 - Cours HTML & CSS pour débutants | Créé avec ❤️</p>
+        </div>
+    </footer>
+
+    <script src="../../../../../assets/js/lesson-progress.js"></script>
+    <script src="../../../../../assets/js/theme-toggle.js"></script>
+
+</body>
+
+</html>
