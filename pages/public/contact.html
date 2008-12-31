@@ -4,13 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Apprendre HTML & CSS</title>
+    <meta name="description"
+        content="Contactez Dev Web AI Madagascar - Posez vos questions, signalez des bugs ou proposez des améliorations.">
+    <title>Contact - Dev Web AI Madagascar</title>
     <link rel="stylesheet" href="../../assets/css/reset-variable.css">
     <link rel="stylesheet" href="../../assets/css/public-styles.css">
 </head>
 
 <body>
-    <!-- Bouton toggle thème (copier sur CHAQUE page) -->
+    <!-- Bouton toggle thème -->
     <button id="theme-toggle" class="theme-toggle" aria-label="Changer de thème">
         <span class="icon-light">☀️</span>
         <span class="icon-dark">🌙</span>
@@ -20,12 +22,15 @@
     <header>
         <div class="header-content">
             <h1 class="site-title">
-                <object data="../../assets/img/logo-devweb-ai.svg" type="image/svg+xml" width="300">Logo Dev Web AI
-                    Madagascar</object>
+                <a href="../../index.html">
+                    <object data="../../assets/img/logo-devweb-ai.svg" type="image/svg+xml" width="300">
+                        Dev Web AI Madagascar
+                    </object>
+                </a>
             </h1>
             <nav class="main-nav">
                 <a href="../../index.html">🏠 Accueil</a>
-                <a href="lessons.html">📖 Leçons</a>
+                <a href="lessons.html">📖 Cours</a>
                 <a href="about.html">ℹ️ À Propos</a>
                 <a href="contact.html" class="active">✉️ Contact</a>
             </nav>
@@ -38,107 +43,157 @@
         <!-- Section Hero -->
         <section class="hero-section">
             <h1>✉️ Contactez-nous</h1>
-            <p>Une question ? Une suggestion ? N'hésite pas à nous écrire !</p>
+            <p>Une question ? Une suggestion ? Un bug à signaler ? N'hésite pas à nous écrire !</p>
         </section>
 
-        <!-- Section Formulaire -->
+        <!-- Section Pourquoi nous contacter -->
         <section class="content-section">
-            <h2>📝 Envoie-nous un message</h2>
-            <p class="text-center">Remplis le formulaire ci-dessous et nous te répondrons dans les plus brefs délais.
-            </p>
+            <h2>💬 Pourquoi me contacter ?</h2>
 
-            <form class="contact-form" action="#" method="POST">
-
-                <!-- Nom -->
-                <div class="form-group">
-                    <label for="name">👤 Nom complet <span style="color: red;">*</span></label>
-                    <input type="text" id="name" name="name" placeholder="Ton nom et prénom" required>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-icon">❓</div>
+                    <h3>Poser une question</h3>
+                    <p>Besoin d'aide sur une leçon ou un concept ?</p>
                 </div>
 
-                <!-- Email -->
-                <div class="form-group">
-                    <label for="email">📧 Adresse email <span style="color: red;">*</span></label>
-                    <input type="email" id="email" name="email" placeholder="ton.email@exemple.com" required>
+                <div class="card">
+                    <div class="card-icon">🐛</div>
+                    <h3>Signaler un bug</h3>
+                    <p>Tu as trouvé une erreur ou un dysfonctionnement ?</p>
                 </div>
 
-                <!-- Sujet -->
-                <div class="form-group">
-                    <label for="subject">📌 Sujet <span style="color: red;">*</span></label>
-                    <input type="text" id="subject" name="subject" placeholder="Le sujet de ton message" required>
+                <div class="card">
+                    <div class="card-icon">💡</div>
+                    <h3>Proposer une amélioration</h3>
+                    <p>Tu as une idée pour améliorer la plateforme ?</p>
                 </div>
 
-                <!-- Message -->
-                <div class="form-group">
-                    <label for="message">💬 Message <span style="color: red;">*</span></label>
-                    <textarea id="message" name="message" placeholder="Écris ton message ici..." required></textarea>
+                <div class="card">
+                    <div class="card-icon">🤝</div>
+                    <h3>Contribuer au projet</h3>
+                    <p>Tu veux participer au développement ?</p>
                 </div>
-
-                <!-- Bouton Submit -->
-                <button type="submit" class="btn-submit">📤 Envoyer le message</button>
-
-            </form>
+            </div>
         </section>
 
-        <!-- Section Autres moyens de contact -->
+        <!-- Section Moyens de contact directs -->
         <section class="content-section">
-            <h2>📞 Autres moyens de nous contacter</h2>
+            <h2>📞 Me contacter directement</h2>
 
             <div class="cards-grid">
 
                 <div class="card">
                     <div class="card-icon">📧</div>
                     <h3>Email</h3>
-                    <p>contact@apprendre-html-css.com</p>
-                    <a href="mailto:contact@apprendre-html-css.com">Nous écrire →</a>
+                    <p style="word-break: break-all;">heryandrianarimbola@gmail.com</p>
+                    <a href="mailto:heryandrianarimbola@gmail.com">M'écrire →</a>
                 </div>
 
                 <div class="card">
-                    <div class="card-icon">💬</div>
-                    <h3>Communauté</h3>
-                    <p>Rejoins notre groupe Discord</p>
-                    <a href="#">Rejoindre →</a>
+                    <div class="card-icon">💼</div>
+                    <h3>LinkedIn</h3>
+                    <p>Restons connectés professionnellement</p>
+                    <a href="https://www.linkedin.com/in/herimampionona-andrianarimbola-a6110b398" target="_blank">Me
+                        suivre →</a>
                 </div>
 
                 <div class="card">
-                    <div class="card-icon">🐦</div>
-                    <h3>Réseaux sociaux</h3>
-                    <p>Suis-nous sur Twitter et LinkedIn</p>
-                    <a href="#">Nous suivre →</a>
+                    <div class="card-icon">💻</div>
+                    <h3>GitHub</h3>
+                    <p>Contribue au projet open source</p>
+                    <a href="https://github.com/DevWebAiMadagascar" target="_blank">Voir le code →</a>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">📘</div>
+                    <h3>Facebook</h3>
+                    <p>Suivre notre page facebook officiel</p>
+                    <a href="https://www.facebook.com/profile.php?id=61586330605976" target="_blank">Nous suivre →</a>
                 </div>
 
             </div>
         </section>
 
-        <!-- Section FAQ rapide -->
+        <!-- Section Contribuer au projet -->
+        <section class="content-section">
+            <h2>🤝 Contribuer au projet</h2>
+
+            <p>Dev Web AI Madagascar est un <strong>projet open source</strong>. Tu peux contribuer de plusieurs façons
+                :</p>
+
+            <h3>💻 Contribuer au code</h3>
+            <p>Le projet est hébergé sur GitHub. Tu peux :</p>
+            <ul>
+                <li>✅ Signaler des bugs via les <strong>Issues</strong></li>
+                <li>✅ Proposer de nouvelles fonctionnalités</li>
+                <li>✅ Améliorer le code existant via des <strong>Pull Requests</strong></li>
+                <li>✅ Corriger des fautes d'orthographe ou améliorer les explications</li>
+            </ul>
+            <p style="margin-top: 1rem;">
+                <a href="https://github.com/DevWebAiMadagascar/officialwebsite" target="_blank" class="btn-primary">📂
+                    Voir le repository GitHub →</a>
+            </p>
+
+            <h3>📚 Contribuer au contenu</h3>
+            <p>Tu peux proposer :</p>
+            <ul>
+                <li>✅ De nouvelles leçons</li>
+                <li>✅ Des exercices pratiques</li>
+                <li>✅ Des quiz interactifs</li>
+                <li>✅ Des projets guidés</li>
+            </ul>
+
+            <h3>💬 Partager et recommander</h3>
+            <p>Si tu trouves cette plateforme utile :</p>
+            <ul>
+                <li>✅ Partage-la avec tes amis</li>
+                <li>✅ Mets une ⭐ sur GitHub</li>
+                <li>✅ Parles-en sur les réseaux sociaux</li>
+            </ul>
+        </section>
+
+        <!-- Section FAQ -->
         <section class="content-section">
             <h2>❓ Questions fréquentes</h2>
 
             <h3>💰 Les cours sont-ils vraiment gratuits ?</h3>
-            <p>Oui, <strong>100% gratuits</strong> ! Tous les cours et ressources sont accessibles sans aucun frais.</p>
+            <p>Oui, <strong>100% gratuits</strong> ! Tous les cours et ressources sont accessibles sans aucun frais,
+                maintenant et pour toujours.</p>
 
-            <h3>⏱️ Combien de temps faut-il pour terminer le parcours ?</h3>
-            <p>Cela dépend de ton rythme, mais en moyenne <strong>2 à 3 mois</strong> en y consacrant quelques heures
-                par semaine.</p>
+            <h3>⏱️ Combien de temps pour terminer le parcours ?</h3>
+            <p>Cela dépend de ton rythme. En moyenne, avec <strong>3-4 heures par semaine</strong>, tu peux terminer les
+                modules HTML et CSS en <strong>2-3 mois</strong>.</p>
 
             <h3>🎓 Est-ce que je reçois un certificat ?</h3>
-            <p>Actuellement, nous ne délivrons pas de certificat, mais nous travaillons sur cette fonctionnalité !</p>
+            <p>Le système de certificats est <strong>en développement</strong>. Il sera disponible dans une prochaine
+                version de la plateforme.</p>
 
             <h3>💻 Quel matériel ai-je besoin ?</h3>
             <p>Un <strong>ordinateur</strong> (Windows, Mac ou Linux) et une <strong>connexion internet</strong>
-                suffisent.</p>
+                suffisent. Un éditeur de code gratuit comme VS Code est recommandé.</p>
 
             <h3>🤔 Je suis débutant complet, puis-je suivre ?</h3>
-            <p>Absolument ! Nos cours sont conçus pour les <strong>débutants totaux</strong>. On part de zéro.</p>
+            <p>Absolument ! Les cours sont conçus pour les <strong>débutants totaux</strong>. Nous partons de zéro,
+                aucune connaissance préalable n'est requise.</p>
 
             <h3>📱 Puis-je apprendre sur mobile/tablette ?</h3>
             <p>Tu peux <strong>consulter</strong> les leçons sur mobile/tablette, mais pour <strong>pratiquer le
-                    code</strong>, un ordinateur est recommandé.</p>
+                    code</strong>, un ordinateur est fortement recommandé.</p>
+
+            <h3>🕐 Combien de temps pour avoir une réponse ?</h3>
+            <p>Je m'efforce de répondre à tous les messages dans un délai de <strong>48-72 heures</strong>. Merci de ta
+                patience !</p>
+
+            <h3>🌍 Y a-t-il une communauté d'apprenants ?</h3>
+            <p>Une communauté Forum est <strong>en préparation</strong>. En attendant, n'hésite pas à me contacter
+                directement ou via notre page Facebook.</p>
         </section>
 
         <!-- Call to Action -->
         <section class="content-section text-center">
-            <h2>🚀 Une question ? Contacte-nous !</h2>
-            <p>Nous sommes là pour t'aider dans ton parcours d'apprentissage.</p>
+            <h2>💬 Besoin d'aide ?</h2>
+            <p>N'hésite surtout pas à me contacter. Aucune question n'est stupide !</p>
             <p style="margin-top: 1rem;">
                 <a href="#" class="btn-primary" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">
                     ↑ Remonter au formulaire
@@ -148,37 +203,47 @@
 
     </main>
 
-    <!-- ===== FOOTER AVEC NAVIGATION ===== -->
+    <!-- ===== FOOTER ===== -->
     <footer>
         <div class="footer-content">
             <!-- Navigation Footer -->
             <nav class="footer-nav">
                 <a href="../../index.html">🏠 Accueil</a>
-                <a href="lessons.html">📖 Leçons</a>
+                <a href="lessons.html">📖 Cours</a>
                 <a href="about.html">ℹ️ À Propos</a>
                 <a href="contact.html">✉️ Contact</a>
             </nav>
 
             <!-- Informations -->
             <div class="footer-info">
-                <p><strong>📚 Apprendre HTML & CSS</strong></p>
-                <p>Ton parcours d'apprentissage du développement web</p>
+                <p><strong>Dev Web AI - Madagascar</strong></p>
+                <p>Partage l'aventure du développement web et de l'IA</p>
 
                 <!-- Réseaux sociaux -->
                 <div class="social-links">
-                    <a href="#" title="Facebook">📘</a>
-                    <a href="#" title="Twitter">🐦</a>
-                    <a href="#" title="LinkedIn">💼</a>
-                    <a href="#" title="GitHub">💻</a>
+                    <a href="https://www.facebook.com/profile.php?id=61586330605976" target="_blank" title="Facebook"
+                        aria-label="Notre page Facebook">📘</a>
+                    <a href="https://www.linkedin.com/in/herimampionona-andrianarimbola-a6110b398" target="_blank"
+                        title="LinkedIn" aria-label="LinkedIn de l'auteur">💼</a>
+                    <a href="https://github.com/DevWebAiMadagascar" target="_blank" title="GitHub"
+                        aria-label="Notre GitHub">💻</a>
+                    <a href="mailto:heryandrianarimbola@gmail.com" title="Email"
+                        aria-label="Nous contacter par email">📧</a>
                 </div>
 
-                <p style="margin-top: 1.5rem;">© 2026 - Cours HTML & CSS pour débutants | Créé avec ❤️</p>
+                <p style="margin-top: 1.5rem; font-size: 0.9rem;">
+                    © 2026 Dev Web AI Madagascar • Créé avec ❤️ à Madagascar
+                </p>
+                <p style="font-size: 0.85rem; color: var(--text-muted);">
+                    Par <a href="https://www.linkedin.com/in/herimampionona-andrianarimbola-a6110b398" target="_blank"
+                        style="color: var(--primary-light);">Heri Ma ANDRIA</a>
+                </p>
             </div>
         </div>
     </footer>
 
+    <!-- Scripts -->
     <script src="../../assets/js/theme-toggle.js"></script>
-
 </body>
 
 </html>

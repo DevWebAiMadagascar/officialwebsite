@@ -4,13 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leçons - Apprendre HTML & CSS</title>
+    <meta name="description"
+        content="Tous les cours de Dev Web AI Madagascar - Modules HTML, CSS et JavaScript pour apprendre le développement web gratuitement.">
+    <title>Cours - Dev Web AI Madagascar</title>
     <link rel="stylesheet" href="../../assets/css/reset-variable.css">
     <link rel="stylesheet" href="../../assets/css/public-styles.css">
 </head>
 
 <body>
-    <!-- Bouton toggle thème (copier sur CHAQUE page) -->
+    <!-- Bouton toggle thème -->
     <button id="theme-toggle" class="theme-toggle" aria-label="Changer de thème">
         <span class="icon-light">☀️</span>
         <span class="icon-dark">🌙</span>
@@ -20,12 +22,15 @@
     <header>
         <div class="header-content">
             <h1 class="site-title">
-                <object data="../../assets/img/logo-devweb-ai.svg" type="image/svg+xml" width="300">Logo Dev Web AI
-                    Madagascar</object>
+                <a href="../../index.html">
+                    <object data="../../assets/img/logo-devweb-ai.svg" type="image/svg+xml" width="300">
+                        Dev Web AI Madagascar
+                    </object>
+                </a>
             </h1>
             <nav class="main-nav">
                 <a href="../../index.html">🏠 Accueil</a>
-                <a href="lessons.html" class="active">📖 Leçons</a>
+                <a href="lessons.html" class="active">📖 Cours</a>
                 <a href="about.html">ℹ️ À Propos</a>
                 <a href="contact.html">✉️ Contact</a>
             </nav>
@@ -37,148 +42,338 @@
 
         <!-- Section Hero -->
         <section class="hero-section">
-            <h1>📖 Toutes les leçons</h1>
-            <p>Parcours complet pour maîtriser HTML et CSS</p>
+            <h1>📖 Tous les cours disponibles</h1>
+            <p>Parcours complet pour maîtriser le développement web de zéro à héros</p>
         </section>
 
-        <!-- Section Leçons HTML -->
-        <section class="content-section" id="html">
-            <h2>📝 Leçons HTML</h2>
-            <p>Apprends les bases du HTML, le langage qui structure les pages web.</p>
-
-            <ul class="lessons-list">
-                <li>
-                    <a href="../lessons/html/lesson1.html">
-                        📚 Leçon 1 - Comprendre le HTML et le WEB
-                    </a>
-                </li>
-                <li>
-                    <a href="../lessons/html/lesson2.html">
-                        🧠 Leçon 2 - Structure d'un fichier HTML
-                    </a>
-                </li>
-                <li>
-                    <a href="../lessons/html/lesson3.html">
-                        🔤 Leçon 3 - Les balises de texte
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        🔗 Leçon 4 - Liens et images (Bientôt disponible)
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        📋 Leçon 5 - Listes et tableaux (Bientôt disponible)
-                    </a>
-                </li>
-            </ul>
-        </section>
-
-        <!-- Section Leçons CSS -->
-        <section class="content-section" id="css">
-            <h2>🎨 Leçons CSS</h2>
-            <p>Apprends à styliser tes pages web et à créer des designs magnifiques.</p>
-
-            <ul class="lessons-list">
-                <li>
-                    <a href="../lessons/css/lesson1.html">
-                        🎨 Leçon 1 - HTML + CSS : Première Connexion
-                    </a>
-                </li>
-                <li>
-                    <a href="../lessons/css/lesson2.html">
-                        🎯 Leçon 2 - Les sélecteurs CSS (bases)
-                    </a>
-                </li>
-                <li>
-                    <a href="../lessons/css/lesson3.html">
-                        🔤 Leçon 3 - Propriétés CSS de texte
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        📦 Leçon 4 - Box Model (Bientôt disponible)
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        🎨 Leçon 5 - Couleurs et arrière-plans (Bientôt disponible)
-                    </a>
-                </li>
-            </ul>
-        </section>
-
-        <!-- Section Projets -->
+        <!-- Section Parcours d'apprentissage -->
         <section class="content-section">
-            <h2>🚀 Projets pratiques</h2>
-            <p>Mets en pratique ce que tu as appris avec des projets concrets.</p>
+            <h2>🗺️ Ton parcours d'apprentissage</h2>
+            <p>Suis le parcours dans l'ordre recommandé pour une progression optimale :</p>
+
+            <div
+                style="background: var(--bg-section); padding: var(--spacing-lg); border-radius: var(--radius-lg); margin-top: var(--spacing-md);">
+                <p style="font-size: 1.1rem; text-align: center; margin-bottom: var(--spacing-md);">
+                    <strong>Module HTML</strong> → <strong>Module CSS</strong> → <strong>Module JavaScript</strong> →
+                    <strong>Projets</strong>
+                </p>
+                <p style="text-align: center; color: var(--text-secondary);">
+                    Chaque module s'appuie sur les connaissances du précédent
+                </p>
+            </div>
+        </section>
+
+        <!-- Section Module HTML -->
+        <section class="content-section" id="html">
+            <h2>📝 Module HTML </h2>
+            <p>Apprends à structurer des pages web avec HTML, le langage fondamental du web.</p>
+
+            <div
+                style="background: var(--bg-section); padding: var(--spacing-md); border-radius: var(--radius-md); margin-bottom: var(--spacing-md); border-left: 4px solid var(--success-light);">
+                <p><strong>✅ Statut :</strong> Réaliser (9/9 leçons)</p>
+                <p><strong>⏱️ Durée estimée :</strong> 4-6 heures</p>
+                <p><strong>🎯 Niveau :</strong> Débutant</p>
+            </div>
+
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-icon">📚</div>
+                    <h3>9 leçons complètes</h3>
+                    <p>Structure HTML, balises, sémantique et bonnes pratiques</p>
+                    <a href="lesson/html/sommaire-html.html" class="btn-primary"
+                        style="margin-top: 1rem; display: inline-block;">
+                        📖 Accéder au module HTML →
+                    </a>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">🎯</div>
+                    <h3>Ce que tu vas apprendre</h3>
+                    <ul style="text-align: left; margin-top: 1rem; line-height: 1.8;">
+                        <li>Comprendre le HTML et le web</li>
+                        <li>Structure d'une page HTML</li>
+                        <li>Balises de texte</li>
+                        <li>Liens et images</li>
+                        <li>Les liste</li>
+                        <li>le Tableau</li>
+                        <li>Formulaires</li>
+                        <li>Structure sémantiques</li>
+                        <li>Les attributs</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Module CSS -->
+        <section class="content-section" id="css">
+            <h2>🎨 Module CSS </h2>
+            <p>Apprends à styliser tes pages web et à créer des designs modernes et responsives.</p>
+
+            <div
+                style="background: var(--bg-section); padding: var(--spacing-md); border-radius: var(--radius-md); margin-bottom: var(--spacing-md); border-left: 4px solid var(--warning-dark);">
+                <p><strong>⏳ Statut :</strong> En cours (3/7 leçons)</p>
+                <p><strong>⏱️ Durée estimée :</strong> 6-8 heures (une fois complet)</p>
+                <p><strong>🎯 Niveau :</strong> Débutant</p>
+            </div>
+
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-icon">🎨</div>
+                    <h3>3 leçons disponibles</h3>
+                    <p>Sélecteurs, propriétés de texte et mise en forme</p>
+                    <a href="lesson/css/sommaire-css.html" class="btn-primary"
+                        style="margin-top: 1rem; display: inline-block;">
+                        🎨 Accéder au module CSS →
+                    </a>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">📋</div>
+                    <h3>6 leçons à venir</h3>
+                    <ul style="text-align: left; margin-top: 1rem; line-height: 1.8;">
+                        <li>✅ HTML et CSS : connexion</li>
+                        <li>✅ Sélecteurs CSS</li>
+                        <li>✅ Propriétés de texte</li>
+                        <li>🔜 Box Model</li>
+                        <li>🔜 Couleurs et unités</li>
+                        <li>🔜 Display et positionnement</li>
+                        <li>🔜 Flexbox (bases)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Module JavaScript -->
+        <section class="content-section" id="javascript">
+            <h2>⚡ Module JavaScript</h2>
+            <p>Rends tes pages web interactives avec JavaScript, le langage de programmation du web.</p>
+
+            <div
+                style="background: var(--bg-section); padding: var(--spacing-md); border-radius: var(--radius-md); margin-bottom: var(--spacing-md); border-left: 4px solid var(--info-color);">
+                <p><strong>🔜 Statut :</strong> Bientôt disponible (0/9 leçons)</p>
+                <p><strong>⏱️ Durée estimée :</strong> 10-12 heures</p>
+                <p><strong>🎯 Niveau :</strong> Débutant à intermédiaire</p>
+            </div>
+
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-icon">⚡</div>
+                    <h3>Module en préparation</h3>
+                    <p>Découvre la programmation avec JavaScript</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">📝</div>
+                    <h3>Au programme</h3>
+                    <ul style="text-align: left; margin-top: 1rem; line-height: 1.8;">
+                        <li>🔜 Introduction à JavaScript</li>
+                        <li>🔜 Variables et types de données</li>
+                        <li>🔜 Opérateurs et conditions</li>
+                        <li>🔜 Boucles et itérations</li>
+                        <li>🔜 Fonctions</li>
+                        <li>🔜 Manipulation du DOM</li>
+                        <li>🔜 Événements</li>
+                        <li>🔜 Objets et tableaux</li>
+                        <li>🔜 Bonnes pratiques JS</li>
+                    </ul>
+                </div>
+            </div>
+
+            <p
+                style="text-align: center; margin-top: var(--spacing-lg); padding: var(--spacing-md); background: var(--bg-info-box); border-radius: var(--radius-md);">
+                💡 <strong>Prévu pour février 2026</strong> - Termine tous les modules de base HTML, CSS et JS pour être
+                prêt !
+            </p>
+        </section>
+
+        <!-- Section Quiz et Évaluations -->
+        <section class="content-section">
+            <h2>✍️ Quiz et Évaluations</h2>
+            <p>Valide tes acquis avec des quiz interactifs après chaque module.</p>
+
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-icon">📝</div>
+                    <h3>Quiz HTML</h3>
+                    <p>Teste tes connaissances sur le module HTML</p>
+                    <a href="quiz/bases-html.html">🎯 Faire le quiz →</a>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">🎨</div>
+                    <h3>Quiz CSS</h3>
+                    <p>Valide ta maîtrise du CSS</p>
+                    <a href="#" style="opacity: 0.6; pointer-events: none;">🔜 Bientôt disponible</a>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">⚡</div>
+                    <h3>Quiz JavaScript</h3>
+                    <p>Évalue ton niveau en JavaScript</p>
+                    <a href="#" style="opacity: 0.6; pointer-events: none;">🔜 Bientôt disponible</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Projets pratiques -->
+        <section class="content-section">
+            <h2>🚀 Projets pratiques guidés</h2>
+            <p>Mets en pratique ce que tu as appris avec des projets concrets et guidés.</p>
 
             <div class="cards-grid">
                 <div class="card">
                     <div class="card-icon">📄</div>
                     <h3>Page personnelle</h3>
-                    <p>Crée ta première page web</p>
-                    <a href="#">Bientôt disponible →</a>
+                    <p>Crée ta première page web complète avec HTML et CSS</p>
+                    <a href="#" style="opacity: 0.6; pointer-events: none;">🔜 Bientôt disponible</a>
                 </div>
 
                 <div class="card">
                     <div class="card-icon">💼</div>
-                    <h3>Portfolio</h3>
-                    <p>Construis ton portfolio professionnel</p>
-                    <a href="#">Bientôt disponible →</a>
+                    <h3>Portfolio professionnel</h3>
+                    <p>Construis ton portfolio pour présenter tes projets</p>
+                    <a href="#" style="opacity: 0.6; pointer-events: none;">🔜 Bientôt disponible</a>
                 </div>
 
                 <div class="card">
                     <div class="card-icon">🏪</div>
                     <h3>Site vitrine</h3>
-                    <p>Réalise un site complet</p>
-                    <a href="#">Bientôt disponible →</a>
+                    <p>Réalise un site complet pour une entreprise fictive</p>
+                    <a href="#" style="opacity: 0.6; pointer-events: none;">🔜 Bientôt disponible</a>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">🎮</div>
+                    <h3>Application interactive</h3>
+                    <p>Crée une app web avec JavaScript</p>
+                    <a href="#" style="opacity: 0.6; pointer-events: none;">🔜 Bientôt disponible</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Progression recommandée -->
+        <section class="content-section">
+            <h2>🎯 Parcours recommandé</h2>
+            <p>Pour un apprentissage optimal, suis ce parcours dans l'ordre :</p>
+
+            <div
+                style="background: var(--bg-section); padding: var(--spacing-lg); border-radius: var(--radius-lg); margin-top: var(--spacing-md);">
+                <h3 style="margin-top: 0;">Étape 1 : Les Fondations (4-6 semaines)</h3>
+                <ol style="line-height: 2;">
+                    <li>📝 <strong>Module HTML complet</strong> (9 leçons) - <a href="lesson/html/sommaire-html.html"
+                            style="color: var(--primary-light);">Commencer →</a></li>
+                    <li>✍️ <strong>Quiz HTML</strong> pour valider tes acquis</li>
+                    <li>🎨 <strong>Module CSS complet</strong> (9 leçons) - <a href="lesson/css/sommaire-css.html"
+                            style="color: var(--primary-light);">Commencer →</a></li>
+                    <li>✍️ <strong>Quiz CSS</strong> pour confirmer ta maîtrise</li>
+                </ol>
+
+                <h3>Étape 2 : L'Interactivité (6-8 semaines)</h3>
+                <ol start="5" style="line-height: 2;">
+                    <li>⚡ <strong>Module JavaScript complet</strong> (9 leçons) - <span
+                            style="color: var(--text-secondary);">Bientôt disponible</span></li>
+                    <li>✍️ <strong>Quiz JavaScript</strong></li>
+                    <li>🚀 <strong>Premier projet guidé</strong> : Page personnelle interactive</li>
+                </ol>
+
+                <h3>Étape 3 : Les Projets (4-6 semaines)</h3>
+                <ol start="8" style="line-height: 2;">
+                    <li>💼 <strong>Projet Portfolio</strong></li>
+                    <li>🏪 <strong>Projet Site vitrine</strong></li>
+                    <li>🎮 <strong>Projet Application interactive</strong></li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Section Conseils -->
+        <section class="content-section">
+            <h2>💡 Conseils pour réussir</h2>
+
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-icon">📅</div>
+                    <h3>Sois régulier</h3>
+                    <p>Mieux vaut 30 minutes par jour que 5 heures une fois par semaine</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">💻</div>
+                    <h3>Pratique, pratique, pratique</h3>
+                    <p>Ne te contente pas de lire, code en même temps que les exemples</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">🔄</div>
+                    <h3>Répète les exercices</h3>
+                    <p>La répétition est la clé de la maîtrise</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">❓</div>
+                    <h3>Pose des questions</h3>
+                    <p>N'hésite pas à nous contacter si tu bloques</p>
                 </div>
             </div>
         </section>
 
         <!-- Call to Action -->
         <section class="content-section text-center">
-            <h2>💪 Continue ton apprentissage</h2>
-            <p>Chaque leçon te rapproche de ton objectif !</p>
-            <a href="../lessons/html/lesson1.html" class="btn-primary" style="margin-top: 1rem;">Commencer maintenant
-                →</a>
+            <h2>🎉 Prêt à commencer ton aventure ?</h2>
+            <p style="font-size: 1.1rem; margin-bottom: 1.5rem;">
+                Chaque expert a été débutant un jour. Aujourd'hui, c'est ton tour de commencer !
+            </p>
+            <a href="lesson/html/sommaire-html.html" class="btn-primary">
+                🚀 Commencer le Module HTML →
+            </a>
+            <p style="margin-top: 1.5rem; color: var(--text-secondary);">
+                Besoin d'aide ? <a href="contact.html"
+                    style="color: var(--primary-light); text-decoration: underline;">Contacte-nous</a>
+            </p>
         </section>
 
     </main>
 
-    <!-- ===== FOOTER AVEC NAVIGATION ===== -->
+    <!-- ===== FOOTER ===== -->
     <footer>
         <div class="footer-content">
             <!-- Navigation Footer -->
             <nav class="footer-nav">
                 <a href="../../index.html">🏠 Accueil</a>
-                <a href="lessons.html">📖 Leçons</a>
+                <a href="lessons.html">📖 Cours</a>
                 <a href="about.html">ℹ️ À Propos</a>
                 <a href="contact.html">✉️ Contact</a>
             </nav>
 
             <!-- Informations -->
             <div class="footer-info">
-                <p><strong>📚 Apprendre HTML & CSS</strong></p>
-                <p>Ton parcours d'apprentissage du développement web</p>
+                <p><strong>Dev Web AI - Madagascar</strong></p>
+                <p>Partage l'aventure du développement web et de l'IA</p>
 
                 <!-- Réseaux sociaux -->
                 <div class="social-links">
-                    <a href="#" title="Facebook">📘</a>
-                    <a href="#" title="Twitter">🐦</a>
-                    <a href="#" title="LinkedIn">💼</a>
-                    <a href="#" title="GitHub">💻</a>
+                    <a href="https://www.facebook.com/profile.php?id=61586330605976" target="_blank" title="Facebook"
+                        aria-label="Notre page Facebook">📘</a>
+                    <a href="https://www.linkedin.com/in/herimampionona-andrianarimbola-a6110b398" target="_blank"
+                        title="LinkedIn" aria-label="LinkedIn de l'auteur">💼</a>
+                    <a href="https://github.com/DevWebAiMadagascar" target="_blank" title="GitHub"
+                        aria-label="Notre GitHub">💻</a>
+                    <a href="mailto:heryandrianarimbola@gmail.com" title="Email"
+                        aria-label="Nous contacter par email">📧</a>
                 </div>
 
-                <p style="margin-top: 1.5rem;">© 2026 - Cours HTML & CSS pour débutants | Créé avec ❤️</p>
+                <p style="margin-top: 1.5rem; font-size: 0.9rem;">
+                    © 2026 Dev Web AI Madagascar • Créé avec ❤️ à Madagascar
+                </p>
+                <p style="font-size: 0.85rem; color: var(--text-muted);">
+                    Par <a href="https://www.linkedin.com/in/herimampionona-andrianarimbola-a6110b398"
+                     target="_blank" style="color: var(--primary-light);">Heri Ma ANDRIA</a>
+                </p>
             </div>
         </div>
     </footer>
 
+    <!-- Scripts -->
     <script src="../../assets/js/theme-toggle.js"></script>
-
 </body>
 
 </html>
