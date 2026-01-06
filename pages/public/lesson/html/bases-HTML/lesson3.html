@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leçon 3 - Les balises de texte (contenu de base)</title>
+    <link rel="stylesheet" href="../../../../../assets/CSS/lesson-styles.css">
+</head>
+
+<body>
+
+    <!-- ===== EN-TÊTE DE LA PAGE ===== -->
+    <header>
+        <h1>📝 Leçon 3 - Les balises de texte (contenu de base)</h1>
+    </header>
+
+    <!-- ===== CONTENU PRINCIPAL ===== -->
+    <main>
+
+        <!-- Section : Objectifs -->
+        <section>
+            <h2>🎯 Objectif de la leçon</h2>
+            <p>À la fin de cette leçon, tu sauras :</p>
+            <ul>
+                <li>Afficher du <strong>texte correctement structuré</strong></li>
+                <li>Utiliser les <strong>balises de texte essentielles</strong></li>
+                <li>Comprendre la différence entre <strong>structure</strong> et <strong>apparence</strong></li>
+            </ul>
+        </section>
+
+        <!-- Section : Les titres -->
+        <section>
+            <h2>📝 1. Les titres : <code>&lt;h1&gt;</code> à <code>&lt;h6&gt;</code></h2>
+
+            <p>HTML propose <strong>6 niveaux de titres</strong> :</p>
+
+            <pre><code>&lt;h1&gt;Titre principal&lt;/h1&gt;
+&lt;h2&gt;Sous-titre&lt;/h2&gt;
+&lt;h3&gt;Sous-sous-titre&lt;/h3&gt;</code></pre>
+
+            <h3>📌 Règles importantes</h3>
+            <ul>
+                <li><code>&lt;h1&gt;</code> = titre <strong>le plus important</strong></li>
+                <li><code>&lt;h6&gt;</code> = titre <strong>le moins important</strong></li>
+                <li>On n'utilise <strong>pas les titres pour grossir le texte</strong></li>
+                <li>Une page = <strong>1 seul <code>&lt;h1&gt;</code> (bonne pratique)</strong></li>
+            </ul>
+
+            <div class="info-box">
+                <p><strong>💡 Bon à savoir :</strong></p>
+                <p>Les moteurs de recherche (Google, etc.) utilisent les titres pour comprendre la structure de ta page
+                    !</p>
+            </div>
+        </section>
+
+        <!-- Section : Les paragraphes -->
+        <section>
+            <h2>📄 2. Les paragraphes : <code>&lt;p&gt;</code></h2>
+
+            <pre><code>&lt;p&gt;Ceci est un paragraphe.&lt;/p&gt;
+&lt;p&gt;Ceci est un autre paragraphe.&lt;/p&gt;</code></pre>
+
+            <ul>
+                <li>📌 Chaque <code>&lt;p&gt;</code> crée un <strong>nouveau bloc de texte</strong></li>
+                <li>📌 Le navigateur ajoute automatiquement un espace entre les paragraphes</li>
+            </ul>
+        </section>
+
+        <!-- Section : Mettre en valeur -->
+        <section>
+            <h2>💪 3. Mettre du texte en valeur</h2>
+
+            <h3>🔹 <code>&lt;strong&gt;</code> — importance</h3>
+
+            <pre><code>&lt;p&gt;Ce mot est &lt;strong&gt;important&lt;/strong&gt;.&lt;/p&gt;</code></pre>
+
+            <ul>
+                <li>Donne une <strong>importance sémantique</strong></li>
+                <li>Les lecteurs d'écran le prennent en compte</li>
+            </ul>
+
+            <p><strong>Rendu :</strong></p>
+            <p class="exemple">Ce mot est <strong>important</strong>.</p>
+
+            <h3>🔹 <code>&lt;em&gt;</code> — emphase</h3>
+
+            <pre><code>&lt;p&gt;Ce mot est &lt;em&gt;accentué&lt;/em&gt;.&lt;/p&gt;</code></pre>
+
+            <ul>
+                <li>Sert à <strong>insister</strong> sur un mot</li>
+            </ul>
+
+            <p><strong>Rendu :</strong></p>
+            <p class="exemple">Ce mot est <em>accentué</em>.</p>
+
+            <div class="info-box">
+                <p><strong>📌 Important :</strong></p>
+                <p><code>&lt;strong&gt;</code> et <code>&lt;em&gt;</code> ≠ juste du style</p>
+                <p>👉 Ils ont un <strong>sens sémantique</strong>.</p>
+            </div>
+        </section>
+
+        <!-- Section : Saut de ligne -->
+        <section>
+            <h2>🧾 4. Saut de ligne : <code>&lt;br&gt;</code></h2>
+
+            <pre><code>&lt;p&gt;Ligne 1&lt;br&gt;Ligne 2&lt;/p&gt;</code></pre>
+
+            <h3>📌 <code>&lt;br&gt;</code> :</h3>
+            <ul>
+                <li>Ne contient pas de texte</li>
+                <li>N'a <strong>pas</strong> de balise fermante</li>
+                <li>Force un retour à la ligne</li>
+            </ul>
+
+            <p><strong>Rendu :</strong></p>
+            <p class="exemple">Ligne 1<br>Ligne 2</p>
+        </section>
+
+        <!-- Section : Ce qu'il ne faut pas faire -->
+        <section>
+            <h2>🚫 5. Ce qu'il ne faut PAS faire</h2>
+
+            <ul style="list-style: none; padding-left: 0;">
+                <li>❌ Utiliser <code>&lt;br&gt;</code> pour structurer un texte</li>
+                <li>❌ Utiliser <code>&lt;strong&gt;</code> juste pour faire du gras</li>
+                <li>❌ Écrire tout le texte sans <code>&lt;p&gt;</code></li>
+                <li>❌ Utiliser plusieurs <code>&lt;h1&gt;</code> sur une même page</li>
+            </ul>
+
+            <div class="info-box" style="background: #d4edda; border-left-color: #28a745;">
+                <p><strong>✔️ Bonnes pratiques :</strong></p>
+                <ul style="margin: 0.5rem 0 0 1rem;">
+                    <li>Utiliser les balises pour leur <strong>sens</strong>, pas leur apparence</li>
+                    <li>Structurer logiquement avec les titres</li>
+                    <li>Un paragraphe = une idée</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Section : Exemple complet -->
+        <section>
+            <h2>🧱 6. Exemple complet</h2>
+
+            <pre><code>&lt;body&gt;
+  &lt;h1&gt;Apprendre le HTML&lt;/h1&gt;
+
+  &lt;p&gt;Le HTML sert à &lt;strong&gt;structurer&lt;/strong&gt; une page web.&lt;/p&gt;
+
+  &lt;p&gt;
+    Il est utilisé avec &lt;em&gt;CSS&lt;/em&gt; et &lt;em&gt;JavaScript&lt;/em&gt;.
+  &lt;/p&gt;
+&lt;/body&gt;</code></pre>
+
+            <div class="exemple-rendu">
+                <p><strong>Rendu dans le navigateur :</strong></p>
+                <div style="border: 2px solid #ddd; padding: 1rem; border-radius: 8px; background: #f9f9f9;">
+                    <h3 style="margin: 0 0 1rem 0; border: none; padding: 0;">Apprendre le HTML</h3>
+                    <p style="margin-bottom: 0.5rem;">Le HTML sert à <strong>structurer</strong> une page web.</p>
+                    <p style="margin: 0;">Il est utilisé avec <em>CSS</em> et <em>JavaScript</em>.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section : Mini pratique -->
+        <section class="quiz-section">
+            <h2>✍️ 7. Mini pratique</h2>
+            <p>Indique quelle balise utiliser :</p>
+
+            <ol>
+                <li>Un titre principal</li>
+                <li>Un paragraphe</li>
+                <li>Un mot très important</li>
+                <li>Un mot à accentuer</li>
+                <li>Aller à la ligne sans nouveau paragraphe</li>
+            </ol>
+
+            <details class="reponses">
+                <summary>🔍 Voir les réponses</summary>
+                <div style="margin-top: 1rem;">
+                    <p><strong>1.</strong> <code>&lt;h1&gt;</code> ✅</p>
+                    <p><strong>2.</strong> <code>&lt;p&gt;</code> ✅</p>
+                    <p><strong>3.</strong> <code>&lt;strong&gt;</code> ✅</p>
+                    <p><strong>4.</strong> <code>&lt;em&gt;</code> ✅</p>
+                    <p><strong>5.</strong> <code>&lt;br&gt;</code> ✅</p>
+                </div>
+            </details>
+        </section>
+
+    </main>
+
+    <!-- ===== NAVIGATION ENTRE LEÇONS ===== -->
+    <nav class="nav-lecons">
+        <div class="conteneur-nav-lecons">
+
+            <!-- Bouton Précédent -->
+            <a href="lesson2.html" class="btn-nav precedent">
+                <span class="fleche">←</span>
+                <div class="info-nav">
+                    <span class="label">Précédent</span>
+                    <span class="titre-lecon">Structure HTML</span>
+                </div>
+            </a>
+
+            <!-- Bouton Sommaire -->
+            <a href="../sommaire-html.html" class="btn-sommaire">
+                📋 Sommaire
+            </a>
+
+            <!-- Bouton Suivant -->
+            <a href="lesson4.html" class="btn-nav suivant">
+                <div class="info-nav">
+                    <span class="label">Suivant</span>
+                    <span class="titre-lecon">Liens et images</span>
+                </div>
+                <span class="fleche">→</span>
+            </a>
+
+        </div>
+    </nav>
+
+    <!-- ===== PIED DE PAGE / RÉSUMÉ ===== -->
+    <footer>
+        <div class="footer-content">
+            <h2>📝 Résumé rapide</h2>
+            <ul>
+                <li><strong>&lt;h1&gt; à &lt;h6&gt;</strong> → titres (du plus au moins important)</li>
+                <li><strong>&lt;p&gt;</strong> → paragraphe</li>
+                <li><strong>&lt;strong&gt;</strong> → importance sémantique</li>
+                <li><strong>&lt;em&gt;</strong> → emphase</li>
+                <li><strong>&lt;br&gt;</strong> → saut de ligne</li>
+                <li><strong>Structure</strong> ≠ apparence</li>
+            </ul>
+
+            <div class="footer-motivation">
+                <p>🎉 <strong>Excellent !</strong> Tu maîtrises maintenant les balises de texte.</p>
+                <p>Excellent rythme. Continue ! 🚀💪</p>
+            </div>
+        </div>
+
+        <div class="footer-credits">
+            <p>© 2026 - Cours HTML pour débutants | Créé avec ❤️</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leçon 1 - Comprendre le HTML et le WEB</title>
+    <link rel="stylesheet" href="../../../../../assets/CSS/lesson-styles.css">
+</head>
+
+<body>
+
+    <!-- ===== EN-TÊTE DE LA PAGE ===== -->
+    <header>
+        <h1>📚 Leçon 1 - Comprendre le HTML et le WEB</h1>
+    </header>
+
+    <!-- ===== CONTENU PRINCIPAL ===== -->
+    <main>
+
+        <!-- Section : Objectifs -->
+        <section>
+            <h2>🎯 Objectif de la leçon</h2>
+            <p>À la fin de cette leçon, tu comprendras :</p>
+            <ul>
+                <li>Ce qu'est <strong>le Web</strong></li>
+                <li>Comment une <strong>page web</strong> fonctionne</li>
+                <li>Ce qu'est <strong>le HTML</strong></li>
+                <li>Pourquoi le HTML est la base de tout site web</li>
+            </ul>
+        </section>
+
+        <!-- Section : Qu'est-ce que le Web -->
+        <section>
+            <h2>🌐 1. Qu'est-ce que le Web ?</h2>
+            <p>Le <strong>Web (World Wide Web)</strong>, c'est un énorme réseau de <strong>pages</strong> reliées entre
+                elles.</p>
+            <p>Quand tu ouvres :</p>
+            <ul>
+                <li>Google</li>
+                <li>YouTube</li>
+                <li>Facebook</li>
+            </ul>
+            <p>Tu consultes des <strong>pages web</strong> stockées sur des <strong>ordinateurs appelés
+                    serveurs</strong>.</p>
+
+            <h3>💡 Comment ça marche (simplement)</h3>
+            <ol>
+                <li>Tu écris une adresse (ex : google.com)</li>
+                <li>Ton navigateur (Chrome, Firefox...) <strong>demande</strong> la page à un serveur</li>
+                <li>Le serveur <strong>envoie des fichiers</strong></li>
+                <li>Ton navigateur <strong>lit ces fichiers</strong> et les affiche</li>
+            </ol>
+        </section>
+
+        <!-- Section : Qu'est-ce qu'une page web -->
+        <section>
+            <h2>📄 2. Qu'est-ce qu'une page web ?</h2>
+            <p>Une page web, c'est <strong>un document</strong>.</p>
+            <p>Exactement comme :</p>
+            <ul>
+                <li>Un document Word</li>
+                <li>Un fichier PDF</li>
+                <li>Un fichier texte</li>
+            </ul>
+            <p>Sauf que c'est un <strong>fichier HTML</strong>.</p>
+        </section>
+
+        <!-- Section : Qu'est-ce que le HTML -->
+        <section>
+            <h2>🔤 3. Qu'est-ce que le HTML ?</h2>
+
+            <h3>Définition</h3>
+            <p><strong>HTML</strong> signifie :</p>
+            <p class="definition"><strong>H</strong>yper<strong>T</strong>ext <strong>M</strong>arkup
+                <strong>L</strong>anguage
+            </p>
+            <p>Ce n'est <strong>PAS</strong> un langage de programmation.<br>
+                C'est un <strong>langage de balisage</strong>.</p>
+
+            <div class="info-box">
+                <p><strong>💡 Qu'est-ce qu'une balise ?</strong></p>
+                <p>Une balise est un <strong>marqueur</strong> qui indique au navigateur comment afficher le contenu.
+                </p>
+            </div>
+        </section>
+
+        <!-- Section : Exemple concret -->
+        <section>
+            <h2>💻 4. Exemple concret de HTML</h2>
+            <pre><code>&lt;h1&gt;Bonjour&lt;/h1&gt;
+&lt;p&gt;Ceci est un paragraphe&lt;/p&gt;</code></pre>
+
+            <ul>
+                <li><code>&lt;h1&gt;</code> est une balise d'ouverture pour un titre</li>
+                <li><code>&lt;/h1&gt;</code> est une balise de fermeture du titre</li>
+                <li><code>&lt;p&gt;</code> est une balise d'ouverture pour un paragraphe</li>
+                <li><code>&lt;/p&gt;</code> est une balise de fermeture du paragraphe</li>
+            </ul>
+        </section>
+
+        <!-- Section : Mini pratique -->
+        <section class="quiz-section">
+            <h2>✍️ 5. Mini pratique (très important)</h2>
+            <p>Réponds <strong>sans tricher</strong>, juste avec ta logique :</p>
+            <ol>
+                <li>HTML sert-il à :
+                    <ul>
+                        <li>a) faire du traitement de texte</li>
+                        <li>b) structurer une page</li>
+                    </ul>
+                </li>
+                <li>Une page web est :
+                    <ul>
+                        <li>a) un programme</li>
+                        <li>b) un fichier</li>
+                    </ul>
+                </li>
+                <li>Le navigateur sert à :
+                    <ul>
+                        <li>a) écrire du HTML</li>
+                        <li>b) afficher du HTML</li>
+                    </ul>
+                </li>
+            </ol>
+
+            <details class="reponses">
+                <summary>🔍 Voir les réponses</summary>
+                <p><strong>Réponses :</strong> 1-b, 2-b, 3-b</p>
+            </details>
+        </section>
+
+    </main>
+
+    <!-- ===== NAVIGATION ENTRE LEÇONS ===== -->
+    <nav class="nav-lecons">
+        <div class="conteneur-nav-lecons">
+
+            <!-- Bouton Précédent (désactivé pour la leçon 1) -->
+            <a href="#" class="btn-nav precedent desactive">
+                <span class="fleche">←</span>
+                <div class="info-nav">
+                    <span class="label">Précédent</span>
+                    <span class="titre-lecon">-</span>
+                </div>
+            </a>
+
+            <!-- Bouton Sommaire -->
+            <a href="../sommaire-html.html" class="btn-sommaire">
+                📋 Sommaire
+            </a>
+
+            <!-- Bouton Suivant -->
+            <a href="lesson2.html" class="btn-nav suivant">
+                <div class="info-nav">
+                    <span class="label">Suivant</span>
+                    <span class="titre-lecon">Structure HTML</span>
+                </div>
+                <span class="fleche">→</span>
+            </a>
+
+        </div>
+    </nav>
+
+    <!-- ===== PIED DE PAGE / RÉSUMÉ ===== -->
+    <footer>
+        <div class="footer-content">
+            <h2>📝 Résumé rapide</h2>
+            <ul>
+                <li><strong>Le Web</strong> = serveurs + pages + navigateurs</li>
+                <li><strong>Une page web</strong> = fichier HTML</li>
+                <li><strong>HTML</strong> = structure d'une page</li>
+                <li><strong>HTML utilise des balises</strong> pour organiser le contenu</li>
+                <li><strong>Sans HTML</strong>, il n'y a pas de site web</li>
+            </ul>
+
+            <div class="footer-motivation">
+                <p>🎉 <strong>Bravo !</strong> Tu as terminé la première leçon.</p>
+                <p>Continue sur ta lancée, tu es sur la bonne voie ! 💪</p>
+            </div>
+        </div>
+
+        <div class="footer-credits">
+            <p>© 2026 - Cours HTML pour débutants | Créé avec ❤️</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leçon 7 - Les formulaires HTML</title>
+    <link rel="stylesheet" href="../../../../../assets/CSS/lesson-styles.css">
+</head>
+
+<body>
+    
+    <!-- ===== EN-TÊTE DE LA PAGE ===== -->
+    <header>
+        <h1>📝 Leçon 7 - Les formulaires HTML (<code>&lt;form&gt;</code>, <code>&lt;input&gt;</code>, <code>&lt;label&gt;</code>)</h1>
+    </header>
+
+    <!-- ===== CONTENU PRINCIPAL ===== -->
+    <main>
+
+        <!-- Section : Objectifs -->
+        <section>
+            <h2>🎯 Objectif de la leçon</h2>
+            <p>À la fin de cette leçon, tu sauras :</p>
+            <ul>
+                <li>Créer un <strong>formulaire</strong></li>
+                <li>Comprendre comment le navigateur envoie des données</li>
+                <li>Utiliser les <strong>champs de base</strong></li>
+                <li>Éviter les erreurs classiques</li>
+            </ul>
+        </section>
+
+        <!-- Section : À quoi sert un formulaire -->
+        <section>
+            <h2>📨 1. À quoi sert un formulaire ?</h2>
+            
+            <p>Un formulaire permet à l'utilisateur de :</p>
+            
+            <ul>
+                <li>Envoyer des informations</li>
+                <li>Remplir un contact</li>
+                <li>Se connecter</li>
+                <li>S'inscrire</li>
+            </ul>
+            
+            <div class="info-box" style="background: #fff3cd; border-left-color: #ffc107;">
+                <p><strong>⚠️ Important :</strong></p>
+                <p>Sans JavaScript ni backend, le HTML <strong>prépare</strong> juste les données.</p>
+            </div>
+        </section>
+
+        <!-- Section : Structure de base -->
+        <section>
+            <h2>🧱 2. Structure de base d'un formulaire</h2>
+            
+            <h3>📌 Exemple</h3>
+            
+            <pre><code>&lt;form&gt;
+  &lt;label for="nom"&gt;Nom :&lt;/label&gt;
+  &lt;input type="text" id="nom"&gt;
+
+  &lt;button&gt;Envoyer&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+
+            <h3>🔍 Résultat</h3>
+            
+            <div class="exemple-rendu">
+                <div style="border: 2px solid #ddd; padding: 1rem; border-radius: 8px; background: #f9f9f9;">
+                    <form style="display: flex; flex-direction: column; gap: 0.5rem; max-width: 300px;">
+                        <label for="nom-exemple" style="font-weight: bold;">Nom :</label>
+                        <input type="text" id="nom-exemple" style="padding: 0.5rem; border: 1px solid #ccc; border-radius: 4px;">
+                        <button type="button" style="padding: 0.5rem 1rem; background: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer; margin-top: 0.5rem;">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section : Les balises essentielles -->
+        <section>
+            <h2>🧩 3. Les balises essentielles</h2>
+            
+            <h3>🔹 <code>&lt;form&gt;</code></h3>
+            
+            <ul>
+                <li>Contient <strong>tout le formulaire</strong></li>
+                <li>Peut envoyer les données vers un serveur (plus tard)</li>
+            </ul>
+            
+            <h3>🔹 <code>&lt;label&gt;</code></h3>
+            
+            <pre><code>&lt;label for="email"&gt;Email :&lt;/label&gt;</code></pre>
+            
+            <p>📌 <strong>Rôle :</strong></p>
+            
+            <ul>
+                <li>Décrit le champ</li>
+                <li>Améliore l'accessibilité</li>
+            </ul>
+            
+            <p>👉 <code>for</code> doit correspondre au <code>id</code> de l'input.</p>
+            
+            <h3>🔹 <code>&lt;input&gt;</code></h3>
+            
+            <pre><code>&lt;input type="text"&gt;</code></pre>
+            
+            <ul>
+                <li>📌 Champ de saisie</li>
+                <li>📌 <strong>Balise auto-fermante</strong></li>
+            </ul>
+            
+            <h3>🔹 <code>&lt;button&gt;</code></h3>
+            
+            <pre><code>&lt;button&gt;Envoyer&lt;/button&gt;</code></pre>
+            
+            <ul>
+                <li>📌 Bouton cliquable</li>
+                <li>📌 Par défaut : <strong>soumet le formulaire</strong></li>
+            </ul>
+            
+            <div class="info-box">
+                <p><strong>💡 Bon à savoir :</strong></p>
+                <p>Le lien entre <code>&lt;label&gt;</code> et <code>&lt;input&gt;</code> via <code>for</code> et <code>id</code> permet de cliquer sur le label pour activer le champ !</p>
+            </div>
+        </section>
+
+        <!-- Section : Types d'input -->
+        <section>
+            <h2>🧪 4. Types d'input courants</h2>
+            
+            <pre><code>&lt;input type="text"&gt;
+&lt;input type="email"&gt;
+&lt;input type="password"&gt;
+&lt;input type="number"&gt;
+&lt;input type="checkbox"&gt;
+&lt;input type="radio"&gt;</code></pre>
+
+            <p>📌 Le <code>type</code> change le <strong>comportement</strong> du champ.</p>
+            
+            <h3>🔍 Aperçu des différents types</h3>
+            
+            <div class="exemple-rendu">
+                <div style="border: 2px solid #ddd; padding: 1rem; border-radius: 8px; background: #f9f9f9;">
+                    <form style="display: flex; flex-direction: column; gap: 1rem; max-width: 400px;">
+                        <div>
+                            <label style="display: block; font-weight: bold; margin-bottom: 0.25rem;">Texte :</label>
+                            <input type="text" placeholder="Votre nom" style="width: 100%; padding: 0.5rem; border: 1px solid #ccc; border-radius: 4px;">
+                        </div>
+                        <div>
+                            <label style="display: block; font-weight: bold; margin-bottom: 0.25rem;">Email :</label>
+                            <input type="email" placeholder="email@exemple.com" style="width: 100%; padding: 0.5rem; border: 1px solid #ccc; border-radius: 4px;">
+                        </div>
+                        <div>
+                            <label style="display: block; font-weight: bold; margin-bottom: 0.25rem;">Mot de passe :</label>
+                            <input type="password" placeholder="••••••••" style="width: 100%; padding: 0.5rem; border: 1px solid #ccc; border-radius: 4px;">
+                        </div>
+                        <div>
+                            <label style="display: block; font-weight: bold; margin-bottom: 0.25rem;">Nombre :</label>
+                            <input type="number" placeholder="25" style="width: 100%; padding: 0.5rem; border: 1px solid #ccc; border-radius: 4px;">
+                        </div>
+                        <div>
+                            <label style="display: flex; align-items: center; gap: 0.5rem;">
+                                <input type="checkbox">
+                                <span>J'accepte les conditions</span>
+                            </label>
+                        </div>
+                        <div>
+                            <label style="display: flex; align-items: center; gap: 0.5rem;">
+                                <input type="radio" name="choix">
+                                <span>Option 1</span>
+                            </label>
+                            <label style="display: flex; align-items: center; gap: 0.5rem;">
+                                <input type="radio" name="choix">
+                                <span>Option 2</span>
+                            </label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section : Erreurs fréquentes -->
+        <section>
+            <h2>🚫 5. Erreurs fréquentes</h2>
+            
+            <ul style="list-style: none; padding-left: 0;">
+                <li>❌ Oublier <code>&lt;form&gt;</code></li>
+                <li>❌ Ne pas lier <code>&lt;label&gt;</code> et <code>&lt;input&gt;</code></li>
+                <li>❌ Utiliser <code>&lt;p&gt;</code> à la place de <code>&lt;label&gt;</code></li>
+                <li>❌ Oublier <code>type</code> dans <code>&lt;input&gt;</code></li>
+            </ul>
+            
+            <div class="info-box" style="background: #d4edda; border-left-color: #28a745;">
+                <p><strong>✔️ Bonnes pratiques :</strong></p>
+                <ul style="margin: 0.5rem 0 0 1rem;">
+                    <li>Toujours utiliser <code>&lt;label&gt;</code> avec un attribut <code>for</code></li>
+                    <li>Toujours donner un <code>id</code> unique à chaque <code>&lt;input&gt;</code></li>
+                    <li>Spécifier le <code>type</code> approprié pour améliorer l'expérience utilisateur</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Section : Exemple complet -->
+        <section>
+            <h2>🧱 6. Exemple complet</h2>
+            
+            <pre><code>&lt;form&gt;
+  &lt;label for="email"&gt;Email :&lt;/label&gt;
+  &lt;input type="email" id="email"&gt;
+
+  &lt;label for="mdp"&gt;Mot de passe :&lt;/label&gt;
+  &lt;input type="password" id="mdp"&gt;
+
+  &lt;button&gt;Connexion&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+
+            <h3>🔍 Résultat</h3>
+            
+            <div class="exemple-rendu">
+                <div style="border: 2px solid #ddd; padding: 1rem; border-radius: 8px; background: #f9f9f9;">
+                    <form style="display: flex; flex-direction: column; gap: 1rem; max-width: 350px;">
+                        <div>
+                            <label for="email-exemple" style="display: block; font-weight: bold; margin-bottom: 0.25rem;">Email :</label>
+                            <input type="email" id="email-exemple" style="width: 100%; padding: 0.5rem; border: 1px solid #ccc; border-radius: 4px;">
+                        </div>
+                        <div>
+                            <label for="mdp-exemple" style="display: block; font-weight: bold; margin-bottom: 0.25rem;">Mot de passe :</label>
+                            <input type="password" id="mdp-exemple" style="width: 100%; padding: 0.5rem; border: 1px solid #ccc; border-radius: 4px;">
+                        </div>
+                        <button type="button" style="padding: 0.75rem; background: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: bold;">Connexion</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section : Mini pratique -->
+        <section class="quiz-section">
+            <h2>✍️ 7. Mini pratique</h2>
+            <p>Réponds :</p>
+            
+            <ol>
+                <li>Quelle balise contient tout le formulaire ?</li>
+                <li>Quelle balise décrit un champ ?</li>
+                <li>Quel attribut relie <code>&lt;label&gt;</code> à <code>&lt;input&gt;</code> ?</li>
+                <li>Quelle balise permet d'envoyer le formulaire ?</li>
+            </ol>
+            
+            <details class="reponses">
+                <summary>🔍 Voir les réponses</summary>
+                <div style="margin-top: 1rem;">
+                    <p><strong>1.</strong> <code>&lt;form&gt;</code> ✅</p>
+                    <p><strong>2.</strong> <code>&lt;label&gt;</code> ✅</p>
+                    <p><strong>3.</strong> <code>for</code> (dans le label) et <code>id</code> (dans l'input) ✅</p>
+                    <p><strong>4.</strong> <code>&lt;button&gt;</code> ✅</p>
+                </div>
+            </details>
+        </section>
+
+    </main>
+
+    <!-- ===== NAVIGATION ENTRE LEÇONS ===== -->
+    <nav class="nav-lecons">
+        <div class="conteneur-nav-lecons">
+            
+            <!-- Bouton Précédent -->
+            <a href="lesson6.html" class="btn-nav precedent">
+                <span class="fleche">←</span>
+                <div class="info-nav">
+                    <span class="label">Précédent</span>
+                    <span class="titre-lecon">Les tableaux</span>
+                </div>
+            </a>
+            
+            <!-- Bouton Sommaire -->
+            <a href="../sommaire-html.html" class="btn-sommaire">
+                📋 Sommaire
+            </a>
+            
+            <!-- Bouton Suivant -->
+            <a href="lesson8.html" class="btn-nav suivant">
+                <div class="info-nav">
+                    <span class="label">Suivant</span>
+                    <span class="titre-lecon">Structure sémantique</span>
+                </div>
+                <span class="fleche">→</span>
+            </a>
+            
+        </div>
+    </nav>
+
+    <!-- ===== PIED DE PAGE / RÉSUMÉ ===== -->
+    <footer>
+        <div class="footer-content">
+            <h2>📝 Résumé rapide</h2>
+            <ul>
+                <li><strong>&lt;form&gt;</strong> → contient tout le formulaire</li>
+                <li><strong>&lt;label&gt;</strong> → décrit un champ (utilise <code>for</code>)</li>
+                <li><strong>&lt;input&gt;</strong> → champ de saisie (spécifier le <code>type</code>)</li>
+                <li><strong>&lt;button&gt;</strong> → bouton pour soumettre le formulaire</li>
+                <li>Le <code>type</code> de l'input change son comportement</li>
+            </ul>
+            
+            <div class="footer-motivation">
+                <p>🎉 <strong>Bravo !</strong> Tu sais maintenant créer des formulaires HTML.</p>
+                <p>Tu es en train de construire des bases solides 💪</p>
+            </div>
+        </div>
+        
+        <div class="footer-credits">
+            <p>© 2026 - Cours HTML pour débutants | Créé avec ❤️</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

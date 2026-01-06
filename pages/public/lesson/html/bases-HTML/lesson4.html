@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leçon 4 - Liens et images</title>
+    <link rel="stylesheet" href="../../../../../assets/CSS/lesson-styles.css">
+</head>
+
+<body>
+
+    <!-- ===== EN-TÊTE DE LA PAGE ===== -->
+    <header>
+        <h1>📝 Leçon 4 - Liens et images (<code>&lt;a&gt;</code> et <code>&lt;img&gt;</code>)</h1>
+    </header>
+
+    <!-- ===== CONTENU PRINCIPAL ===== -->
+    <main>
+
+        <!-- Section : Objectifs -->
+        <section>
+            <h2>🎯 Objectif de la leçon</h2>
+            <p>À la fin de cette leçon, tu sauras :</p>
+            <ul>
+                <li>Créer des <strong>liens</strong> entre pages et sites</li>
+                <li>Afficher des <strong>images</strong></li>
+                <li>Comprendre les <strong>attributs HTML</strong></li>
+                <li>Éviter les erreurs classiques</li>
+            </ul>
+        </section>
+
+        <!-- Section : Les liens -->
+        <section>
+            <h2>🔗 1. Les liens — balise <code>&lt;a&gt;</code></h2>
+
+            <p>La balise <code>&lt;a&gt;</code> permet de <strong>créer des liens cliquables</strong> :</p>
+
+            <pre><code>&lt;a href="https://www.google.com"&gt;Aller sur Google&lt;/a&gt;</code></pre>
+
+            <h3>📌 Règles importantes</h3>
+            <ul>
+                <li><code>&lt;a&gt;</code> = <strong>anchor</strong> (ancre)</li>
+                <li><code>href</code> = <strong>destination du lien</strong></li>
+                <li>Le texte entre les balises est <strong>cliquable</strong></li>
+                <li>Sans <code>href</code> → pas de lien</li>
+            </ul>
+
+            <div class="info-box">
+                <p><strong>💡 Bon à savoir :</strong></p>
+                <p>L'attribut <code>href</code> (hypertext reference) indique où le navigateur doit naviguer quand on
+                    clique sur le lien.</p>
+            </div>
+        </section>
+
+        <!-- Section : Lien interne -->
+        <section>
+            <h2>🌍 2. Lien vers une autre page du site</h2>
+
+            <pre><code>&lt;a href="contact.html"&gt;Page contact&lt;/a&gt;</code></pre>
+
+            <ul>
+                <li>📌 Utilisé pour naviguer <strong>dans ton site</strong></li>
+                <li>📌 Le fichier doit exister dans ton projet</li>
+            </ul>
+
+            <p><strong>Exemple :</strong></p>
+            <pre><code>&lt;a href="about.html"&gt;À propos&lt;/a&gt;
+&lt;a href="services.html"&gt;Nos services&lt;/a&gt;</code></pre>
+        </section>
+
+        <!-- Section : Nouvel onglet -->
+        <section>
+            <h2>🆕 3. Ouvrir dans un nouvel onglet</h2>
+
+            <pre><code>&lt;a href="https://www.google.com" target="_blank"&gt;
+  Google
+&lt;/a&gt;</code></pre>
+
+            <h3>📌 L'attribut <code>target</code> :</h3>
+            <ul>
+                <li><code>target="_blank"</code> = nouvel onglet</li>
+                <li>Utile pour les <strong>liens externes</strong></li>
+                <li>L'utilisateur reste sur ton site</li>
+            </ul>
+
+            <div class="info-box">
+                <p><strong>💡 Bon à savoir :</strong></p>
+                <p>Pour les liens externes, il est recommandé d'ouvrir dans un nouvel onglet pour ne pas perdre
+                    l'utilisateur.</p>
+            </div>
+        </section>
+
+        <!-- Section : Les images -->
+        <section>
+            <h2>🖼️ 4. Les images — balise <code>&lt;img&gt;</code></h2>
+
+            <p>La balise <code>&lt;img&gt;</code> permet d'<strong>afficher des images</strong> :</p>
+
+            <pre><code>&lt;img src="image.jpg" alt="Description de l'image"&gt;</code></pre>
+
+            <h3>📌 Les attributs essentiels</h3>
+            <ul>
+                <li><code>src</code> = <strong>chemin de l'image</strong> (source)</li>
+                <li><code>alt</code> = <strong>texte alternatif</strong> (très important)</li>
+            </ul>
+
+            <h3>🔹 <code>&lt;img&gt;</code> :</h3>
+            <ul>
+                <li>N'a <strong>pas</strong> de balise fermante</li>
+                <li>Affiche une image</li>
+                <li>Est une balise auto-fermante</li>
+            </ul>
+
+            <p><strong>Rendu :</strong></p>
+            <p class="exemple">
+                <img src="https://via.placeholder.com/300x150" alt="Image exemple"
+                    style="max-width: 100%; border-radius: 8px;">
+            </p>
+        </section>
+
+        <!-- Section : Importance de alt -->
+        <section>
+            <h2>♿ 5. Pourquoi <code>alt</code> est obligatoire ?</h2>
+
+            <p>L'attribut <code>alt</code> a <strong>plusieurs rôles essentiels</strong> :</p>
+
+            <ul>
+                <li><strong>Accessibilité</strong> : les lecteurs d'écran lisent le texte <code>alt</code> pour les
+                    personnes malvoyantes</li>
+                <li><strong>SEO</strong> : Google utilise <code>alt</code> pour comprendre le contenu de l'image</li>
+                <li><strong>Affichage de secours</strong> : le texte s'affiche si l'image ne charge pas</li>
+            </ul>
+
+            <div class="info-box" style="background: #d4edda; border-left-color: #28a745;">
+                <p><strong>✔️ Bonne pratique :</strong></p>
+                <p>Toujours mettre un <code>alt</code> descriptif et pertinent. Exemple :
+                    <code>alt="Logo de l'entreprise ABC"</code> plutôt que <code>alt="image"</code>.</p>
+            </div>
+        </section>
+
+        <!-- Section : Chemins des fichiers -->
+        <section>
+            <h2>📂 6. Chemins des fichiers (bases)</h2>
+
+            <h3>📁 Même dossier</h3>
+
+            <pre><code>&lt;img src="photo.png" alt="Ma photo"&gt;</code></pre>
+
+            <p>👉 L'image est <strong>dans le même dossier</strong> que ta page HTML.</p>
+
+            <h3>📁 Dossier images</h3>
+
+            <pre><code>&lt;img src="images/photo.png" alt="Ma photo"&gt;</code></pre>
+
+            <p>👉 L'image est dans un <strong>sous-dossier</strong> appelé <code>images</code>.</p>
+
+            <h3>🌍 Image externe</h3>
+
+            <pre><code>&lt;img src="https://site.com/photo.jpg" alt="Photo externe"&gt;</code></pre>
+
+            <p>👉 L'image est hébergée sur <strong>un autre site</strong>.</p>
+
+            <div class="info-box">
+                <p><strong>💡 Bon à savoir :</strong></p>
+                <p>Il est préférable d'héberger tes images localement pour éviter que les liens externes ne se brisent.
+                </p>
+            </div>
+        </section>
+
+        <!-- Section : Ce qu'il ne faut pas faire -->
+        <section>
+            <h2>🚫 7. Erreurs fréquentes</h2>
+
+            <ul style="list-style: none; padding-left: 0;">
+                <li>❌ Oublier l'attribut <code>href</code> dans un lien</li>
+                <li>❌ Oublier l'attribut <code>alt</code> dans une image</li>
+                <li>❌ Mauvais chemin de fichier (l'image ne s'affiche pas)</li>
+                <li>❌ Écrire <code>&lt;img&gt;&lt;/img&gt;</code> (faux, pas de balise fermante)</li>
+            </ul>
+
+            <div class="info-box" style="background: #d4edda; border-left-color: #28a745;">
+                <p><strong>✔️ Bonnes pratiques :</strong></p>
+                <ul style="margin: 0.5rem 0 0 1rem;">
+                    <li>Toujours vérifier que tes <strong>chemins de fichiers</strong> sont corrects</li>
+                    <li>Toujours mettre un <code>alt</code> descriptif</li>
+                    <li>Utiliser <code>target="_blank"</code> pour les liens externes</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Section : Exemple complet -->
+        <section>
+            <h2>🧱 8. Exemple complet</h2>
+
+            <pre><code>&lt;body&gt;
+  &lt;h1&gt;Mon site&lt;/h1&gt;
+
+  &lt;p&gt;
+    Visite 
+    &lt;a href="https://www.wikipedia.org" target="_blank"&gt;
+      Wikipédia
+    &lt;/a&gt;
+  &lt;/p&gt;
+
+  &lt;img src="images/logo.png" alt="Logo du site"&gt;
+  
+  &lt;p&gt;
+    &lt;a href="contact.html"&gt;Contactez-nous&lt;/a&gt;
+  &lt;/p&gt;
+&lt;/body&gt;</code></pre>
+
+            <div class="exemple-rendu">
+                <p><strong>Rendu dans le navigateur :</strong></p>
+                <div style="border: 2px solid #ddd; padding: 1rem; border-radius: 8px; background: #f9f9f9;">
+                    <h3 style="margin: 0 0 1rem 0; border: none; padding: 0;">Mon site</h3>
+                    <p style="margin-bottom: 0.5rem;">
+                        Visite
+                        <a href="https://www.wikipedia.org" target="_blank">Wikipédia</a>
+                    </p>
+                    <img src="https://via.placeholder.com/200x100" alt="Logo du site"
+                        style="max-width: 100%; border-radius: 4px; margin: 0.5rem 0;">
+                    <p style="margin: 0.5rem 0 0 0;">
+                        <a href="#">Contactez-nous</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section : Mini pratique -->
+        <section class="quiz-section">
+            <h2>✍️ 9. Mini pratique</h2>
+            <p>Réponds :</p>
+
+            <ol>
+                <li>Quel attribut indique la destination d'un lien ?</li>
+                <li>Quelle balise affiche une image ?</li>
+                <li>Pourquoi <code>alt</code> est important ?</li>
+                <li>Quelle balise n'a pas de fermeture ?</li>
+                <li>Comment ouvrir un lien dans un nouvel onglet ?</li>
+            </ol>
+
+            <details class="reponses">
+                <summary>🔍 Voir les réponses</summary>
+                <div style="margin-top: 1rem;">
+                    <p><strong>1.</strong> <code>href</code> ✅</p>
+                    <p><strong>2.</strong> <code>&lt;img&gt;</code> ✅</p>
+                    <p><strong>3.</strong> Pour l'accessibilité, le SEO et l'affichage de secours ✅</p>
+                    <p><strong>4.</strong> <code>&lt;img&gt;</code> ✅</p>
+                    <p><strong>5.</strong> Avec <code>target="_blank"</code> ✅</p>
+                </div>
+            </details>
+        </section>
+
+    </main>
+
+    <!-- ===== NAVIGATION ENTRE LEÇONS ===== -->
+    <nav class="nav-lecons">
+        <div class="conteneur-nav-lecons">
+
+            <!-- Bouton Précédent -->
+            <a href="lesson3.html" class="btn-nav precedent">
+                <span class="fleche">←</span>
+                <div class="info-nav">
+                    <span class="label">Précédent</span>
+                    <span class="titre-lecon">Les balises de texte</span>
+                </div>
+            </a>
+
+            <!-- Bouton Sommaire -->
+            <a href="../sommaire-html.html" class="btn-sommaire">
+                📋 Sommaire
+            </a>
+
+            <!-- Bouton Suivant -->
+            <a href="lesson5.html" class="btn-nav suivant">
+                <div class="info-nav">
+                    <span class="label">Suivant</span>
+                    <span class="titre-lecon">Les listes</span>
+                </div>
+                <span class="fleche">→</span>
+            </a>
+
+        </div>
+    </nav>
+
+    <!-- ===== PIED DE PAGE / RÉSUMÉ ===== -->
+    <footer>
+        <div class="footer-content">
+            <h2>📝 Résumé rapide</h2>
+            <ul>
+                <li><strong>&lt;a href=""&gt;</strong> → crée un lien cliquable</li>
+                <li><strong>target="_blank"</strong> → ouvre dans un nouvel onglet</li>
+                <li><strong>&lt;img src="" alt=""&gt;</strong> → affiche une image</li>
+                <li><strong>alt</strong> → texte alternatif (accessibilité + SEO)</li>
+                <li><strong>src</strong> → chemin vers l'image ou le fichier</li>
+                <li><strong>&lt;img&gt;</strong> n'a pas de balise fermante</li>
+            </ul>
+
+            <div class="footer-motivation">
+                <p>🎉 <strong>Bravo !</strong> Tu sais maintenant créer des liens et afficher des images.</p>
+                <p>Continue comme ça, tu progresses super bien ! 🚀💪</p>
+            </div>
+        </div>
+
+        <div class="footer-credits">
+            <p>© 2026 - Cours HTML pour débutants | Créé avec ❤️</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

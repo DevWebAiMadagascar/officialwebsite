@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leçon 2 - Structure d'un fichier HTML</title>
+    <link rel="stylesheet" href="../../../../../assets/CSS/lesson-styles.css">
+</head>
+
+<body>
+
+    <!-- ===== EN-TÊTE DE LA PAGE ===== -->
+    <header>
+        <h1>🧠 Leçon 2 - Structure d'un fichier HTML</h1>
+    </header>
+
+    <!-- ===== CONTENU PRINCIPAL ===== -->
+    <main>
+
+        <!-- Section : Objectifs -->
+        <section>
+            <h2>🎯 Objectif de la leçon</h2>
+            <p>À la fin de cette leçon, tu comprendras :</p>
+            <ul>
+                <li>La <strong>structure complète</strong> d'un fichier HTML</li>
+                <li>Le rôle de chaque partie</li>
+                <li>Pourquoi cette structure est <strong>obligatoire</strong></li>
+                <li>Comment le navigateur lit un fichier HTML</li>
+            </ul>
+        </section>
+
+        <!-- Section : Fichier HTML réel -->
+        <section>
+            <h2>📄 1. Un fichier HTML réel</h2>
+            <p>Un vrai fichier HTML <strong>ne se limite pas</strong> à quelques balises.</p>
+            <p>Il a une <strong>structure standard</strong> que tous les navigateurs comprennent.</p>
+
+            <p>Voici un <strong>fichier HTML minimal correct</strong> :</p>
+
+            <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Ma première page&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Bonjour le monde&lt;/h1&gt;
+    &lt;p&gt;Ceci est ma première page HTML.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+            <div class="info-box">
+                <p>👉 On va <strong>tout décortiquer</strong>, ligne par ligne.</p>
+            </div>
+        </section>
+
+        <!-- Section : DOCTYPE -->
+        <section>
+            <h2>🧩 2. <code>&lt;!DOCTYPE html&gt;</code></h2>
+
+            <pre><code>&lt;!DOCTYPE html&gt;</code></pre>
+
+            <h3>📌 Rôle</h3>
+            <ul>
+                <li>Indique au navigateur :<br>
+                    👉 "Ce document est du <strong>HTML5</strong>"</li>
+                <li>Ce n'est <strong>PAS</strong> une balise HTML</li>
+            </ul>
+
+            <div class="info-box">
+                <p><strong>📌 Sans ça :</strong></p>
+                <p>Le navigateur peut mal interpréter la page</p>
+                <p>👉 <strong>Toujours en première ligne.</strong></p>
+            </div>
+        </section>
+
+        <!-- Section : html -->
+        <section>
+            <h2>🌐 3. <code>&lt;html&gt;</code></h2>
+
+            <pre><code>&lt;html&gt;
+  ...
+&lt;/html&gt;</code></pre>
+
+            <h3>📌 Rôle</h3>
+            <ul>
+                <li>C'est la <strong>racine</strong> du document</li>
+                <li>Tout le HTML doit être <strong>à l'intérieur</strong></li>
+            </ul>
+
+            <p><strong>📌 Rien ne doit être en dehors de <code>&lt;html&gt;</code>.</strong></p>
+        </section>
+
+        <!-- Section : head -->
+        <section>
+            <h2>🧠 4. <code>&lt;head&gt;</code> (la tête)</h2>
+
+            <pre><code>&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;title&gt;Ma première page&lt;/title&gt;
+&lt;/head&gt;</code></pre>
+
+            <h3>📌 À quoi ça sert ?</h3>
+            <p>Le <code>&lt;head&gt;</code> contient des <strong>informations pour le navigateur</strong>, pas pour
+                l'utilisateur.</p>
+
+            <h3>Contenu typique :</h3>
+            <ul>
+                <li>Encodage des caractères</li>
+                <li>Titre de la page</li>
+                <li>Liens vers CSS</li>
+                <li>Infos SEO (plus tard)</li>
+            </ul>
+
+            <h3>🔤 <code>&lt;meta charset="UTF-8"&gt;</code></h3>
+            <ul>
+                <li>Définit l'encodage du texte</li>
+                <li>Permet d'afficher correctement :
+                    <ul>
+                        <li>Accents (é, à, è)</li>
+                        <li>Caractères spéciaux</li>
+                    </ul>
+                </li>
+            </ul>
+            <p>👉 <strong>Indispensable.</strong></p>
+
+            <h3>🏷️ <code>&lt;title&gt;</code></h3>
+            <ul>
+                <li>Titre de l'onglet du navigateur</li>
+                <li>Pas visible dans la page</li>
+            </ul>
+        </section>
+
+        <!-- Section : body -->
+        <section>
+            <h2>👀 5. <code>&lt;body&gt;</code> (le corps)</h2>
+
+            <pre><code>&lt;body&gt;
+  &lt;h1&gt;Bonjour le monde&lt;/h1&gt;
+  &lt;p&gt;Ceci est ma première page HTML.&lt;/p&gt;
+&lt;/body&gt;</code></pre>
+
+            <h3>📌 Rôle</h3>
+            <p>👉 <strong>Tout ce que l'utilisateur voit</strong> est ici.</p>
+
+            <p><strong>Exemples :</strong></p>
+            <ul>
+                <li>Texte</li>
+                <li>Images</li>
+                <li>Boutons</li>
+                <li>Formulaires</li>
+            </ul>
+
+            <div class="info-box">
+                <p><strong>📌 Important :</strong> 1 page = 1 seul <code>&lt;body&gt;</code>.</p>
+            </div>
+        </section>
+
+        <!-- Section : Hiérarchie -->
+        <section>
+            <h2>🧱 6. Hiérarchie (parent / enfant)</h2>
+
+            <p>HTML fonctionne comme un <strong>arbre</strong>.</p>
+
+            <p><strong>Exemple :</strong></p>
+
+            <pre><code>&lt;body&gt;
+  &lt;h1&gt;Titre&lt;/h1&gt;
+  &lt;p&gt;Paragraphe&lt;/p&gt;
+&lt;/body&gt;</code></pre>
+
+            <ul>
+                <li><code>&lt;body&gt;</code> = <strong>parent</strong></li>
+                <li><code>&lt;h1&gt;</code> et <code>&lt;p&gt;</code> = <strong>enfants</strong></li>
+            </ul>
+
+            <div class="info-box">
+                <p><strong>📌 Cette hiérarchie est très importante</strong> pour la suite (CSS, JS).</p>
+            </div>
+        </section>
+
+        <!-- Section : Erreurs fréquentes -->
+        <section>
+            <h2>❌ 7. Erreurs fréquentes de débutant</h2>
+
+            <ul style="list-style: none; padding-left: 0;">
+                <li>❌ Oublier de fermer une balise</li>
+                <li>❌ Mettre du contenu hors de <code>&lt;body&gt;</code></li>
+                <li>❌ Oublier <code>&lt;!DOCTYPE html&gt;</code></li>
+                <li>❌ Écrire tout en majuscules</li>
+            </ul>
+
+            <div class="info-box" style="background: #d4edda; border-left-color: #28a745;">
+                <p><strong>✔️ HTML moderne = minuscules</strong></p>
+            </div>
+        </section>
+
+        <!-- Section : Mini pratique -->
+        <section class="quiz-section">
+            <h2>✍️ 8. Mini pratique (obligatoire)</h2>
+            <p>Sans regarder au-dessus, réponds :</p>
+
+            <ol>
+                <li>Où va le contenu visible ?</li>
+                <li>À quoi sert <code>&lt;head&gt;</code> ?</li>
+                <li>Que se passe-t-il si on oublie <code>&lt;meta charset="UTF-8"&gt;</code> ?</li>
+                <li>Quelle balise contient toute la page ?</li>
+            </ol>
+
+            <p>Tu peux répondre <strong>en phrases simples</strong>.</p>
+
+            <details class="reponses">
+                <summary>🔍 Voir les réponses</summary>
+                <div style="margin-top: 1rem;">
+                    <p><strong>1.</strong> Le contenu visible va dans <code>&lt;body&gt;</code></p>
+                    <p><strong>2.</strong> <code>&lt;head&gt;</code> contient les informations pour le navigateur
+                        (titre, encodage, liens CSS, etc.)</p>
+                    <p><strong>3.</strong> Les accents et caractères spéciaux peuvent mal s'afficher</p>
+                    <p><strong>4.</strong> <code>&lt;html&gt;</code> contient toute la page</p>
+                </div>
+            </details>
+        </section>
+
+    </main>
+
+    <!-- ===== NAVIGATION ENTRE LEÇONS ===== -->
+    <nav class="nav-lecons">
+        <div class="conteneur-nav-lecons">
+
+            <!-- Bouton Précédent -->
+            <a href="lesson1.html" class="btn-nav precedent">
+                <span class="fleche">←</span>
+                <div class="info-nav">
+                    <span class="label">Précédent</span>
+                    <span class="titre-lecon">Comprendre le HTML et le WEB</span>
+                </div>
+            </a>
+
+            <!-- Bouton Sommaire -->
+            <a href="../sommaire-html.html" class="btn-sommaire">
+                📋 Sommaire
+            </a>
+
+            <!-- Bouton Suivant -->
+            <a href="lesson3.html" class="btn-nav suivant">
+                <div class="info-nav">
+                    <span class="label">Suivant</span>
+                    <span class="titre-lecon">Les balises de texte</span>
+                </div>
+                <span class="fleche">→</span>
+            </a>
+
+        </div>
+    </nav>
+
+    <!-- ===== PIED DE PAGE / RÉSUMÉ ===== -->
+    <footer>
+        <div class="footer-content">
+            <h2>📝 Résumé rapide</h2>
+            <ul>
+                <li><strong>Un fichier HTML</strong> a une structure fixe</li>
+                <li><strong>&lt;!DOCTYPE&gt;</strong> → type de document</li>
+                <li><strong>&lt;html&gt;</strong> → racine</li>
+                <li><strong>&lt;head&gt;</strong> → infos pour le navigateur</li>
+                <li><strong>&lt;body&gt;</strong> → contenu visible</li>
+            </ul>
+
+            <div class="footer-motivation">
+                <p>🎉 <strong>Bravo !</strong> Tu maîtrises maintenant la structure HTML.</p>
+                <p>Tu progresses bien. Continue ! 👏💪</p>
+            </div>
+        </div>
+
+        <div class="footer-credits">
+            <p>© 2026 - Cours HTML pour débutants | Créé avec ❤️</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leçon 8 - Structure sémantique HTML</title>
+    <link rel="stylesheet" href="../../../../../assets/CSS/lesson-styles.css">
+</head>
+
+<body>
+
+    <!-- ===== EN-TÊTE DE LA PAGE ===== -->
+    <header>
+        <h1>📝 Leçon 8 - Structure sémantique HTML (<code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>,
+            <code>&lt;footer&gt;</code>, etc.)
+        </h1>
+    </header>
+
+    <!-- ===== CONTENU PRINCIPAL ===== -->
+    <main>
+
+        <!-- Section : Objectifs -->
+        <section>
+            <h2>🎯 Objectif de la leçon</h2>
+            <p>À la fin de cette leçon, tu comprendras :</p>
+            <ul>
+                <li>Ce qu'est la <strong>sémantique</strong> en HTML</li>
+                <li>Pourquoi elle est <strong>très importante</strong></li>
+                <li>Comment structurer correctement une page</li>
+                <li>Les balises sémantiques principales</li>
+            </ul>
+        </section>
+
+        <!-- Section : Qu'est-ce que la sémantique -->
+        <section>
+            <h2>🧠 1. Qu'est-ce que la sémantique ?</h2>
+
+            <p>👉 La <strong>sémantique</strong> = le <strong>sens</strong> du contenu.</p>
+
+            <p>HTML moderne ne sert pas seulement à afficher, mais à <strong>expliquer au navigateur</strong> et aux
+                outils :</p>
+
+            <ul>
+                <li>Ce qu'est un en-tête</li>
+                <li>Ce qu'est le contenu principal</li>
+                <li>Ce qu'est un pied de page</li>
+            </ul>
+
+            <p>📌 C'est crucial pour :</p>
+
+            <ul>
+                <li>Accessibilité</li>
+                <li>SEO</li>
+                <li>Lisibilité du code</li>
+            </ul>
+
+            <div class="info-box">
+                <p><strong>💡 Bon à savoir :</strong></p>
+                <p>Les balises sémantiques aident les lecteurs d'écran à naviguer dans ton site et permettent aux
+                    moteurs de recherche de mieux comprendre ton contenu.</p>
+            </div>
+        </section>
+
+        <!-- Section : Avant vs Maintenant -->
+        <section>
+            <h2>🧱 2. Avant vs Maintenant</h2>
+
+            <h3>❌ Ancienne méthode (non sémantique)</h3>
+
+            <pre><code>&lt;div id="header"&gt;...&lt;/div&gt;
+&lt;div id="content"&gt;...&lt;/div&gt;
+&lt;div id="footer"&gt;...&lt;/div&gt;</code></pre>
+
+            <h3>✅ Méthode moderne (sémantique)</h3>
+
+            <pre><code>&lt;header&gt;...&lt;/header&gt;
+&lt;main&gt;...&lt;/main&gt;
+&lt;footer&gt;...&lt;/footer&gt;</code></pre>
+
+            <p>👉 Même rendu visuel, <strong>meilleur sens</strong>.</p>
+
+            <div class="info-box" style="background: #d4edda; border-left-color: #28a745;">
+                <p><strong>✔️ Bonne pratique :</strong></p>
+                <p>Utilise toujours les balises sémantiques quand elles existent, même si <code>&lt;div&gt;</code>
+                    fonctionne visuellement de la même façon.</p>
+            </div>
+        </section>
+
+        <!-- Section : Les balises sémantiques principales -->
+        <section>
+            <h2>🧩 3. Les balises sémantiques principales</h2>
+
+            <h3>🔹 <code>&lt;header&gt;</code></h3>
+
+            <ul>
+                <li>En-tête de page ou de section</li>
+                <li>Contient :
+                    <ul style="margin-top: 0.5rem;">
+                        <li>Titre</li>
+                        <li>Logo</li>
+                        <li>Navigation</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h3>🔹 <code>&lt;nav&gt;</code></h3>
+
+            <ul>
+                <li>Zone de navigation</li>
+                <li>Menus, liens principaux</li>
+            </ul>
+
+            <pre><code>&lt;nav&gt;
+  &lt;a href="#"&gt;Accueil&lt;/a&gt;
+  &lt;a href="#"&gt;Contact&lt;/a&gt;
+&lt;/nav&gt;</code></pre>
+
+            <h3>🔹 <code>&lt;main&gt;</code></h3>
+
+            <ul>
+                <li>Contenu <strong>principal unique</strong> de la page</li>
+                <li>❗ <strong>1 seul <code>&lt;main&gt;</code> par page</strong></li>
+            </ul>
+
+            <h3>🔹 <code>&lt;section&gt;</code></h3>
+
+            <ul>
+                <li>Regroupe un contenu lié</li>
+                <li>Doit avoir un <strong>titre</strong></li>
+            </ul>
+
+            <h3>🔹 <code>&lt;article&gt;</code></h3>
+
+            <ul>
+                <li>Contenu autonome</li>
+                <li>Peut être lu indépendamment (ex : article de blog, post)</li>
+            </ul>
+
+            <h3>🔹 <code>&lt;footer&gt;</code></h3>
+
+            <ul>
+                <li>Pied de page</li>
+                <li>Infos secondaires :
+                    <ul style="margin-top: 0.5rem;">
+                        <li>Copyright</li>
+                        <li>Liens</li>
+                        <li>Contacts</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="info-box">
+                <p><strong>💡 Bon à savoir :</strong></p>
+                <p>La différence entre <code>&lt;section&gt;</code> et <code>&lt;article&gt;</code> : une section
+                    regroupe du contenu lié, tandis qu'un article peut être extrait et compris seul.</p>
+            </div>
+        </section>
+
+        <!-- Section : Structure complète -->
+        <section>
+            <h2>🧱 4. Structure complète d'une page</h2>
+
+            <pre><code>&lt;body&gt;
+  &lt;header&gt;
+    &lt;h1&gt;Mon site&lt;/h1&gt;
+    &lt;nav&gt;
+      &lt;a href="#"&gt;Accueil&lt;/a&gt;
+      &lt;a href="#"&gt;Blog&lt;/a&gt;
+    &lt;/nav&gt;
+  &lt;/header&gt;
+
+  &lt;main&gt;
+    &lt;section&gt;
+      &lt;h2&gt;À propos&lt;/h2&gt;
+      &lt;p&gt;Texte...&lt;/p&gt;
+    &lt;/section&gt;
+
+    &lt;article&gt;
+      &lt;h2&gt;Article 1&lt;/h2&gt;
+      &lt;p&gt;Contenu...&lt;/p&gt;
+    &lt;/article&gt;
+  &lt;/main&gt;
+
+  &lt;footer&gt;
+    &lt;p&gt;© 2026&lt;/p&gt;
+  &lt;/footer&gt;
+&lt;/body&gt;</code></pre>
+
+            <h3>🔍 Visualisation de la structure</h3>
+
+            <div class="exemple-rendu">
+                <div style="border: 2px solid #ddd; padding: 1rem; border-radius: 8px; background: #f9f9f9;">
+                    <div
+                        style="border: 2px solid #007bff; padding: 1rem; margin-bottom: 1rem; background: #e7f3ff; border-radius: 4px;">
+                        <strong style="color: #007bff;">HEADER</strong>
+                        <h3 style="margin: 0.5rem 0; border: none; padding: 0;">Mon site</h3>
+                        <div style="display: flex; gap: 1rem; margin-top: 0.5rem;">
+                            <a href="#" style="color: #007bff;">Accueil</a>
+                            <a href="#" style="color: #007bff;">Blog</a>
+                        </div>
+                    </div>
+
+                    <div
+                        style="border: 2px solid #28a745; padding: 1rem; margin-bottom: 1rem; background: #d4edda; border-radius: 4px;">
+                        <strong style="color: #28a745;">MAIN</strong>
+                        <div
+                            style="margin-top: 1rem; padding: 0.75rem; background: white; border-radius: 4px; border-left: 3px solid #17a2b8;">
+                            <strong style="color: #17a2b8;">SECTION</strong>
+                            <h4 style="margin: 0.5rem 0 0.25rem 0;">À propos</h4>
+                            <p style="margin: 0; color: #666;">Texte...</p>
+                        </div>
+                        <div
+                            style="margin-top: 0.75rem; padding: 0.75rem; background: white; border-radius: 4px; border-left: 3px solid #ffc107;">
+                            <strong style="color: #ffc107;">ARTICLE</strong>
+                            <h4 style="margin: 0.5rem 0 0.25rem 0;">Article 1</h4>
+                            <p style="margin: 0; color: #666;">Contenu...</p>
+                        </div>
+                    </div>
+
+                    <div style="border: 2px solid #6c757d; padding: 1rem; background: #e9ecef; border-radius: 4px;">
+                        <strong style="color: #6c757d;">FOOTER</strong>
+                        <p style="margin: 0.5rem 0 0 0;">© 2026</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section : Erreurs fréquentes -->
+        <section>
+            <h2>🚫 5. Erreurs fréquentes</h2>
+
+            <ul style="list-style: none; padding-left: 0;">
+                <li>❌ Plusieurs <code>&lt;main&gt;</code></li>
+                <li>❌ Utiliser <code>&lt;section&gt;</code> sans titre</li>
+                <li>❌ Utiliser <code>&lt;div&gt;</code> partout sans raison</li>
+                <li>❌ Confondre <code>&lt;article&gt;</code> et <code>&lt;section&gt;</code></li>
+            </ul>
+
+            <div class="info-box" style="background: #d4edda; border-left-color: #28a745;">
+                <p><strong>✔️ Bonnes pratiques :</strong></p>
+                <ul style="margin: 0.5rem 0 0 1rem;">
+                    <li>Un seul <code>&lt;main&gt;</code> par page</li>
+                    <li>Toujours donner un titre (<code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code>, etc.) à une
+                        <code>&lt;section&gt;</code>
+                    </li>
+                    <li>Utiliser <code>&lt;div&gt;</code> uniquement pour la mise en forme CSS, pas pour la structure
+                        sémantique</li>
+                    <li>Penser : "Est-ce que ce contenu a un sens particulier ?" Si oui, utilise une balise sémantique
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Section : Mini pratique -->
+        <section class="quiz-section">
+            <h2>✍️ 6. Mini pratique</h2>
+            <p>Réponds :</p>
+
+            <ol>
+                <li>Quelle balise contient le contenu principal unique ?</li>
+                <li>Quelle balise est faite pour la navigation ?</li>
+                <li>Quelle balise représente un contenu autonome ?</li>
+                <li>Quelle balise est le pied de page ?</li>
+            </ol>
+
+            <details class="reponses">
+                <summary>🔍 Voir les réponses</summary>
+                <div style="margin-top: 1rem;">
+                    <p><strong>1.</strong> <code>&lt;main&gt;</code> ✅</p>
+                    <p><strong>2.</strong> <code>&lt;nav&gt;</code> ✅</p>
+                    <p><strong>3.</strong> <code>&lt;article&gt;</code> ✅</p>
+                    <p><strong>4.</strong> <code>&lt;footer&gt;</code> ✅</p>
+                </div>
+            </details>
+        </section>
+
+    </main>
+
+    <!-- ===== NAVIGATION ENTRE LEÇONS ===== -->
+    <nav class="nav-lecons">
+        <div class="conteneur-nav-lecons">
+
+            <!-- Bouton Précédent -->
+            <a href="lesson7.html" class="btn-nav precedent">
+                <span class="fleche">←</span>
+                <div class="info-nav">
+                    <span class="label">Précédent</span>
+                    <span class="titre-lecon">Les formulaires</span>
+                </div>
+            </a>
+
+            <!-- Bouton Sommaire -->
+            <a href="../sommaire-html.html" class="btn-sommaire">
+                📋 Sommaire
+            </a>
+
+            <!-- Bouton Suivant -->
+            <a href="lesson9.html" class="btn-nav suivant">
+                <div class="info-nav">
+                    <span class="label">Suivant</span>
+                    <span class="titre-lecon">Les attributs HTML</span>
+                </div>
+                <span class="fleche">→</span>
+            </a>
+
+        </div>
+    </nav>
+
+    <!-- ===== PIED DE PAGE / RÉSUMÉ ===== -->
+    <footer>
+        <div class="footer-content">
+            <h2>📝 Résumé rapide</h2>
+            <ul>
+                <li><strong>&lt;header&gt;</strong> → en-tête de page ou section</li>
+                <li><strong>&lt;nav&gt;</strong> → zone de navigation</li>
+                <li><strong>&lt;main&gt;</strong> → contenu principal unique (1 seul par page)</li>
+                <li><strong>&lt;section&gt;</strong> → regroupe du contenu lié (doit avoir un titre)</li>
+                <li><strong>&lt;article&gt;</strong> → contenu autonome</li>
+                <li><strong>&lt;footer&gt;</strong> → pied de page</li>
+                <li>Les balises sémantiques améliorent l'<strong>accessibilité</strong> et le <strong>SEO</strong></li>
+            </ul>
+
+            <div class="footer-motivation">
+                <p>🎉 <strong>Excellent !</strong> Tu es maintenant sur du HTML propre et professionnel.</p>
+                <p>Tu maîtrises la structure sémantique 👌</p>
+            </div>
+        </div>
+
+        <div class="footer-credits">
+            <p>© 2026 - Cours HTML pour débutants | Créé avec ❤️</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

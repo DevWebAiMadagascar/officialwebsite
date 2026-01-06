@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leçon 6 - Les tableaux en HTML</title>
+    <link rel="stylesheet" href="../../../../../assets/CSS/lesson-styles.css">
+</head>
+
+<body>
+
+    <!-- ===== EN-TÊTE DE LA PAGE ===== -->
+    <header>
+        <h1>📝 Leçon 6 - Les tableaux en HTML (<code>&lt;table&gt;</code>, <code>&lt;tr&gt;</code>,
+            <code>&lt;th&gt;</code>, <code>&lt;td&gt;</code>)
+        </h1>
+    </header>
+
+    <!-- ===== CONTENU PRINCIPAL ===== -->
+    <main>
+
+        <!-- Section : Objectifs -->
+        <section>
+            <h2>🎯 Objectif de la leçon</h2>
+            <p>À la fin de cette leçon, tu sauras :</p>
+            <ul>
+                <li>Créer un <strong>tableau HTML</strong></li>
+                <li>Comprendre chaque balise d'un tableau</li>
+                <li>Structurer des <strong>données tabulaires</strong></li>
+                <li>Éviter les erreurs courantes</li>
+            </ul>
+        </section>
+
+        <!-- Section : À quoi sert un tableau -->
+        <section>
+            <h2>📊 1. À quoi sert un tableau ?</h2>
+
+            <p>Un tableau sert à afficher des <strong>données organisées</strong> :</p>
+
+            <ul>
+                <li>Notes d'étudiants</li>
+                <li>Horaires de cours</li>
+                <li>Listes avec colonnes</li>
+                <li>Comparaisons de produits</li>
+                <li>Résultats sportifs</li>
+            </ul>
+
+            <div class="info-box" style="background: #fff3cd; border-left-color: #ffc107;">
+                <p><strong>⚠️ Important :</strong></p>
+                <p>Un tableau <strong>n'est pas fait pour la mise en page</strong>. On utilise le CSS pour positionner
+                    les éléments sur une page.</p>
+            </div>
+        </section>
+
+        <!-- Section : Structure de base -->
+        <section>
+            <h2>🧱 2. Structure de base d'un tableau</h2>
+
+            <h3>📌 Exemple</h3>
+
+            <pre><code>&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Nom&lt;/th&gt;
+    &lt;th&gt;Âge&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Alice&lt;/td&gt;
+    &lt;td&gt;20&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Bob&lt;/td&gt;
+    &lt;td&gt;22&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+
+            <h3>🔍 Résultat</h3>
+
+            <div class="exemple-rendu">
+                <div style="border: 2px solid #ddd; padding: 1rem; border-radius: 8px; background: #f9f9f9;">
+                    <table style="width: 100%; border-collapse: collapse;">
+                        <tr>
+                            <th
+                                style="border: 1px solid #999; padding: 0.5rem; background: #e9ecef; font-weight: bold; text-align: left;">
+                                Nom</th>
+                            <th
+                                style="border: 1px solid #999; padding: 0.5rem; background: #e9ecef; font-weight: bold; text-align: left;">
+                                Âge</th>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #999; padding: 0.5rem;">Alice</td>
+                            <td style="border: 1px solid #999; padding: 0.5rem;">20</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #999; padding: 0.5rem;">Bob</td>
+                            <td style="border: 1px solid #999; padding: 0.5rem;">22</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section : Les balises expliquées -->
+        <section>
+            <h2>🧩 3. Les balises expliquées</h2>
+
+            <h3>🔹 <code>&lt;table&gt;</code></h3>
+
+            <ul>
+                <li>Contient <strong>tout le tableau</strong></li>
+                <li>C'est la balise parente de toutes les autres</li>
+            </ul>
+
+            <h3>🔹 <code>&lt;tr&gt;</code> — table row</h3>
+
+            <ul>
+                <li>Représente une <strong>ligne</strong></li>
+                <li><strong>tr</strong> = table row (ligne de tableau)</li>
+                <li>Contient des cellules (<code>&lt;th&gt;</code> ou <code>&lt;td&gt;</code>)</li>
+            </ul>
+
+            <h3>🔹 <code>&lt;th&gt;</code> — table header</h3>
+
+            <ul>
+                <li>Cellule de <strong>titre</strong> ou d'en-tête</li>
+                <li><strong>th</strong> = table header (en-tête de tableau)</li>
+                <li>Texte en <strong>gras</strong> par défaut</li>
+                <li>Utilisée dans la première ligne généralement</li>
+            </ul>
+
+            <h3>🔹 <code>&lt;td&gt;</code> — table data</h3>
+
+            <ul>
+                <li>Cellule de <strong>donnée</strong></li>
+                <li><strong>td</strong> = table data (donnée de tableau)</li>
+                <li>Contient les informations du tableau</li>
+            </ul>
+
+            <div class="info-box">
+                <p><strong>💡 Bon à savoir :</strong></p>
+                <p>Les balises <code>&lt;th&gt;</code> aident les moteurs de recherche et les lecteurs d'écran à
+                    comprendre la structure du tableau.</p>
+            </div>
+        </section>
+
+        <!-- Section : Lecture logique -->
+        <section>
+            <h2>🧠 4. Lecture logique d'un tableau</h2>
+
+            <p>Voici comment un tableau est structuré :</p>
+
+            <pre><code>&lt;table&gt;
+  └── &lt;tr&gt; (ligne 1)
+      ├── &lt;th&gt;Nom&lt;/th&gt;
+      └── &lt;th&gt;Âge&lt;/th&gt;
+  
+  └── &lt;tr&gt; (ligne 2)
+      ├── &lt;td&gt;Alice&lt;/td&gt;
+      └── &lt;td&gt;20&lt;/td&gt;
+&lt;/table&gt;</code></pre>
+
+            <p>📌 <strong>Logique parent → enfant :</strong></p>
+
+            <ul>
+                <li><code>&lt;table&gt;</code> contient des <code>&lt;tr&gt;</code></li>
+                <li><code>&lt;tr&gt;</code> contient des <code>&lt;th&gt;</code> ou <code>&lt;td&gt;</code></li>
+                <li>Même logique que le reste du HTML</li>
+            </ul>
+
+            <div class="info-box">
+                <p><strong>💡 Bon à savoir :</strong></p>
+                <p>Pense à un tableau comme à une <strong>grille</strong> : chaque ligne (<code>&lt;tr&gt;</code>)
+                    contient plusieurs cellules (<code>&lt;th&gt;</code> ou <code>&lt;td&gt;</code>).</p>
+            </div>
+        </section>
+
+        <!-- Section : Exemple avec plus de données -->
+        <section>
+            <h2>📦 5. Exemple avec plus de données</h2>
+
+            <pre><code>&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Prénom&lt;/th&gt;
+    &lt;th&gt;Ville&lt;/th&gt;
+    &lt;th&gt;Note&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Alice&lt;/td&gt;
+    &lt;td&gt;Paris&lt;/td&gt;
+    &lt;td&gt;18&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Bob&lt;/td&gt;
+    &lt;td&gt;Lyon&lt;/td&gt;
+    &lt;td&gt;15&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Charlie&lt;/td&gt;
+    &lt;td&gt;Nice&lt;/td&gt;
+    &lt;td&gt;17&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+
+            <h3>🔍 Résultat</h3>
+
+            <div class="exemple-rendu">
+                <div style="border: 2px solid #ddd; padding: 1rem; border-radius: 8px; background: #f9f9f9;">
+                    <table style="width: 100%; border-collapse: collapse;">
+                        <tr>
+                            <th
+                                style="border: 1px solid #999; padding: 0.5rem; background: #e9ecef; font-weight: bold; text-align: left;">
+                                Prénom</th>
+                            <th
+                                style="border: 1px solid #999; padding: 0.5rem; background: #e9ecef; font-weight: bold; text-align: left;">
+                                Ville</th>
+                            <th
+                                style="border: 1px solid #999; padding: 0.5rem; background: #e9ecef; font-weight: bold; text-align: left;">
+                                Note</th>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #999; padding: 0.5rem;">Alice</td>
+                            <td style="border: 1px solid #999; padding: 0.5rem;">Paris</td>
+                            <td style="border: 1px solid #999; padding: 0.5rem;">18</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #999; padding: 0.5rem;">Bob</td>
+                            <td style="border: 1px solid #999; padding: 0.5rem;">Lyon</td>
+                            <td style="border: 1px solid #999; padding: 0.5rem;">15</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #999; padding: 0.5rem;">Charlie</td>
+                            <td style="border: 1px solid #999; padding: 0.5rem;">Nice</td>
+                            <td style="border: 1px solid #999; padding: 0.5rem;">17</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section : Ce qu'il ne faut pas faire -->
+        <section>
+            <h2>🚫 6. Erreurs fréquentes</h2>
+
+            <ul style="list-style: none; padding-left: 0;">
+                <li>❌ Mettre du texte directement dans <code>&lt;table&gt;</code></li>
+                <li>❌ Mettre <code>&lt;td&gt;</code> sans <code>&lt;tr&gt;</code></li>
+                <li>❌ Utiliser un tableau pour aligner des éléments visuels</li>
+                <li>❌ Ne pas mettre le même nombre de cellules dans chaque ligne</li>
+            </ul>
+
+            <div class="info-box" style="background: #d4edda; border-left-color: #28a745;">
+                <p><strong>✔️ Bonnes pratiques :</strong></p>
+                <ul style="margin: 0.5rem 0 0 1rem;">
+                    <li>Utiliser les tableaux <strong>uniquement pour les données tabulaires</strong></li>
+                    <li>Toujours mettre <code>&lt;th&gt;</code> pour les en-têtes</li>
+                    <li>S'assurer que chaque ligne a le <strong>même nombre de cellules</strong></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Section : Exemple complet -->
+        <section>
+            <h2>🧱 7. Exemple complet</h2>
+
+            <pre><code>&lt;body&gt;
+  &lt;h1&gt;Résultats des étudiants&lt;/h1&gt;
+
+  &lt;table&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Nom&lt;/th&gt;
+      &lt;th&gt;Matière&lt;/th&gt;
+      &lt;th&gt;Note&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Alice&lt;/td&gt;
+      &lt;td&gt;HTML&lt;/td&gt;
+      &lt;td&gt;18/20&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Bob&lt;/td&gt;
+      &lt;td&gt;CSS&lt;/td&gt;
+      &lt;td&gt;16/20&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/table&gt;
+&lt;/body&gt;</code></pre>
+
+            <div class="exemple-rendu">
+                <p><strong>Rendu dans le navigateur :</strong></p>
+                <div style="border: 2px solid #ddd; padding: 1rem; border-radius: 8px; background: #f9f9f9;">
+                    <h3 style="margin: 0 0 1rem 0; border: none; padding: 0;">Résultats des étudiants</h3>
+                    <table style="width: 100%; border-collapse: collapse;">
+                        <tr>
+                            <th
+                                style="border: 1px solid #999; padding: 0.5rem; background: #e9ecef; font-weight: bold; text-align: left;">
+                                Nom</th>
+                            <th
+                                style="border: 1px solid #999; padding: 0.5rem; background: #e9ecef; font-weight: bold; text-align: left;">
+                                Matière</th>
+                            <th
+                                style="border: 1px solid #999; padding: 0.5rem; background: #e9ecef; font-weight: bold; text-align: left;">
+                                Note</th>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #999; padding: 0.5rem;">Alice</td>
+                            <td style="border: 1px solid #999; padding: 0.5rem;">HTML</td>
+                            <td style="border: 1px solid #999; padding: 0.5rem;">18/20</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #999; padding: 0.5rem;">Bob</td>
+                            <td style="border: 1px solid #999; padding: 0.5rem;">CSS</td>
+                            <td style="border: 1px solid #999; padding: 0.5rem;">16/20</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section : Mini pratique -->
+        <section class="quiz-section">
+            <h2>✍️ 8. Mini pratique</h2>
+            <p>Réponds :</p>
+
+            <ol>
+                <li>Quelle balise contient tout le tableau ?</li>
+                <li>Quelle balise représente une ligne ?</li>
+                <li>Quelle balise est utilisée pour une cellule de titre ?</li>
+                <li>Quelle balise contient une donnée ?</li>
+            </ol>
+
+            <details class="reponses">
+                <summary>🔍 Voir les réponses</summary>
+                <div style="margin-top: 1rem;">
+                    <p><strong>1.</strong> <code>&lt;table&gt;</code> ✅</p>
+                    <p><strong>2.</strong> <code>&lt;tr&gt;</code> ✅</p>
+                    <p><strong>3.</strong> <code>&lt;th&gt;</code> ✅</p>
+                    <p><strong>4.</strong> <code>&lt;td&gt;</code> ✅</p>
+                </div>
+            </details>
+        </section>
+
+    </main>
+
+    <!-- ===== NAVIGATION ENTRE LEÇONS ===== -->
+    <nav class="nav-lecons">
+        <div class="conteneur-nav-lecons">
+
+            <!-- Bouton Précédent -->
+            <a href="lesson5.html" class="btn-nav precedent">
+                <span class="fleche">←</span>
+                <div class="info-nav">
+                    <span class="label">Précédent</span>
+                    <span class="titre-lecon">Les listes</span>
+                </div>
+            </a>
+
+            <!-- Bouton Sommaire -->
+            <a href="../sommaire-html.html" class="btn-sommaire">
+                📋 Sommaire
+            </a>
+
+            <!-- Bouton Suivant -->
+            <a href="lesson7.html" class="btn-nav suivant">
+                <div class="info-nav">
+                    <span class="label">Suivant</span>
+                    <span class="titre-lecon">Les formulaires</span>
+                </div>
+                <span class="fleche">→</span>
+            </a>
+
+        </div>
+    </nav>
+
+    <!-- ===== PIED DE PAGE / RÉSUMÉ ===== -->
+    <footer>
+        <div class="footer-content">
+            <h2>📝 Résumé rapide</h2>
+            <ul>
+                <li><strong>&lt;table&gt;</strong> → contient tout le tableau</li>
+                <li><strong>&lt;tr&gt;</strong> → ligne de tableau</li>
+                <li><strong>&lt;th&gt;</strong> → cellule de titre (en-tête)</li>
+                <li><strong>&lt;td&gt;</strong> → cellule de donnée</li>
+                <li>Les tableaux sont pour les <strong>données tabulaires</strong>, pas la mise en page</li>
+            </ul>
+
+            <div class="footer-motivation">
+                <p>🎉 <strong>Bravo !</strong> Tu maîtrises maintenant les tableaux HTML.</p>
+                <p>Tu avances très bien, continue 🔥</p>
+            </div>
+        </div>
+
+        <div class="footer-credits">
+            <p>© 2026 - Cours HTML pour débutants | Créé avec ❤️</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

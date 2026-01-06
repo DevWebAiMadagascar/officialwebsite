@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leçon 5 - Les listes en HTML</title>
+    <link rel="stylesheet" href="../../../../../assets/CSS/lesson-styles.css">
+</head>
+
+<body>
+
+    <!-- ===== EN-TÊTE DE LA PAGE ===== -->
+    <header>
+        <h1>📝 Leçon 5 - Les listes en HTML (<code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>, <code>&lt;li&gt;</code>)
+        </h1>
+    </header>
+
+    <!-- ===== CONTENU PRINCIPAL ===== -->
+    <main>
+
+        <!-- Section : Objectifs -->
+        <section>
+            <h2>🎯 Objectif de la leçon</h2>
+            <p>À la fin de cette leçon, tu sauras :</p>
+            <ul>
+                <li>Créer des <strong>listes</strong></li>
+                <li>Comprendre la différence entre <strong>liste ordonnée</strong> et <strong>non ordonnée</strong></li>
+                <li>Utiliser correctement les balises de liste</li>
+                <li>Éviter les erreurs classiques</li>
+            </ul>
+        </section>
+
+        <!-- Section : Liste non ordonnée -->
+        <section>
+            <h2>📋 1. Liste non ordonnée — <code>&lt;ul&gt;</code></h2>
+
+            <p>👉 Utilisée quand <strong>l'ordre n'a pas d'importance</strong></p>
+
+            <h3>📌 Exemple</h3>
+
+            <pre><code>&lt;ul&gt;
+  &lt;li&gt;HTML&lt;/li&gt;
+  &lt;li&gt;CSS&lt;/li&gt;
+  &lt;li&gt;JavaScript&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+
+            <h3>🔍 Résultat</h3>
+
+            <ul class="exemple">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+
+            <ul>
+                <li>📌 <code>&lt;ul&gt;</code> = <strong>unordered list</strong> (liste non ordonnée)</li>
+                <li>📌 <code>&lt;li&gt;</code> = <strong>list item</strong> (élément de liste)</li>
+                <li>📌 Chaque élément commence par une <strong>puce</strong></li>
+            </ul>
+
+            <div class="info-box">
+                <p><strong>💡 Bon à savoir :</strong></p>
+                <p>Les puces (•) sont ajoutées automatiquement par le navigateur. Tu peux les personnaliser avec CSS
+                    plus tard !</p>
+            </div>
+        </section>
+
+        <!-- Section : Liste ordonnée -->
+        <section>
+            <h2>🔢 2. Liste ordonnée — <code>&lt;ol&gt;</code></h2>
+
+            <p>👉 Utilisée quand <strong>l'ordre est important</strong></p>
+
+            <h3>📌 Exemple</h3>
+
+            <pre><code>&lt;ol&gt;
+  &lt;li&gt;Installer un éditeur&lt;/li&gt;
+  &lt;li&gt;Créer un fichier HTML&lt;/li&gt;
+  &lt;li&gt;Écrire le code&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+
+            <h3>🔍 Résultat</h3>
+
+            <ol class="exemple">
+                <li>Installer un éditeur</li>
+                <li>Créer un fichier HTML</li>
+                <li>Écrire le code</li>
+            </ol>
+
+            <ul>
+                <li>📌 <code>&lt;ol&gt;</code> = <strong>ordered list</strong> (liste ordonnée)</li>
+                <li>📌 Les éléments sont <strong>numérotés automatiquement</strong></li>
+                <li>📌 Parfait pour des <strong>étapes</strong> ou des <strong>instructions</strong></li>
+            </ul>
+
+            <div class="info-box">
+                <p><strong>💡 Bon à savoir :</strong></p>
+                <p>Les numéros sont gérés automatiquement. Si tu ajoutes ou supprimes un élément, la numérotation se met
+                    à jour toute seule !</p>
+            </div>
+        </section>
+
+        <!-- Section : Règles importantes -->
+        <section>
+            <h2>🧱 3. Règles très importantes</h2>
+
+            <p>⚠️ <strong>Toujours respecter ces règles</strong> :</p>
+
+            <ul>
+                <li><code>&lt;li&gt;</code> doit être <strong>dans</strong> <code>&lt;ul&gt;</code> ou
+                    <code>&lt;ol&gt;</code>
+                </li>
+                <li>On ne met <strong>jamais</strong> de texte direct dans <code>&lt;ul&gt;</code> ou
+                    <code>&lt;ol&gt;</code>
+                </li>
+                <li>On peut mettre <strong>n'importe quelle balise</strong> dans <code>&lt;li&gt;</code></li>
+            </ul>
+
+            <h3>❌ Mauvais exemple</h3>
+
+            <pre><code>&lt;ul&gt;
+  HTML
+  &lt;li&gt;CSS&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+
+            <h3>✅ Bon exemple</h3>
+
+            <pre><code>&lt;ul&gt;
+  &lt;li&gt;HTML&lt;/li&gt;
+  &lt;li&gt;CSS&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+        </section>
+
+        <!-- Section : Contenu complexe -->
+        <section>
+            <h2>📦 4. Liste avec contenu complexe</h2>
+
+            <p>Tu peux mettre <strong>n'importe quel contenu</strong> dans un <code>&lt;li&gt;</code> :</p>
+
+            <pre><code>&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h3&gt;HTML&lt;/h3&gt;
+    &lt;p&gt;Langage de structure&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h3&gt;CSS&lt;/h3&gt;
+    &lt;p&gt;Langage de style&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+
+            <h3>🔍 Résultat</h3>
+
+            <div class="exemple-rendu">
+                <div style="border: 2px solid #ddd; padding: 1rem; border-radius: 8px; background: #f9f9f9;">
+                    <ul style="list-style: disc; padding-left: 1.5rem;">
+                        <li style="margin-bottom: 1rem;">
+                            <h3 style="margin: 0 0 0.25rem 0; font-size: 1.1rem; border: none; padding: 0;">HTML</h3>
+                            <p style="margin: 0; font-size: 0.95rem;">Langage de structure</p>
+                        </li>
+                        <li>
+                            <h3 style="margin: 0 0 0.25rem 0; font-size: 1.1rem; border: none; padding: 0;">CSS</h3>
+                            <p style="margin: 0; font-size: 0.95rem;">Langage de style</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <p>📌 Une liste ne sert pas qu'à du texte simple.</p>
+        </section>
+
+        <!-- Section : Ce qu'il ne faut pas faire -->
+        <section>
+            <h2>🚫 5. Erreurs fréquentes</h2>
+
+            <ul style="list-style: none; padding-left: 0;">
+                <li>❌ Mettre <code>&lt;li&gt;</code> sans <code>&lt;ul&gt;</code> ou <code>&lt;ol&gt;</code></li>
+                <li>❌ Mettre du texte directement dans <code>&lt;ul&gt;</code></li>
+                <li>❌ Utiliser une liste pour faire de la mise en forme</li>
+                <li>❌ Oublier de fermer les balises <code>&lt;li&gt;</code></li>
+            </ul>
+
+            <div class="info-box" style="background: #d4edda; border-left-color: #28a745;">
+                <p><strong>✔️ Bonnes pratiques :</strong></p>
+                <ul style="margin: 0.5rem 0 0 1rem;">
+                    <li>Utiliser <code>&lt;ul&gt;</code> pour des <strong>éléments sans ordre</strong></li>
+                    <li>Utiliser <code>&lt;ol&gt;</code> pour des <strong>étapes ou classements</strong></li>
+                    <li>Toujours mettre <code>&lt;li&gt;</code> à l'intérieur de <code>&lt;ul&gt;</code> ou
+                        <code>&lt;ol&gt;</code>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Section : Quand utiliser -->
+        <section>
+            <h2>🧠 6. Quand utiliser une liste ?</h2>
+
+            <p>Les listes sont <strong>très utiles</strong> pour :</p>
+
+            <ul>
+                <li>✔️ <strong>Menu de navigation</strong> (liens du site)</li>
+                <li>✔️ <strong>Étapes d'un tutoriel</strong> (comme cette leçon)</li>
+                <li>✔️ <strong>Liste de fonctionnalités</strong> d'un produit</li>
+                <li>✔️ <strong>Liste de cours / leçons</strong></li>
+                <li>✔️ <strong>Ingrédients d'une recette</strong></li>
+            </ul>
+
+            <div class="info-box">
+                <p><strong>💡 Bon à savoir :</strong></p>
+                <p>Les listes ne sont pas juste pour des points simples. Beaucoup de sites utilisent
+                    <code>&lt;ul&gt;</code> pour structurer leurs menus de navigation !
+                </p>
+            </div>
+        </section>
+
+        <!-- Section : Exemple complet -->
+        <section>
+            <h2>🧱 7. Exemple complet</h2>
+
+            <pre><code>&lt;body&gt;
+  &lt;h1&gt;Apprendre le développement web&lt;/h1&gt;
+
+  &lt;h2&gt;Technologies à connaître :&lt;/h2&gt;
+  &lt;ul&gt;
+    &lt;li&gt;HTML&lt;/li&gt;
+    &lt;li&gt;CSS&lt;/li&gt;
+    &lt;li&gt;JavaScript&lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;h2&gt;Étapes pour commencer :&lt;/h2&gt;
+  &lt;ol&gt;
+    &lt;li&gt;Installer VS Code&lt;/li&gt;
+    &lt;li&gt;Créer ton premier fichier HTML&lt;/li&gt;
+    &lt;li&gt;Pratiquer chaque jour&lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/body&gt;</code></pre>
+
+            <div class="exemple-rendu">
+                <p><strong>Rendu dans le navigateur :</strong></p>
+                <div style="border: 2px solid #ddd; padding: 1rem; border-radius: 8px; background: #f9f9f9;">
+                    <h3 style="margin: 0 0 1rem 0; border: none; padding: 0;">Apprendre le développement web</h3>
+
+                    <h4 style="margin: 1rem 0 0.5rem 0; font-size: 1rem;">Technologies à connaître :</h4>
+                    <ul style="margin: 0 0 1rem 1.5rem;">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+
+                    <h4 style="margin: 1rem 0 0.5rem 0; font-size: 1rem;">Étapes pour commencer :</h4>
+                    <ol style="margin: 0 0 0 1.5rem;">
+                        <li>Installer VS Code</li>
+                        <li>Créer ton premier fichier HTML</li>
+                        <li>Pratiquer chaque jour</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section : Mini pratique -->
+        <section class="quiz-section">
+            <h2>✍️ 8. Mini pratique</h2>
+            <p>Réponds simplement :</p>
+
+            <ol>
+                <li>Quelle balise contient les éléments de liste ?</li>
+                <li>Quelle balise est utilisée quand l'ordre est important ?</li>
+                <li>Peut-on mettre un <code>&lt;p&gt;</code> dans un <code>&lt;li&gt;</code> ? (oui / non)</li>
+                <li>Quelle balise représente un élément de liste ?</li>
+            </ol>
+
+            <details class="reponses">
+                <summary>🔍 Voir les réponses</summary>
+                <div style="margin-top: 1rem;">
+                    <p><strong>1.</strong> <code>&lt;li&gt;</code> ✅</p>
+                    <p><strong>2.</strong> <code>&lt;ol&gt;</code> ✅</p>
+                    <p><strong>3.</strong> Oui ✅</p>
+                    <p><strong>4.</strong> <code>&lt;li&gt;</code> ✅</p>
+                </div>
+            </details>
+        </section>
+
+    </main>
+
+    <!-- ===== NAVIGATION ENTRE LEÇONS ===== -->
+    <nav class="nav-lecons">
+        <div class="conteneur-nav-lecons">
+
+            <!-- Bouton Précédent -->
+            <a href="lesson4.html" class="btn-nav precedent">
+                <span class="fleche">←</span>
+                <div class="info-nav">
+                    <span class="label">Précédent</span>
+                    <span class="titre-lecon">Liens et images</span>
+                </div>
+            </a>
+
+            <!-- Bouton Sommaire -->
+            <a href="../sommaire-html.html" class="btn-sommaire">
+                📋 Sommaire
+            </a>
+
+            <!-- Bouton Suivant -->
+            <a href="lesson6.html" class="btn-nav suivant">
+                <div class="info-nav">
+                    <span class="label">Suivant</span>
+                    <span class="titre-lecon">Les tableaux</span>
+                </div>
+                <span class="fleche">→</span>
+            </a>
+
+        </div>
+    </nav>
+
+    <!-- ===== PIED DE PAGE / RÉSUMÉ ===== -->
+    <footer>
+        <div class="footer-content">
+            <h2>📝 Résumé rapide</h2>
+            <ul>
+                <li><strong>&lt;ul&gt;</strong> → liste non ordonnée (puces)</li>
+                <li><strong>&lt;ol&gt;</strong> → liste ordonnée (numéros)</li>
+                <li><strong>&lt;li&gt;</strong> → élément de liste</li>
+                <li><code>&lt;li&gt;</code> doit toujours être dans <code>&lt;ul&gt;</code> ou <code>&lt;ol&gt;</code>
+                </li>
+                <li>On peut mettre n'importe quel contenu dans <code>&lt;li&gt;</code></li>
+            </ul>
+
+            <div class="footer-motivation">
+                <p>🎉 <strong>Excellent !</strong> Tu maîtrises maintenant les listes en HTML.</p>
+                <p>Très bon rythme, tu avances comme un vrai dev 💪</p>
+            </div>
+        </div>
+
+        <div class="footer-credits">
+            <p>© 2026 - Cours HTML pour débutants | Créé avec ❤️</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
