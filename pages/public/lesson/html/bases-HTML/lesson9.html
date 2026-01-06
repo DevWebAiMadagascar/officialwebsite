@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leçon 9 - Les attributs HTML</title>
-    <link rel="stylesheet" href="../../../../../assets/CSS/lesson-styles.css">
+    <link rel="stylesheet" href="../../../../../assets/css/lesson-styles.css">
 </head>
 
-<body>
-    
+<body data-lesson-id="html-lesson-9">
+
     <!-- ===== EN-TÊTE DE LA PAGE ===== -->
     <header>
         <h1>📝 Leçon 9 - Les attributs HTML (<code>id</code>, <code>class</code>, et autres)</h1>
@@ -33,80 +33,89 @@
         <!-- Section : Qu'est-ce qu'un attribut -->
         <section>
             <h2>🧩 1. Qu'est-ce qu'un attribut HTML ?</h2>
-            
+
             <p>Un <strong>attribut</strong> donne des <strong>informations supplémentaires</strong> à une balise.</p>
-            
+
             <h3>📌 Syntaxe</h3>
-            
+
             <pre><code>&lt;balise attribut="valeur"&gt;Contenu&lt;/balise&gt;</code></pre>
 
             <p>👉 Un attribut est <strong>toujours dans la balise ouvrante</strong>.</p>
-            
+
             <div class="info-box">
                 <p><strong>💡 Bon à savoir :</strong></p>
-                <p>Les attributs permettent de personnaliser et de contrôler le comportement des balises HTML. Ils sont essentiels pour le CSS et JavaScript.</p>
+                <p>Les attributs permettent de personnaliser et de contrôler le comportement des balises HTML. Ils sont
+                    essentiels pour le CSS et JavaScript.</p>
             </div>
         </section>
 
         <!-- Section : id -->
         <section>
             <h2>🆔 2. <code>id</code> — identifiant unique</h2>
-            
+
             <pre><code>&lt;h1 id="titre-principal"&gt;Bienvenue&lt;/h1&gt;</code></pre>
 
             <h3>📌 Règles</h3>
-            
+
             <ul>
                 <li><code>id</code> doit être <strong>unique</strong> dans la page</li>
                 <li>Une seule balise peut avoir cet <code>id</code></li>
             </ul>
-            
+
             <h3>📌 À quoi ça sert ?</h3>
-            
+
             <ul>
                 <li>Cibler un élément en CSS</li>
                 <li>Cibler un élément en JavaScript</li>
                 <li>Créer des ancres de lien</li>
             </ul>
-            
+
             <div class="info-box" style="background: #fff3cd; border-left-color: #ffc107;">
                 <p><strong>⚠️ Important :</strong></p>
-                <p>Un <code>id</code> ne peut être utilisé qu'<strong>une seule fois</strong> dans toute la page. Si tu as besoin de cibler plusieurs éléments similaires, utilise <code>class</code>.</p>
+                <p>Un <code>id</code> ne peut être utilisé qu'<strong>une seule fois</strong> dans toute la page. Si tu
+                    as besoin de cibler plusieurs éléments similaires, utilise <code>class</code>.</p>
             </div>
         </section>
 
         <!-- Section : class -->
         <section>
             <h2>🏷️ 3. <code>class</code> — groupe d'éléments</h2>
-            
+
             <pre><code>&lt;p class="important"&gt;Texte important&lt;/p&gt;
 &lt;p class="important"&gt;Autre texte&lt;/p&gt;</code></pre>
 
             <h3>📌 Règles</h3>
-            
+
             <ul>
                 <li>Plusieurs éléments peuvent avoir la même <code>class</code></li>
                 <li>Une balise peut avoir <strong>plusieurs classes</strong></li>
             </ul>
-            
+
             <pre><code>&lt;p class="important rouge"&gt;Texte&lt;/p&gt;</code></pre>
 
             <div class="info-box">
                 <p><strong>💡 Bon à savoir :</strong></p>
-                <p>Pour mettre plusieurs classes, sépare-les par un <strong>espace</strong>. C'est très utile pour combiner différents styles CSS.</p>
+                <p>Pour mettre plusieurs classes, sépare-les par un <strong>espace</strong>. C'est très utile pour
+                    combiner différents styles CSS.</p>
             </div>
         </section>
 
         <!-- Section : Différence id vs class -->
         <section>
             <h2>⚖️ 4. Différence <code>id</code> vs <code>class</code></h2>
-            
+
             <div class="exemple-rendu">
                 <div style="border: 2px solid #ddd; padding: 1rem; border-radius: 8px; background: #f9f9f9;">
                     <table style="width: 100%; border-collapse: collapse;">
                         <tr>
-                            <th style="border: 1px solid #999; padding: 0.75rem; background: #e9ecef; font-weight: bold; text-align: left;"><code>id</code></th>
-                            <th style="border: 1px solid #999; padding: 0.75rem; background: #e9ecef; font-weight: bold; text-align: left;"><code>class</code></th>
+                            <th
+                                style="border: 1px solid #999; padding: 0.75rem; background: #e9ecef; font-weight: bold; text-align: left;">
+                                <code>id</code>
+                            </th>
+                            <th
+                                style="border: 1px solid #999; padding: 0.75rem; background: #e9ecef; font-weight: bold; text-align: left;">
+                                <code>class</code>
+                            </th>
                         </tr>
                         <tr>
                             <td style="border: 1px solid #999; padding: 0.75rem;">Unique</td>
@@ -123,9 +132,9 @@
                     </table>
                 </div>
             </div>
-            
+
             <p>📌 <strong>En pratique :</strong></p>
-            
+
             <ul>
                 <li><code>id</code> → élément précis</li>
                 <li><code>class</code> → style ou groupe</li>
@@ -135,53 +144,59 @@
         <!-- Section : Autres attributs courants -->
         <section>
             <h2>🧰 5. Autres attributs courants</h2>
-            
+
             <h3>🔗 <code>href</code></h3>
-            
+
             <pre><code>&lt;a href="page.html"&gt;Lien&lt;/a&gt;</code></pre>
-            
+
             <p>📌 Utilisé dans les liens pour indiquer la destination.</p>
-            
+
             <h3>🖼️ <code>src</code></h3>
-            
+
             <pre><code>&lt;img src="image.png"&gt;</code></pre>
-            
+
             <p>📌 Utilisé pour indiquer la source d'une image.</p>
-            
+
             <h3>♿ <code>alt</code></h3>
-            
+
             <pre><code>&lt;img src="img.png" alt="Description"&gt;</code></pre>
-            
+
             <p>📌 Décrit l'image pour l'accessibilité et quand l'image ne charge pas.</p>
-            
+
             <h3>✏️ <code>type</code></h3>
-            
+
             <pre><code>&lt;input type="email"&gt;</code></pre>
-            
+
             <p>📌 Définit le type de champ dans un formulaire.</p>
-            
+
             <div class="info-box">
                 <p><strong>💡 Bon à savoir :</strong></p>
-                <p>Chaque balise a ses propres attributs spécifiques. Par exemple, <code>href</code> fonctionne avec <code>&lt;a&gt;</code>, mais pas avec <code>&lt;p&gt;</code>.</p>
+                <p>Chaque balise a ses propres attributs spécifiques. Par exemple, <code>href</code> fonctionne avec
+                    <code>&lt;a&gt;</code>, mais pas avec <code>&lt;p&gt;</code>.
+                </p>
             </div>
         </section>
 
         <!-- Section : Erreurs fréquentes -->
         <section>
             <h2>🚫 6. Erreurs fréquentes</h2>
-            
+
             <ul style="list-style: none; padding-left: 0;">
                 <li>❌ Utiliser le même <code>id</code> plusieurs fois</li>
                 <li>❌ Mettre des espaces dans un <code>id</code></li>
                 <li>❌ Utiliser <code>id</code> pour du style répétitif</li>
                 <li>❌ Oublier les guillemets</li>
             </ul>
-            
+
             <div class="info-box" style="background: #d4edda; border-left-color: #28a745;">
                 <p><strong>✔️ Bonnes pratiques :</strong></p>
                 <ul style="margin: 0.5rem 0 0 1rem;">
-                    <li>Utilise des <strong>tirets</strong> pour séparer les mots dans <code>id</code> et <code>class</code> : <code>mon-titre</code></li>
-                    <li>Choisis des noms <strong>descriptifs</strong> : <code>bouton-principal</code> plutôt que <code>btn1</code></li>
+                    <li>Utilise des <strong>tirets</strong> pour séparer les mots dans <code>id</code> et
+                        <code>class</code> : <code>mon-titre</code>
+                    </li>
+                    <li>Choisis des noms <strong>descriptifs</strong> : <code>bouton-principal</code> plutôt que
+                        <code>btn1</code>
+                    </li>
                     <li>Réserve <code>id</code> pour des éléments vraiment uniques</li>
                     <li>Utilise <code>class</code> pour tous les styles répétitifs</li>
                 </ul>
@@ -191,7 +206,7 @@
         <!-- Section : Exemple concret -->
         <section>
             <h2>🧠 7. Exemple concret</h2>
-            
+
             <pre><code>&lt;section id="contact"&gt;
   &lt;h2 class="titre"&gt;Contact&lt;/h2&gt;
   &lt;p class="texte important"&gt;
@@ -200,12 +215,14 @@
 &lt;/section&gt;</code></pre>
 
             <h3>🔍 Analyse</h3>
-            
+
             <div class="exemple-rendu">
                 <div style="border: 2px solid #ddd; padding: 1rem; border-radius: 8px; background: #f9f9f9;">
                     <ul style="margin: 0; list-style: none; padding-left: 0;">
-                        <li style="margin-bottom: 0.75rem;">✅ <code>id="contact"</code> → identifie la section de manière unique</li>
-                        <li style="margin-bottom: 0.75rem;">✅ <code>class="titre"</code> → peut être réutilisée pour d'autres titres</li>
+                        <li style="margin-bottom: 0.75rem;">✅ <code>id="contact"</code> → identifie la section de
+                            manière unique</li>
+                        <li style="margin-bottom: 0.75rem;">✅ <code>class="titre"</code> → peut être réutilisée pour
+                            d'autres titres</li>
                         <li>✅ <code>class="texte important"</code> → deux classes pour combiner les styles</li>
                     </ul>
                 </div>
@@ -216,14 +233,14 @@
         <section class="quiz-section">
             <h2>✍️ 8. Mini pratique</h2>
             <p>Réponds :</p>
-            
+
             <ol>
                 <li>Quel attribut doit être unique ?</li>
                 <li>Quel attribut peut être partagé ?</li>
                 <li>Peut-on mettre plusieurs classes sur une balise ? (oui / non)</li>
                 <li>Où s'écrit un attribut (balise ouvrante ou fermante) ?</li>
             </ol>
-            
+
             <details class="reponses">
                 <summary>🔍 Voir les réponses</summary>
                 <div style="margin-top: 1rem;">
@@ -240,7 +257,7 @@
     <!-- ===== NAVIGATION ENTRE LEÇONS ===== -->
     <nav class="nav-lecons">
         <div class="conteneur-nav-lecons">
-            
+
             <!-- Bouton Précédent -->
             <a href="lesson8.html" class="btn-nav precedent">
                 <span class="fleche">←</span>
@@ -249,12 +266,12 @@
                     <span class="titre-lecon">Structure sémantique</span>
                 </div>
             </a>
-            
+
             <!-- Bouton Sommaire -->
             <a href="../sommaire-html.html" class="btn-sommaire">
                 📋 Sommaire
             </a>
-            
+
             <!-- Bouton Suivant -->
             <a href="../../../quiz/bases-html.html" class="btn-nav suivant">
                 <div class="info-nav">
@@ -263,7 +280,7 @@
                 </div>
                 <span class="fleche">→</span>
             </a>
-            
+
         </div>
     </nav>
 
@@ -277,19 +294,22 @@
                 <li><strong>class</strong> → groupe d'éléments (réutilisable)</li>
                 <li>Une balise peut avoir <strong>plusieurs classes</strong></li>
                 <li>Les attributs s'écrivent dans la <strong>balise ouvrante</strong></li>
-                <li>Autres attributs courants : <code>href</code>, <code>src</code>, <code>alt</code>, <code>type</code></li>
+                <li>Autres attributs courants : <code>href</code>, <code>src</code>, <code>alt</code>, <code>type</code>
+                </li>
             </ul>
-            
+
             <div class="footer-motivation">
                 <p>🎉 <strong>Excellent travail !</strong> Tu maîtrises maintenant les attributs HTML.</p>
                 <p>Tu construis une vraie base de dev web 👏</p>
             </div>
         </div>
-        
+
         <div class="footer-credits">
             <p>© 2026 - Cours HTML pour débutants | Créé avec ❤️</p>
         </div>
     </footer>
+
+    <script src="../../../../../assets/js/lesson-progress.js"></script>
 
 </body>
 

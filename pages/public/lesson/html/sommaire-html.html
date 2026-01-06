@@ -1,15 +1,258 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sommaire - Cours HTML</title>
+    <link rel="stylesheet" href="../../../../assets/CSS/sommaire-styles.css">
 </head>
 
 <body>
-    contenue du sommaire HTML
+    <div class="container">
+        <header class="header">
+            <h1>📚 Cours HTML Complet</h1>
+            <p class="subtitle">Maîtrisez les fondamentaux du développement web</p>
+
+            <div class="progress-container">
+                <div class="progress-info">
+                    <span id="progress-text">0/9 leçons terminées</span>
+                    <span id="progress-percentage">0%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progress-fill"></div>
+                </div>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <section class="lessons-section">
+                <h2 class="section-title">🎯 Les Bases du HTML</h2>
+                <p class="section-description">9 leçons essentielles pour débuter avec HTML</p>
+
+                <div class="lessons-grid">
+                    <!-- Leçon 1 -->
+                    <div class="lesson-card" data-lesson="html-lesson-1">
+                        <div class="lesson-number">01</div>
+                        <div class="lesson-content">
+                            <h3 class="lesson-title">Comprendre le HTML et le WEB</h3>
+                            <p class="lesson-description">Introduction aux concepts fondamentaux du web et du langage
+                                HTML</p>
+                            <div class="lesson-meta">
+                                <span class="lesson-duration">⏱️ 10 min</span>
+                                <span class="lesson-level">🟢 Débutant</span>
+                            </div>
+                        </div>
+                        <div class="lesson-status">
+                            <span class="status-badge">À faire</span>
+                        </div>
+                        <a href="bases-html/lesson1.html" class="lesson-link">Commencer →</a>
+                    </div>
+
+                    <!-- Leçon 2 -->
+                    <div class="lesson-card" data-lesson="html-lesson-2">
+                        <div class="lesson-number">02</div>
+                        <div class="lesson-content">
+                            <h3 class="lesson-title">Structure d'un fichier HTML</h3>
+                            <p class="lesson-description">Découvrez l'anatomie complète d'un document HTML valide</p>
+                            <div class="lesson-meta">
+                                <span class="lesson-duration">⏱️ 12 min</span>
+                                <span class="lesson-level">🟢 Débutant</span>
+                            </div>
+                        </div>
+                        <div class="lesson-status">
+                            <span class="status-badge">À faire</span>
+                        </div>
+                        <a href="bases-html/lesson2.html" class="lesson-link">Commencer →</a>
+                    </div>
+
+                    <!-- Leçon 3 -->
+                    <div class="lesson-card" data-lesson="html-lesson-3">
+                        <div class="lesson-number">03</div>
+                        <div class="lesson-content">
+                            <h3 class="lesson-title">Les balises de texte</h3>
+                            <p class="lesson-description">Apprenez à structurer et formater du contenu textuel</p>
+                            <div class="lesson-meta">
+                                <span class="lesson-duration">⏱️ 15 min</span>
+                                <span class="lesson-level">🟢 Débutant</span>
+                            </div>
+                        </div>
+                        <div class="lesson-status">
+                            <span class="status-badge">À faire</span>
+                        </div>
+                        <a href="bases-html/lesson3.html" class="lesson-link">Commencer →</a>
+                    </div>
+
+                    <!-- Leçon 4 -->
+                    <div class="lesson-card" data-lesson="html-lesson-4">
+                        <div class="lesson-number">04</div>
+                        <div class="lesson-content">
+                            <h3 class="lesson-title">Liens et images</h3>
+                            <p class="lesson-description">Créez des liens hypertextes et intégrez des images</p>
+                            <div class="lesson-meta">
+                                <span class="lesson-duration">⏱️ 18 min</span>
+                                <span class="lesson-level">🟢 Débutant</span>
+                            </div>
+                        </div>
+                        <div class="lesson-status">
+                            <span class="status-badge">À faire</span>
+                        </div>
+                        <a href="bases-html/lesson4.html" class="lesson-link">Commencer →</a>
+                    </div>
+
+                    <!-- Leçon 5 -->
+                    <div class="lesson-card" data-lesson="html-lesson-5">
+                        <div class="lesson-number">05</div>
+                        <div class="lesson-content">
+                            <h3 class="lesson-title">Les listes en HTML</h3>
+                            <p class="lesson-description">Maîtrisez les listes ordonnées, non ordonnées et de
+                                définitions</p>
+                            <div class="lesson-meta">
+                                <span class="lesson-duration">⏱️ 12 min</span>
+                                <span class="lesson-level">🟢 Débutant</span>
+                            </div>
+                        </div>
+                        <div class="lesson-status">
+                            <span class="status-badge">À faire</span>
+                        </div>
+                        <a href="bases-html/lesson5.html" class="lesson-link">Commencer →</a>
+                    </div>
+
+                    <!-- Leçon 6 -->
+                    <div class="lesson-card" data-lesson="html-lesson-6">
+                        <div class="lesson-number">06</div>
+                        <div class="lesson-content">
+                            <h3 class="lesson-title">Les tableaux en HTML</h3>
+                            <p class="lesson-description">Créez des tableaux pour organiser vos données</p>
+                            <div class="lesson-meta">
+                                <span class="lesson-duration">⏱️ 20 min</span>
+                                <span class="lesson-level">🟡 Intermédiaire</span>
+                            </div>
+                        </div>
+                        <div class="lesson-status">
+                            <span class="status-badge">À faire</span>
+                        </div>
+                        <a href="bases-html/lesson6.html" class="lesson-link">Commencer →</a>
+                    </div>
+
+                    <!-- Leçon 7 -->
+                    <div class="lesson-card" data-lesson="html-lesson-7">
+                        <div class="lesson-number">07</div>
+                        <div class="lesson-content">
+                            <h3 class="lesson-title">Les formulaires HTML</h3>
+                            <p class="lesson-description">Créez des formulaires interactifs pour collecter des données
+                            </p>
+                            <div class="lesson-meta">
+                                <span class="lesson-duration">⏱️ 25 min</span>
+                                <span class="lesson-level">🟡 Intermédiaire</span>
+                            </div>
+                        </div>
+                        <div class="lesson-status">
+                            <span class="status-badge">À faire</span>
+                        </div>
+                        <a href="bases-html/lesson7.html" class="lesson-link">Commencer →</a>
+                    </div>
+
+                    <!-- Leçon 8 -->
+                    <div class="lesson-card" data-lesson="html-lesson-8">
+                        <div class="lesson-number">08</div>
+                        <div class="lesson-content">
+                            <h3 class="lesson-title">Structure sémantique HTML</h3>
+                            <p class="lesson-description">Utilisez les balises sémantiques pour améliorer votre code</p>
+                            <div class="lesson-meta">
+                                <span class="lesson-duration">⏱️ 15 min</span>
+                                <span class="lesson-level">🟡 Intermédiaire</span>
+                            </div>
+                        </div>
+                        <div class="lesson-status">
+                            <span class="status-badge">À faire</span>
+                        </div>
+                        <a href="bases-html/lesson8.html" class="lesson-link">Commencer →</a>
+                    </div>
+
+                    <!-- Leçon 9 -->
+                    <div class="lesson-card" data-lesson="html-lesson-9">
+                        <div class="lesson-number">09</div>
+                        <div class="lesson-content">
+                            <h3 class="lesson-title">Les attributs HTML</h3>
+                            <p class="lesson-description">Découvrez les attributs essentiels et leurs utilisations</p>
+                            <div class="lesson-meta">
+                                <span class="lesson-duration">⏱️ 18 min</span>
+                                <span class="lesson-level">🟡 Intermédiaire</span>
+                            </div>
+                        </div>
+                        <div class="lesson-status">
+                            <span class="status-badge">À faire</span>
+                        </div>
+                        <a href="bases-html/lesson9.html" class="lesson-link">Commencer →</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="upcoming-section">
+                <h2 class="section-title">🚀 Prochainement</h2>
+                <p class="coming-soon">D'autres leçons HTML avancées arrivent bientôt !</p>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>💡 Conseil : Suivez les leçons dans l'ordre pour une meilleure progression</p>
+        </footer>
+    </div>
+
+    <script>
+        // Système de progression
+        const totalLessons = 9;
+
+        function updateProgress() {
+            let completedCount = 0;
+
+            // Parcourir toutes les cartes de leçon
+            document.querySelectorAll('.lesson-card').forEach(card => {
+                const lessonId = card.getAttribute('data-lesson');
+                const statusBadge = card.querySelector('.status-badge');
+                const isCompleted = localStorage.getItem(lessonId + '-completed') === 'true';
+                const isVisited = localStorage.getItem(lessonId + '-visited') === 'true';
+
+                if (isCompleted) {
+                    card.classList.add('completed');
+                    statusBadge.textContent = '✓ Terminée';
+                    statusBadge.classList.add('completed');
+                    completedCount++;
+                } else if (isVisited) {
+                    card.classList.add('visited');
+                    statusBadge.textContent = '👁️ Vue';
+                    statusBadge.classList.add('visited');
+                }
+            });
+
+            // Mettre à jour la barre de progression
+            const percentage = Math.round((completedCount / totalLessons) * 100);
+            document.getElementById('progress-text').textContent = `${completedCount}/${totalLessons} leçons terminées`;
+            document.getElementById('progress-percentage').textContent = `${percentage}%`;
+            document.getElementById('progress-fill').style.width = `${percentage}%`;
+        }
+
+        // Fonction pour réinitialiser la progression (pour tester)
+        function resetProgress() {
+            if (confirm('Voulez-vous réinitialiser votre progression ?')) {
+                for (let i = 1; i <= totalLessons; i++) {
+                    localStorage.removeItem(`html-lesson-${i}-completed`);
+                    localStorage.removeItem(`html-lesson-${i}-visited`);
+                }
+                location.reload();
+            }
+        }
+
+        // Charger la progression au chargement de la page
+        document.addEventListener('DOMContentLoaded', updateProgress);
+
+        // Ajouter un bouton de réinitialisation (optionnel, pour le développement)
+        // Décommenter pour l'activer
+        // document.querySelector('.header').insertAdjacentHTML('beforeend', 
+        //     '<button onclick="resetProgress()" style="margin-top: 10px; padding: 8px 16px; cursor: pointer;">🔄 Réinitialiser la progression</button>'
+        // );
+    </script>
 </body>
 
 </html>
