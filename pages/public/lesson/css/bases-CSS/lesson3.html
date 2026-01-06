@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leçon 3 - Propriétés CSS de Texte</title>
+    <link rel="stylesheet" href="../../../../../assets/CSS/lesson-styles.css">
+</head>
+
+<body>
+
+    <!-- ===== EN-TÊTE DE LA PAGE ===== -->
+    <header>
+        <h1>📚 Leçon 3 - Propriétés CSS de Texte</h1>
+    </header>
+
+    <!-- ===== CONTENU PRINCIPAL ===== -->
+    <main>
+
+        <!-- Section : Objectifs -->
+        <section>
+            <h2>🎯 Objectif de la leçon</h2>
+            <p>À la fin de cette leçon, tu sauras :</p>
+            <ul>
+                <li>Modifier l'<strong>apparence du texte</strong></li>
+                <li>Utiliser les <strong>propriétés CSS essentielles</strong></li>
+                <li>Comprendre ce que fait chaque propriété</li>
+                <li>Éviter les abus</li>
+            </ul>
+        </section>
+
+        <!-- Section : Couleur du texte -->
+        <section>
+            <h2>🔤 1. Couleur du texte — <code>color</code></h2>
+
+            <pre><code>p {
+  color: red;
+}</code></pre>
+
+            <p>👉 Change la couleur du texte.</p>
+        </section>
+
+        <!-- Section : Taille du texte -->
+        <section>
+            <h2>📏 2. Taille du texte — <code>font-size</code></h2>
+
+            <pre><code>h1 {
+  font-size: 32px;
+}</code></pre>
+
+            <div class="info-box">
+                <p><strong>📌 À retenir :</strong></p>
+                <ul style="margin-bottom: 0;">
+                    <li><code>px</code> = pixels</li>
+                    <li>Plus le nombre est grand → plus le texte est grand</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Section : Police d'écriture -->
+        <section>
+            <h2>✍️ 3. Police d'écriture — <code>font-family</code></h2>
+
+            <pre><code>body {
+  font-family: Arial, sans-serif;
+}</code></pre>
+
+            <div class="info-box">
+                <p><strong>📌 Important :</strong> Le navigateur utilise la première police disponible.</p>
+            </div>
+        </section>
+
+        <!-- Section : Gras -->
+        <section>
+            <h2>💪 4. Gras — <code>font-weight</code></h2>
+
+            <pre><code>p {
+  font-weight: bold;
+}</code></pre>
+
+            <h3>Autres valeurs :</h3>
+            <ul>
+                <li><code>normal</code></li>
+                <li><code>bold</code></li>
+                <li><code>100</code> à <code>900</code></li>
+            </ul>
+        </section>
+
+        <!-- Section : Alignement -->
+        <section>
+            <h2>📐 5. Alignement — <code>text-align</code></h2>
+
+            <pre><code>h1 {
+  text-align: center;
+}</code></pre>
+
+            <h3>Valeurs courantes :</h3>
+            <ul>
+                <li><code>left</code></li>
+                <li><code>center</code></li>
+                <li><code>right</code></li>
+                <li><code>justify</code></li>
+            </ul>
+        </section>
+
+        <!-- Section : Espacement des lignes -->
+        <section>
+            <h2>📏 6. Espacement des lignes — <code>line-height</code></h2>
+
+            <pre><code>p {
+  line-height: 1.5;
+}</code></pre>
+
+            <div class="info-box">
+                <p><strong>👉 Important :</strong> Améliore énormément la lisibilité.</p>
+            </div>
+        </section>
+
+        <!-- Section : Erreurs fréquentes -->
+        <section>
+            <h2>❌ 7. Erreurs fréquentes</h2>
+
+            <ul style="list-style: none; padding-left: 0;">
+                <li>❌ Texte trop petit</li>
+                <li>❌ Tout mettre en gras</li>
+                <li>❌ Mauvaise police</li>
+                <li>❌ Oublier la lisibilité</li>
+            </ul>
+        </section>
+
+        <!-- Section : Exemple complet -->
+        <section>
+            <h2>💻 8. Exemple complet</h2>
+
+            <pre><code>body {
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  font-size: 28px;
+  text-align: center;
+}
+
+p {
+  color: #333;
+  line-height: 1.6;
+}</code></pre>
+        </section>
+
+        <!-- Section : Mini pratique -->
+        <section class="quiz-section">
+            <h2>✍️ 9. Mini pratique</h2>
+            <p>Réponds :</p>
+
+            <ol>
+                <li>Quelle propriété change la couleur du texte ?</li>
+                <li>Quelle propriété change la taille du texte ?</li>
+                <li>Quelle propriété rend le texte en gras ?</li>
+                <li>Quelle propriété aligne le texte au centre ?</li>
+                <li>Quelle propriété améliore l'espacement des lignes ?</li>
+            </ol>
+
+            <details class="reponses">
+                <summary>🔍 Voir les réponses</summary>
+                <div style="margin-top: 1rem;">
+                    <p><strong>1.</strong> <code>color</code></p>
+                    <p><strong>2.</strong> <code>font-size</code></p>
+                    <p><strong>3.</strong> <code>font-weight</code></p>
+                    <p><strong>4.</strong> <code>text-align</code></p>
+                    <p><strong>5.</strong> <code>line-height</code></p>
+                </div>
+            </details>
+        </section>
+
+    </main>
+
+    <!-- ===== NAVIGATION ENTRE LEÇONS ===== -->
+    <nav class="nav-lecons">
+        <div class="conteneur-nav-lecons">
+
+            <!-- Bouton Précédent -->
+            <a href="lesson2.html" class="btn-nav precedent">
+                <span class="fleche">←</span>
+                <div class="info-nav">
+                    <span class="label">Précédent</span>
+                    <span class="titre-lecon">Les Sélecteurs CSS (Bases)</span>
+                </div>
+            </a>
+
+            <!-- Bouton Sommaire -->
+            <a href="../sommaire-css.html" class="btn-sommaire">
+                📋 Sommaire
+            </a>
+
+            <!-- Bouton Suivant -->
+            <a href="lesson4.html" class="btn-nav suivant">
+                <div class="info-nav">
+                    <span class="label">Suivant</span>
+                    <span class="titre-lecon">Box Model</span>
+                </div>
+                <span class="fleche">→</span>
+            </a>
+
+        </div>
+    </nav>
+
+    <!-- ===== PIED DE PAGE / RÉSUMÉ ===== -->
+    <footer>
+        <div class="footer-content">
+            <h2>📝 Résumé rapide</h2>
+            <ul>
+                <li><strong>color</strong> → couleur du texte</li>
+                <li><strong>font-size</strong> → taille du texte (en px)</li>
+                <li><strong>font-family</strong> → police d'écriture</li>
+                <li><strong>font-weight</strong> → gras (normal, bold, 100-900)</li>
+                <li><strong>text-align</strong> → alignement (left, center, right, justify)</li>
+                <li><strong>line-height</strong> → espacement des lignes</li>
+            </ul>
+
+            <div class="footer-motivation">
+                <p>🎉 <strong>Bravo !</strong> Tu maîtrises maintenant le style du texte en CSS.</p>
+                <p>Tu progresses très bien, continue ! 👌💪</p>
+            </div>
+        </div>
+
+        <div class="footer-credits">
+            <p>© 2026 - Cours HTML & CSS pour débutants | Créé avec ❤️</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

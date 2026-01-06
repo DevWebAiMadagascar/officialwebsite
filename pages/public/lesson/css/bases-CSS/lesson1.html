@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leçon 1 - HTML + CSS : Première Connexion</title>
+    <link rel="stylesheet" href="../../../../../assets/CSS/lesson-styles.css">
+</head>
+
+<body>
+
+    <!-- ===== EN-TÊTE DE LA PAGE ===== -->
+    <header>
+        <h1>📚 Leçon 1 - HTML + CSS : Première Connexion</h1>
+    </header>
+
+    <!-- ===== CONTENU PRINCIPAL ===== -->
+    <main>
+
+        <!-- Section : Objectifs -->
+        <section>
+            <h2>🎯 Objectif de la leçon</h2>
+            <p>À la fin de cette leçon, tu comprendras :</p>
+            <ul>
+                <li>Ce qu'est <strong>le CSS</strong></li>
+                <li>À quoi il sert par rapport au HTML</li>
+                <li>Comment <strong>relier HTML et CSS</strong></li>
+                <li>La logique de base du style</li>
+            </ul>
+        </section>
+
+        <!-- Section : Qu'est-ce que le CSS -->
+        <section>
+            <h2>🎨 1. Qu'est-ce que le CSS ?</h2>
+
+            <p><strong>CSS</strong> signifie :</p>
+            <p class="definition"><strong>C</strong>ascading <strong>S</strong>tyle <strong>S</strong>heets</p>
+
+            <p>👉 Le CSS sert à :</p>
+            <ul>
+                <li>Changer les <strong>couleurs</strong></li>
+                <li>Modifier les <strong>tailles</strong></li>
+                <li>Organiser la <strong>mise en page</strong></li>
+                <li>Rendre une page <strong>jolie</strong></li>
+            </ul>
+
+            <div class="info-box">
+                <p><strong>📌 Rappel important :</strong></p>
+                <ul style="margin-bottom: 0;">
+                    <li><strong>HTML</strong> = structure</li>
+                    <li><strong>CSS</strong> = apparence</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Section : Sans CSS vs avec CSS -->
+        <section>
+            <h2>🧱 2. Sans CSS vs avec CSS</h2>
+
+            <h3>HTML seul</h3>
+            <pre><code>&lt;h1&gt;Titre&lt;/h1&gt;
+&lt;p&gt;Paragraphe&lt;/p&gt;</code></pre>
+
+            <p>👉 Fonctionne, mais très basique.</p>
+
+            <h3>HTML + CSS</h3>
+            <pre><code>h1 {
+  color: red;
+}</code></pre>
+
+            <p>👉 Même contenu, meilleur rendu.</p>
+        </section>
+
+        <!-- Section : Lier CSS à HTML -->
+        <section>
+            <h2>🔗 3. Lier un fichier CSS à HTML (méthode propre)</h2>
+
+            <h3>📁 Structure de fichiers</h3>
+            <pre><code>index.html
+style.css</code></pre>
+
+            <h3>📄 Dans le HTML (<code>&lt;head&gt;</code>)</h3>
+            <pre><code>&lt;link rel="stylesheet" href="style.css"&gt;</code></pre>
+
+            <div class="info-box">
+                <p><strong>📌 Cette ligne dit au navigateur :</strong></p>
+                <p>👉 "Va chercher le style dans <code>style.css</code>".</p>
+            </div>
+        </section>
+
+        <!-- Section : Structure règle CSS -->
+        <section>
+            <h2>🧩 4. Structure d'une règle CSS</h2>
+
+            <pre><code>p {
+  color: blue;
+  font-size: 16px;
+}</code></pre>
+
+            <h3>🔍 Décomposition</h3>
+            <ul>
+                <li><code>p</code> → <strong>sélecteur</strong></li>
+                <li><code>{ }</code> → bloc de règles</li>
+                <li><code>color</code> → propriété</li>
+                <li><code>blue</code> → valeur</li>
+                <li><code>;</code> → fin d'instruction</li>
+            </ul>
+        </section>
+
+        <!-- Section : id et class -->
+        <section>
+            <h2>🆔 5. Cibler avec <code>id</code> et <code>class</code></h2>
+
+            <h3>🎯 Avec <code>id</code></h3>
+            <pre><code>#titre {
+  color: green;
+}</code></pre>
+
+            <pre><code>&lt;h1 id="titre"&gt;Bienvenue&lt;/h1&gt;</code></pre>
+
+            <h3>🏷️ Avec <code>class</code></h3>
+            <pre><code>.important {
+  color: red;
+}</code></pre>
+
+            <pre><code>&lt;p class="important"&gt;Attention&lt;/p&gt;</code></pre>
+
+            <div class="info-box">
+                <p><strong>📌 Symboles à retenir :</strong></p>
+                <ul style="margin-bottom: 0;">
+                    <li><code>#</code> → id</li>
+                    <li><code>.</code> → class</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Section : Erreurs fréquentes -->
+        <section>
+            <h2>❌ 6. Erreurs fréquentes</h2>
+
+            <ul style="list-style: none; padding-left: 0;">
+                <li>❌ Oublier de lier le fichier CSS</li>
+                <li>❌ Confondre <code>#</code> et <code>.</code></li>
+                <li>❌ Mettre du CSS dans le HTML sans comprendre</li>
+                <li>❌ Oublier <code>;</code> en CSS</li>
+            </ul>
+        </section>
+
+        <!-- Section : Exemple complet -->
+        <section>
+            <h2>💻 7. Exemple complet</h2>
+
+            <h3>📄 index.html</h3>
+            <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;title&gt;Test CSS&lt;/title&gt;
+  &lt;link rel="stylesheet" href="style.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1 id="titre"&gt;Bonjour&lt;/h1&gt;
+  &lt;p class="important"&gt;Mon premier style&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+            <h3>🎨 style.css</h3>
+            <pre><code>#titre {
+  color: blue;
+}
+
+.important {
+  color: red;
+}</code></pre>
+        </section>
+
+        <!-- Section : Mini pratique -->
+        <section class="quiz-section">
+            <h2>✍️ 8. Mini pratique</h2>
+            <p>Réponds :</p>
+
+            <ol>
+                <li>Quel langage gère l'apparence ?</li>
+                <li>Quelle balise relie HTML et CSS ?</li>
+                <li>Quel symbole cible une <code>class</code> en CSS ?</li>
+                <li>Quel symbole cible un <code>id</code> en CSS ?</li>
+            </ol>
+
+            <details class="reponses">
+                <summary>🔍 Voir les réponses</summary>
+                <div style="margin-top: 1rem;">
+                    <p><strong>1.</strong> Le CSS gère l'apparence</p>
+                    <p><strong>2.</strong> <code>&lt;link rel="stylesheet" href="style.css"&gt;</code></p>
+                    <p><strong>3.</strong> Le point <code>.</code> cible une class</p>
+                    <p><strong>4.</strong> Le dièse <code>#</code> cible un id</p>
+                </div>
+            </details>
+        </section>
+
+    </main>
+
+    <!-- ===== NAVIGATION ENTRE LEÇONS ===== -->
+    <nav class="nav-lecons">
+        <div class="conteneur-nav-lecons">
+
+            <!-- Bouton Précédent (désactivé pour la leçon 1 CSS) -->
+            <a href="#" class="btn-nav precedent desactive">
+                <span class="fleche">←</span>
+                <div class="info-nav">
+                    <span class="label">Précédent</span>
+                    <span class="titre-lecon">-</span>
+                </div>
+            </a>
+
+            <!-- Bouton Sommaire -->
+            <a href="../sommaire-css.html" class="btn-sommaire">
+                📋 Sommaire
+            </a>
+
+            <!-- Bouton Suivant -->
+            <a href="lesson2.html" class="btn-nav suivant">
+                <div class="info-nav">
+                    <span class="label">Suivant</span>
+                    <span class="titre-lecon">Sélecteurs CSS</span>
+                </div>
+                <span class="fleche">→</span>
+            </a>
+
+        </div>
+    </nav>
+
+    <!-- ===== PIED DE PAGE / RÉSUMÉ ===== -->
+    <footer>
+        <div class="footer-content">
+            <h2>📝 Résumé rapide</h2>
+            <ul>
+                <li><strong>CSS</strong> = Cascading Style Sheets</li>
+                <li><strong>HTML</strong> = structure, <strong>CSS</strong> = apparence</li>
+                <li>On relie CSS avec <code>&lt;link rel="stylesheet" href="style.css"&gt;</code></li>
+                <li><strong>#</strong> pour les id, <strong>.</strong> pour les class</li>
+                <li>Une règle CSS = sélecteur + propriétés + valeurs</li>
+            </ul>
+
+            <div class="footer-motivation">
+                <p>🎉 <strong>Félicitations !</strong> Tu viens de franchir un cap important.</p>
+                <p>Tu maîtrises maintenant la connexion HTML-CSS ! 💪</p>
+            </div>
+        </div>
+
+        <div class="footer-credits">
+            <p>© 2026 - Cours HTML & CSS pour débutants | Créé avec ❤️</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
