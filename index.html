@@ -1,48 +1,158 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
-    <title>DevWeb-AI-Madagascar</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil - Apprendre HTML & CSS</title>
+    <link rel="stylesheet" href="assets/css/public-styles.css">
 </head>
 
 <body>
-
-    <!-- En-tête du site -->
+    
+    <!-- ===== HEADER AVEC NAVIGATION ===== -->
     <header>
-        <h1>DevWeb-AI-Madagascar</h1>
-        <p>
-            DevWeb-AI-Madagascar est une plateforme dédiée à l’apprentissage
-            du développement web moderne et de l’intelligence artificielle,
-            adaptée aux débutants comme aux passionnés malgaches.
-        </p>
+        <div class="header-content">
+            <h1 class="site-title">
+                <a href="index.html">📚 Apprendre HTML & CSS</a>
+            </h1>
+            <nav class="main-nav">
+                <a href="index.html" class="active">🏠 Accueil</a>
+                <a href="pages/public/lessons.html">📖 Leçons</a>
+                <a href="pages/public/about.html">ℹ️ À Propos</a>
+                <a href="pages/public/contact.html">✉️ Contact</a>
+            </nav>
+        </div>
     </header>
 
-    <!-- Navigation -->
-    <nav>
-        <ul>
-            <li>
-                <a href="pages/public/accueil.html">Accueil</a>
-                <a href="pages/public/lesson/html/somaire-html.html">html</a>
-            </li>
-        </ul>
-    </nav>
-
-    <!-- Contenu principal -->
+    <!-- ===== CONTENU PRINCIPAL ===== -->
     <main>
-        <h2>Notre mission</h2>
-        <p>
-            Rendre le développement web et l’IA accessibles à tous,
-            à travers des projets pratiques, des explications claires
-            et une approche progressive.
-        </p>
+        
+        <!-- Section Hero -->
+        <section class="hero-section">
+            <h1>🎓 Bienvenue dans ton parcours d'apprentissage</h1>
+            <p>Apprends le HTML et le CSS pas à pas, de zéro à héros !</p>
+            <a href="pages/public/lessons.html" class="btn-primary">Commencer les leçons →</a>
+        </section>
+
+        <!-- Section Pourquoi apprendre -->
+        <section class="content-section">
+            <h2>🚀 Pourquoi apprendre HTML & CSS ?</h2>
+            <p>HTML et CSS sont les <strong>fondations du web</strong>. Que tu veuilles créer un site personnel, un portfolio, ou démarrer une carrière dans le développement web, ces technologies sont essentielles.</p>
+            
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-icon">🌐</div>
+                    <h3>Créer des sites web</h3>
+                    <p>Construis tes propres sites web de A à Z</p>
+                </div>
+                
+                <div class="card">
+                    <div class="card-icon">🎨</div>
+                    <h3>Designer des pages</h3>
+                    <p>Donne vie à tes idées avec CSS</p>
+                </div>
+                
+                <div class="card">
+                    <div class="card-icon">💼</div>
+                    <h3>Carrière prometteuse</h3>
+                    <p>Ouvre-toi des opportunités professionnelles</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Ce que tu vas apprendre -->
+        <section class="content-section">
+            <h2>📚 Ce que tu vas apprendre</h2>
+            
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-icon">📝</div>
+                    <h3>HTML</h3>
+                    <p>Structure de pages, balises, sémantique</p>
+                    <a href="pages/public/lessons.html#html">Voir les leçons HTML →</a>
+                </div>
+                
+                <div class="card">
+                    <div class="card-icon">🎨</div>
+                    <h3>CSS</h3>
+                    <p>Style, couleurs, mise en page, animations</p>
+                    <a href="pages/public/lessons.html#css">Voir les leçons CSS →</a>
+                </div>
+                
+                <div class="card">
+                    <div class="card-icon">📱</div>
+                    <h3>Responsive Design</h3>
+                    <p>Sites adaptés à tous les écrans</p>
+                    <a href="pages/public/lessons.html#responsive">Bientôt disponible →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Méthode d'apprentissage -->
+        <section class="content-section">
+            <h2>🎯 Notre méthode</h2>
+            <p>Notre approche est simple et efficace :</p>
+            
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-icon">1️⃣</div>
+                    <h3>Théorie simple</h3>
+                    <p>Explications claires et concises</p>
+                </div>
+                
+                <div class="card">
+                    <div class="card-icon">2️⃣</div>
+                    <h3>Exemples pratiques</h3>
+                    <p>Code réel et fonctionnel</p>
+                </div>
+                
+                <div class="card">
+                    <div class="card-icon">3️⃣</div>
+                    <h3>Exercices</h3>
+                    <p>Pratique immédiate des concepts</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="content-section text-center">
+            <h2>🎉 Prêt à commencer ?</h2>
+            <p>Commence dès maintenant ton apprentissage du HTML et CSS !</p>
+            <a href="pages/public/lessons.html" class="btn-primary" style="margin-top: 1rem;">Accéder aux leçons →</a>
+        </section>
+
     </main>
 
-    <!-- Pied de page -->
+    <!-- ===== FOOTER AVEC NAVIGATION ===== -->
     <footer>
-        <p>&copy; 2026 DevWeb-AI-Madagascar</p>
+        <div class="footer-content">
+            <!-- Navigation Footer -->
+            <nav class="footer-nav">
+                <a href="index.html">🏠 Accueil</a>
+                <a href="pages/public/lessons.html">📖 Leçons</a>
+                <a href="pages/public/about.html">ℹ️ À Propos</a>
+                <a href="pages/public/contact.html">✉️ Contact</a>
+            </nav>
+            
+            <!-- Informations -->
+            <div class="footer-info">
+                <p><strong>📚 Apprendre HTML & CSS</strong></p>
+                <p>Ton parcours d'apprentissage du développement web</p>
+                
+                <!-- Réseaux sociaux (exemple) -->
+                <div class="social-links">
+                    <a href="#" title="Facebook">📘</a>
+                    <a href="#" title="Twitter">🐦</a>
+                    <a href="#" title="LinkedIn">💼</a>
+                    <a href="#" title="GitHub">💻</a>
+                </div>
+                
+                <p style="margin-top: 1.5rem;">© 2026 - Cours HTML & CSS pour débutants | Créé avec ❤️</p>
+            </div>
+        </div>
     </footer>
 
 </body>
-</html>
 
+</html>

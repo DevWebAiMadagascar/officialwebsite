@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Apprendre HTML & CSS</title>
+    <link rel="stylesheet" href="../../assets/css/public-styles.css">
+</head>
+
+<body>
+
+    <!-- ===== HEADER AVEC NAVIGATION ===== -->
+    <header>
+        <div class="header-content">
+            <h1 class="site-title">
+                <a href="../../index.html">📚 Apprendre HTML & CSS</a>
+            </h1>
+            <nav class="main-nav">
+                <a href="../../index.html">🏠 Accueil</a>
+                <a href="lessons.html">📖 Leçons</a>
+                <a href="about.html">ℹ️ À Propos</a>
+                <a href="contact.html" class="active">✉️ Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ===== CONTENU PRINCIPAL ===== -->
+    <main>
+
+        <!-- Section Hero -->
+        <section class="hero-section">
+            <h1>✉️ Contactez-nous</h1>
+            <p>Une question ? Une suggestion ? N'hésite pas à nous écrire !</p>
+        </section>
+
+        <!-- Section Formulaire -->
+        <section class="content-section">
+            <h2>📝 Envoie-nous un message</h2>
+            <p class="text-center">Remplis le formulaire ci-dessous et nous te répondrons dans les plus brefs délais.
+            </p>
+
+            <form class="contact-form" action="#" method="POST">
+
+                <!-- Nom -->
+                <div class="form-group">
+                    <label for="name">👤 Nom complet <span style="color: red;">*</span></label>
+                    <input type="text" id="name" name="name" placeholder="Ton nom et prénom" required>
+                </div>
+
+                <!-- Email -->
+                <div class="form-group">
+                    <label for="email">📧 Adresse email <span style="color: red;">*</span></label>
+                    <input type="email" id="email" name="email" placeholder="ton.email@exemple.com" required>
+                </div>
+
+                <!-- Sujet -->
+                <div class="form-group">
+                    <label for="subject">📌 Sujet <span style="color: red;">*</span></label>
+                    <input type="text" id="subject" name="subject" placeholder="Le sujet de ton message" required>
+                </div>
+
+                <!-- Message -->
+                <div class="form-group">
+                    <label for="message">💬 Message <span style="color: red;">*</span></label>
+                    <textarea id="message" name="message" placeholder="Écris ton message ici..." required></textarea>
+                </div>
+
+                <!-- Bouton Submit -->
+                <button type="submit" class="btn-submit">📤 Envoyer le message</button>
+
+            </form>
+        </section>
+
+        <!-- Section Autres moyens de contact -->
+        <section class="content-section">
+            <h2>📞 Autres moyens de nous contacter</h2>
+
+            <div class="cards-grid">
+
+                <div class="card">
+                    <div class="card-icon">📧</div>
+                    <h3>Email</h3>
+                    <p>contact@apprendre-html-css.com</p>
+                    <a href="mailto:contact@apprendre-html-css.com">Nous écrire →</a>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">💬</div>
+                    <h3>Communauté</h3>
+                    <p>Rejoins notre groupe Discord</p>
+                    <a href="#">Rejoindre →</a>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">🐦</div>
+                    <h3>Réseaux sociaux</h3>
+                    <p>Suis-nous sur Twitter et LinkedIn</p>
+                    <a href="#">Nous suivre →</a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Section FAQ rapide -->
+        <section class="content-section">
+            <h2>❓ Questions fréquentes</h2>
+
+            <h3>💰 Les cours sont-ils vraiment gratuits ?</h3>
+            <p>Oui, <strong>100% gratuits</strong> ! Tous les cours et ressources sont accessibles sans aucun frais.</p>
+
+            <h3>⏱️ Combien de temps faut-il pour terminer le parcours ?</h3>
+            <p>Cela dépend de ton rythme, mais en moyenne <strong>2 à 3 mois</strong> en y consacrant quelques heures
+                par semaine.</p>
+
+            <h3>🎓 Est-ce que je reçois un certificat ?</h3>
+            <p>Actuellement, nous ne délivrons pas de certificat, mais nous travaillons sur cette fonctionnalité !</p>
+
+            <h3>💻 Quel matériel ai-je besoin ?</h3>
+            <p>Un <strong>ordinateur</strong> (Windows, Mac ou Linux) et une <strong>connexion internet</strong>
+                suffisent.</p>
+
+            <h3>🤔 Je suis débutant complet, puis-je suivre ?</h3>
+            <p>Absolument ! Nos cours sont conçus pour les <strong>débutants totaux</strong>. On part de zéro.</p>
+
+            <h3>📱 Puis-je apprendre sur mobile/tablette ?</h3>
+            <p>Tu peux <strong>consulter</strong> les leçons sur mobile/tablette, mais pour <strong>pratiquer le
+                    code</strong>, un ordinateur est recommandé.</p>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="content-section text-center">
+            <h2>🚀 Une question ? Contacte-nous !</h2>
+            <p>Nous sommes là pour t'aider dans ton parcours d'apprentissage.</p>
+            <p style="margin-top: 1rem;">
+                <a href="#" class="btn-primary" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">
+                    ↑ Remonter au formulaire
+                </a>
+            </p>
+        </section>
+
+    </main>
+
+    <!-- ===== FOOTER AVEC NAVIGATION ===== -->
+    <footer>
+        <div class="footer-content">
+            <!-- Navigation Footer -->
+            <nav class="footer-nav">
+                <a href="../../index.html">🏠 Accueil</a>
+                <a href="lessons.html">📖 Leçons</a>
+                <a href="about.html">ℹ️ À Propos</a>
+                <a href="contact.html">✉️ Contact</a>
+            </nav>
+
+            <!-- Informations -->
+            <div class="footer-info">
+                <p><strong>📚 Apprendre HTML & CSS</strong></p>
+                <p>Ton parcours d'apprentissage du développement web</p>
+
+                <!-- Réseaux sociaux -->
+                <div class="social-links">
+                    <a href="#" title="Facebook">📘</a>
+                    <a href="#" title="Twitter">🐦</a>
+                    <a href="#" title="LinkedIn">💼</a>
+                    <a href="#" title="GitHub">💻</a>
+                </div>
+
+                <p style="margin-top: 1.5rem;">© 2026 - Cours HTML & CSS pour débutants | Créé avec ❤️</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
