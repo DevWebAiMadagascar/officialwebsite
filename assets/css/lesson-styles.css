@@ -1,250 +1,172 @@
 /* ============================================
-   RESET & CONFIGURATION DE BASE
+   LESSON-STYLES.CSS
+   Styles spécifiques aux pages de leçons
+   DÉPEND TOTALEMENT DE: reset-variable.css
    ============================================ */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    min-height: 100vh;
-}
-
-/* ============================================
-   HEADER - EN-TÊTE
-   ============================================ */
+/* ===== HEADER - EN-TÊTE ===== */
 header {
-    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-    color: white;
+    background: var(--header-bg);
+    color: var(--text-white);
     text-align: center;
-    padding: 2.5rem 1rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: var(--spacing-xl) var(--spacing-sm);
+    box-shadow: var(--shadow-md);
 }
 
 header h1 {
-    font-size: 2rem;
+    font-size: var(--font-size-3xl);
     font-weight: 700;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-/* ============================================
-   MAIN - CONTENU PRINCIPAL
-   ============================================ */
+/* ===== CONTENU PRINCIPAL ===== */
 main {
     max-width: 900px;
-    margin: 2rem auto;
-    background: white;
-    padding: 2.5rem;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    margin: var(--spacing-lg) auto;
+    background: var(--bg-card);
+    padding: var(--spacing-xl);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-lg);
 }
 
-/* ============================================
-   SECTIONS
-   ============================================ */
+/* ===== SECTIONS ===== */
 section {
-    margin-bottom: 2.5rem;
-    padding-bottom: 2rem;
-    border-bottom: 2px solid #f0f0f0;
+    margin-bottom: var(--spacing-xl);
+    padding-bottom: var(--spacing-lg);
+    border-bottom: 2px solid var(--border-light);
 }
 
 section:last-of-type {
     border-bottom: none;
 }
 
-/* ============================================
-   TITRES
-   ============================================ */
+/* ===== TITRES ===== */
 h2 {
-    color: #2a5298;
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-    padding-left: 0.5rem;
-    border-left: 4px solid #667eea;
+    color: var(--primary-dark);
+    font-size: var(--font-size-2xl);
+    margin-bottom: var(--spacing-sm);
+    padding-left: var(--spacing-xs);
+    border-left: 4px solid var(--primary-light);
 }
 
 h3 {
-    color: #555;
+    color: var(--text-secondary);
     font-size: 1.3rem;
-    margin: 1.5rem 0 0.8rem 0;
+    margin: var(--spacing-md) 0 var(--spacing-sm) 0;
 }
 
-/* ============================================
-   PARAGRAPHES ET TEXTE
-   ============================================ */
-p {
-    margin-bottom: 1rem;
-    font-size: 1.05rem;
-}
-
+/* ===== TEXTE SPÉCIAL ===== */
 strong {
-    color: #667eea;
+    color: var(--primary-light);
     font-weight: 600;
 }
 
 .definition {
-    font-size: 1.2rem;
+    font-size: var(--font-size-lg);
     text-align: center;
-    background: #f8f9fa;
-    padding: 1rem;
-    border-radius: 8px;
-    margin: 1rem 0;
+    background: var(--bg-section);
+    padding: var(--spacing-sm);
+    border-radius: var(--radius-md);
+    margin: var(--spacing-sm) 0;
 }
 
-/* ============================================
-   LISTES
-   ============================================ */
-ul, ol {
-    margin: 1rem 0 1rem 2rem;
-}
-
-li {
-    margin-bottom: 0.5rem;
-    font-size: 1.05rem;
-}
-
+/* ===== LISTES ===== */
 ul li::marker {
-    color: #667eea;
+    color: var(--primary-light);
 }
 
 ol li::marker {
-    color: #667eea;
+    color: var(--primary-light);
     font-weight: bold;
 }
 
-/* ============================================
-   CODE ET PRÉ-FORMATÉ
-   ============================================ */
-pre {
-    background: #2d2d2d;
-    color: #f8f8f2;
-    padding: 1.5rem;
-    border-radius: 8px;
-    overflow-x: auto;
-    margin: 1rem 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-code {
-    background: #f4f4f4;
-    color: #e83e8c;
-    padding: 0.2rem 0.4rem;
-    border-radius: 4px;
-    font-family: 'Courier New', monospace;
-    font-size: 0.95rem;
-}
-
-pre code {
-    background: transparent;
-    color: #f8f8f2;
-    padding: 0;
-}
-
-/* ============================================
-   BOÎTES D'INFORMATION
-   ============================================ */
+/* ===== BOÎTES D'INFORMATION ===== */
 .info-box {
-    background: #e7f3ff;
-    border-left: 4px solid #2196F3;
-    padding: 1rem 1.5rem;
-    margin: 1.5rem 0;
-    border-radius: 5px;
-}
-
-.info-box p {
-    margin-bottom: 0.5rem;
+    background: var(--bg-info-box);
+    border-left: 4px solid var(--border-info);
+    padding: var(--spacing-sm) var(--spacing-md);
+    margin: var(--spacing-md) 0;
+    border-radius: var(--radius-sm);
 }
 
 .info-box p:last-child {
     margin-bottom: 0;
 }
 
-/* ============================================
-   SECTION QUIZ
-   ============================================ */
+/* ===== SECTION QUIZ ===== */
 .quiz-section {
-    background: #fff9e6;
-    padding: 1.5rem;
-    border-radius: 10px;
-    border: 2px solid #ffc107;
+    background: var(--bg-quiz);
+    padding: var(--spacing-md);
+    border-radius: var(--radius-lg);
+    border: 2px solid var(--border-warning);
 }
 
 .quiz-section h2 {
-    border-left-color: #ffc107;
+    border-left-color: var(--border-warning);
     color: #f57c00;
 }
 
-/* Réponses cachées */
+/* Réponses cachées avec <details> */
 details.reponses {
-    margin-top: 1.5rem;
-    padding: 1rem;
-    background: white;
-    border-radius: 8px;
+    margin-top: var(--spacing-md);
+    padding: var(--spacing-sm);
+    background: var(--bg-card);
+    border-radius: var(--radius-md);
     cursor: pointer;
 }
 
 details.reponses summary {
     font-weight: bold;
-    color: #667eea;
+    color: var(--primary-light);
     cursor: pointer;
     user-select: none;
 }
 
 details.reponses summary:hover {
-    color: #2a5298;
+    color: var(--primary-dark);
 }
 
 details.reponses p {
-    margin-top: 1rem;
-    color: #28a745;
+    margin-top: var(--spacing-sm);
+    color: var(--success-color);
     font-weight: 600;
 }
 
-/* ============================================
-   NAVIGATION ENTRE LEÇONS
-   ============================================ */
+/* ===== NAVIGATION ENTRE LEÇONS ===== */
 .nav-lecons {
-    background: white;
-    padding: 2rem;
-    margin: 2rem auto;
+    background: var(--bg-card);
+    padding: var(--spacing-lg);
+    margin: var(--spacing-lg) auto;
     max-width: 900px;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-lg);
 }
 
 .conteneur-nav-lecons {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 1rem;
+    gap: var(--spacing-sm);
     flex-wrap: wrap;
 }
 
-/* Styles communs pour tous les boutons de navigation */
-.btn-nav, .btn-sommaire, .btn-nav.suivant {
-    padding: 1rem 1.5rem;
-    border-radius: 8px;
+/* Boutons de navigation - Styles communs */
+.btn-nav, 
+.btn-sommaire {
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: var(--radius-md);
     text-decoration: none;
     transition: all 0.3s ease;
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: var(--spacing-xs);
     font-weight: 600;
 }
 
 /* Bouton Précédent */
 .btn-nav.precedent {
-    background: #6c757d;
-    color: white;
+    background: var(--text-muted);
+    color: var(--text-white);
 }
 
 .btn-nav.precedent:hover {
@@ -252,7 +174,7 @@ details.reponses p {
     transform: translateX(-5px);
 }
 
-/* Bouton Précédent désactivé */
+/* Bouton désactivé */
 .btn-nav.desactive {
     background: #e9ecef;
     color: #adb5bd;
@@ -266,8 +188,8 @@ details.reponses p {
 
 /* Bouton Sommaire */
 .btn-sommaire {
-    background: #667eea;
-    color: white;
+    background: var(--primary-light);
+    color: var(--text-white);
     font-size: 1.1rem;
 }
 
@@ -278,8 +200,8 @@ details.reponses p {
 
 /* Bouton Suivant */
 .btn-nav.suivant {
-    background: #28a745;
-    color: white;
+    background: var(--success-color);
+    color: var(--text-white);
 }
 
 .btn-nav.suivant:hover {
@@ -295,7 +217,7 @@ details.reponses p {
 }
 
 .info-nav .label {
-    font-size: 0.85rem;
+    font-size: var(--font-size-sm);
     opacity: 0.9;
 }
 
@@ -303,52 +225,51 @@ details.reponses p {
     font-size: 0.95rem;
 }
 
-/* Flèches */
+/* Flèches de navigation */
 .fleche {
     font-size: 1.5rem;
     font-weight: bold;
 }
 
-/* ============================================
-   FOOTER - PIED DE PAGE
-   ============================================ */
+/* ===== FOOTER - PIED DE PAGE ===== */
 footer {
-    background: white;
+    background: var(--bg-card);
     max-width: 900px;
-    margin: 2rem auto;
-    padding: 2.5rem;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    margin: var(--spacing-lg) auto;
+    padding: var(--spacing-xl);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-lg);
 }
 
 .footer-content h2 {
-    color: #28a745;
-    border-left-color: #28a745;
-    margin-bottom: 1.5rem;
+    color: var(--success-color);
+    border-left-color: var(--success-color);
+    margin-bottom: var(--spacing-md);
 }
 
 .footer-content ul {
-    background: #f8f9fa;
-    padding: 1.5rem 2rem 1.5rem 3rem;
-    border-radius: 8px;
-    margin-bottom: 2rem;
+    background: var(--bg-section);
+    padding: var(--spacing-md) var(--spacing-lg) var(--spacing-md) 3rem;
+    border-radius: var(--radius-md);
+    margin-bottom: var(--spacing-lg);
 }
 
 .footer-content ul li {
     margin-bottom: 0.8rem;
 }
 
+/* Bloc de motivation */
 .footer-motivation {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
-    padding: 1.5rem;
-    border-radius: 10px;
+    background: linear-gradient(135deg, var(--primary-light) 0%, var(--secondary-color) 100%);
+    color: var(--text-white);
+    padding: var(--spacing-md);
+    border-radius: var(--radius-lg);
     text-align: center;
-    margin-top: 2rem;
+    margin-top: var(--spacing-lg);
 }
 
 .footer-motivation p {
-    margin-bottom: 0.5rem;
+    margin-bottom: var(--spacing-xs);
     font-size: 1.1rem;
 }
 
@@ -356,26 +277,25 @@ footer {
     margin-bottom: 0;
 }
 
+/* Crédits */
 .footer-credits {
     text-align: center;
-    margin-top: 2rem;
-    padding-top: 1.5rem;
+    margin-top: var(--spacing-lg);
+    padding-top: var(--spacing-md);
     border-top: 2px solid #e9ecef;
-    color: #6c757d;
+    color: var(--text-muted);
     font-size: 0.9rem;
 }
 
-/* ============================================
-   RESPONSIVE - DESIGN ADAPTATIF
-   ============================================ */
+/* ===== RESPONSIVE - DESIGN ADAPTATIF ===== */
 @media (max-width: 768px) {
     header h1 {
         font-size: 1.5rem;
     }
 
     main {
-        padding: 1.5rem;
-        margin: 1rem;
+        padding: var(--spacing-md);
+        margin: var(--spacing-sm);
     }
 
     h2 {
@@ -386,19 +306,16 @@ footer {
         flex-direction: column;
     }
 
-    .btn-nav, .btn-sommaire, .btn-nav.suivant {
+    .btn-nav, 
+    .btn-sommaire {
         width: 100%;
         justify-content: center;
     }
 
-    footer {
-        margin: 1rem;
-        padding: 1.5rem;
-    }
-
+    footer,
     .nav-lecons {
-        margin: 1rem;
-        padding: 1.5rem;
+        margin: var(--spacing-sm);
+        padding: var(--spacing-md);
     }
 }
 
@@ -408,7 +325,7 @@ footer {
     }
 
     main {
-        padding: 1rem;
+        padding: var(--spacing-sm);
     }
 
     h2 {
@@ -416,7 +333,7 @@ footer {
     }
 
     pre {
-        padding: 1rem;
-        font-size: 0.85rem;
+        padding: var(--spacing-sm);
+        font-size: var(--font-size-sm);
     }
 }
