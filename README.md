@@ -163,16 +163,16 @@ Les bases de la programmation web interactive (contenu à venir)
 
 ## 🗺 Roadmap
 
-### Version actuelle (v0.5)
+### Version actuelle (v0.6)
 - [x] 9 leçons HTML complètes
-- [x] 3 leçons CSS de base
+- [x] 7 leçons CSS de base
 - [x] Système de progression avec localStorage
 - [x] Thème clair/sombre fonctionnel
 - [x] Design responsive
 - [x] Documentation complète du projet
+- [x] Pages principales mises à jour
 
 ### Prochaines étapes
-- [ ] Compléter les 6 leçons CSS restantes
 - [ ] Implémenter les quiz interactifs après chaque module
 - [ ] Ajouter le module JavaScript
 - [ ] Créer des exercices pratiques

@@ -9,16 +9,42 @@ et ce projet adhère au [Versioning Sémantique](https://semver.org/lang/fr/).
 
 ## [Non publié] - À venir
 
-### Planifié pour janvier 2026
-- Complétion des 6 leçons CSS restantes (leçons 4 à 9)
-- Ajout du module JavaScript avec leçons de base
-- Implémentation des quiz interactifs après chaque module
-- Amélioration du système de progression avec statistiques
-- Ajout de badges de réussite
+### Prévu
 
----
+- Ajout des leçons JavaScript bases
+- Ajout d'une page pour faire des quiz
 
-## [0.5.0] - 2026-01-08
+## [0.6.0] - en Developpement
+- Optimiser l'apparence de barre de navigateur header
+- Lien vers les pages principal dans les pages leçons
+- Optimiser l'enregistrement des progression
+- Formulaires de contact
+
+
+
+## [0.6.0] - 2026-01-08 (Lancée)
+
+### Ajouté
+- Mise à jour complète des pages principales du site:
+ - index.html : Statistique réels (16 leçons, 2 modules)
+ - about.html : Historique du projet, présentation de l'auteur, roadmap
+ - Contact.html : coordonnée complète.
+ - lessons.html : Liens vers sommaires (au lieu de leçons directes), statuts réels.
+- Informations de contact personnalisées :
+ - Email : heryandrianarimbola@gmail.com
+ - LinkedIn : Herimampionona ANDRIANARMBOLA
+ - GitHub : DevWebAiMadagascar
+ - Facebook : Page DEV WEB - AI - Madagascar
+- Nom officiel du projet : "Dev Web AI Madagascar"
+- Slogan : "Partage l'aventure à travers le développement web et l'intelligence artificielle"
+
+### Modifié
+-Toutes les pages publiques avec contenus réalistes et à jour
+- Navigation cohérente entre toutes les pages 
+- Footer avec liens sociaux corrects
+- Ajustement des 3 premiéres leçons + ajout des 4 nouveaux leçons
+
+## [0.5.0] - 2026-01-07
 
 ### Ajouté
 - 3 premières leçons CSS du module "Bases CSS"
