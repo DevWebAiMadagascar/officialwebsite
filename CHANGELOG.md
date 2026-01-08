@@ -192,6 +192,6 @@ Le projet est en phase de **développement actif**. La version 1.0.0 sera publi�
 
 <div align="center">
 
-Dernière mise à jour : **07 janvier 2026**
+Dernière mise à jour : **08 janvier 2026**
 
 </div>
