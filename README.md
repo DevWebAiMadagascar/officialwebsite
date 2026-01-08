@@ -146,15 +146,13 @@ Les bases essentielles du langage de balisage :
 
 ### Module CSS (9 leçons prévues)
 Actuellement 3 leçons disponibles, 6 à venir :
-1. Introduction au CSS
+1. HTML + CSS : connexion
 2. Les sélecteurs CSS
-3. Le modèle de boîte
-4. *(à venir)* Le positionnement
-5. *(à venir)* Flexbox
-6. *(à venir)* Grid Layout
-7. *(à venir)* Les animations
-8. *(à venir)* Le responsive design
-9. *(à venir)* Bonnes pratiques CSS
+3. Propriété de texte
+4. Box Model
+5. Couleur et unités
+6. Display et positionnement
+7. Flexbox (bases)
 
 ### Module JavaScript (planifié)
 Les bases de la programmation web interactive (contenu à venir)
@@ -232,7 +230,5 @@ Pour toute question, suggestion ou collaboration, n'hésitez pas à me contacter
 <div align="center">
 
 **⭐ Si ce projet vous aide dans votre apprentissage, n'hésitez pas à lui donner une étoile sur GitHub ! ⭐**
-
-Fait avec ❤️ à Madagascar
 
 </div>
