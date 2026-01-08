@@ -18,7 +18,7 @@ et ce projet adhère au [Versioning Sémantique](https://semver.org/lang/fr/).
 
 ---
 
-## [0.5.0] - 2026-01-07
+## [0.5.0] - 2026-01-08
 
 ### Ajouté
 - 3 premières leçons CSS du module "Bases CSS"
@@ -27,11 +27,23 @@ et ce projet adhère au [Versioning Sémantique](https://semver.org/lang/fr/).
   - Leçon 3 : Le modèle de boîte
 - Page sommaire CSS (`sommaire-css.html`)
 - Mise en ligne du site sur GitHub Pages : https://devwebaimadagascar.github.io/officialwebsite/
+- Documentation complète du projet
+ - README.md : Documentation principale avec présentation, installation et roadmap
+ - CONTRIBUTING.md : Guide de contribution avec standards de code
+ - CHANGELOG.md : Historique des versions
+ - .gitignore : Fichiers à exclure de Git
+- Documentation techniqe
+ - docs\public\STRUCTURE.md : Architecture complète du projet
+ - docs\public\css\RESET-VARIABLE-GUIDES.md : Guide des variables
+ - docs\public\css\LESSON-STYLES-GUIDES.md : Guide des styles lesson
+ - docs\public\css\PUBLIC-STYLES-GUIDES.md : Guide des styles public
+ - docs\public\css\SOMMAIRE-STYLES-GUIDES.md : Guide des styles sommaire
 
 ### Modifié
 - Amélioration de la navigation entre les leçons HTML et CSS
 - Optimisation du responsive design pour les tablettes
 - Mise à jour de la page d'accueil avec lien vers le module CSS
+- Organisation de la documentation dans docs\public\
 
 ---
 
@@ -51,7 +63,7 @@ et ce projet adhère au [Versioning Sémantique](https://semver.org/lang/fr/).
 
 ---
 
-## [0.3.0] - 2026-01-04
+## [0.3.0] - 2026-01-05
 
 ### Ajouté
 - Fonctionnalité de thème clair/sombre
@@ -67,7 +79,7 @@ et ce projet adhère au [Versioning Sémantique](https://semver.org/lang/fr/).
 
 ---
 
-## [0.2.0] - 2026-01-03
+## [0.2.0] - 2026-01-01
 
 ### Ajouté
 - 9 leçons HTML complètes du module "Bases HTML"
@@ -91,7 +103,7 @@ et ce projet adhère au [Versioning Sémantique](https://semver.org/lang/fr/).
 
 ---
 
-## [0.1.0] - 2025-12-20
+## [0.1.0] - 2025-12-25
 
 ### Ajouté
 - Architecture de base du projet
@@ -118,7 +130,7 @@ et ce projet adhère au [Versioning Sémantique](https://semver.org/lang/fr/).
 
 ---
 
-## [0.0.1] - 2025-12-01
+## [0.0.1] - 2025-12-20
 
 ### Ajouté
 - Initialisation du projet Dev Web AI - Madagascar

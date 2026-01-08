@@ -1,0 +1,151 @@
+# ============================================
+# .gitignore - Dev Web AI Madagascar
+# Fichiers et dossiers à exclure de Git
+# ============================================
+
+# ===== ÉDITEURS DE CODE =====
+
+# Visual Studio Code
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json.example
+*.code-workspace
+
+# Notepad++
+*.bak
+nppBackup/
+
+# Autres éditeurs
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+
+# ===== SYSTÈMES D'EXPLOITATION =====
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Linux
+*~
+.directory
+.Trash-*
+
+# ===== FICHIERS TEMPORAIRES =====
+
+# Fichiers de test et brouillons
+test.html
+brouillon.html
+temp.html
+draft.html
+test/
+temp/
+draft/
+brouillon/
+
+# Sauvegardes
+*.backup
+*.old
+*.orig
+*.tmp
+
+# ===== LOGS ET CACHE =====
+
+# Logs
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Cache
+.cache/
+*.cache
+
+# ===== FICHIERS SENSIBLES =====
+
+# Clés API et mots de passe (protection préventive)
+.env
+.env.local
+.env.*.local
+config.local.js
+secrets.json
+*.key
+*.pem
+
+# Base de données locale
+*.sqlite
+*.db
+*.sql
+
+# ===== NODE MODULES (si jamais utilisé) =====
+
+# Dépendances Node.js
+node_modules/
+package-lock.json
+yarn.lock
+
+# ===== BUILDS ET DIST (si jamais utilisé) =====
+
+# Dossiers de build
+build/
+dist/
+out/
+
+# ===== FICHIERS SPÉCIFIQUES AU PROJET =====
+
+# Notes personnelles
+notes-perso.md
+TODO-prive.md
+ideas.txt
+
+# Captures d'écran temporaires
+screenshot*.png
+screen*.jpg
+capture*.png
+
+# Fichiers ZIP ou archives temporaires
+*.zip
+*.rar
+*.7z
+*.tar.gz
+
+# ===== DOCUMENTATION PERSONNELLE (NE PAS COMMITER) =====
+docs\perso\
+
+# ===== EXCEPTIONS - À GARDER DANS GIT =====
+
+# S'assurer que ces dossiers/fichiers sont bien trackés
+!assets/
+!assets/css/
+!assets/js/
+!assets/img/
+!pages/
+!docs/
+!*.html
+!*.css
+!*.js
+!*.md
+!*.svg
+
+# ===== DOCUMENTATION =====
+
+# Ces fichiers MD doivent être trackés
+!README.md
+!CONTRIBUTING.md
+!CHANGELOG.md
+!docs/STRUCTURE.md
+
+# ===== FIN DU FICHIER =====

@@ -169,6 +169,7 @@ Les bases de la programmation web interactive (contenu à venir)
 - [x] Système de progression avec localStorage
 - [x] Thème clair/sombre fonctionnel
 - [x] Design responsive
+- [x] Documentation complète du projet
 
 ### Prochaines étapes
 - [ ] Compléter les 6 leçons CSS restantes
