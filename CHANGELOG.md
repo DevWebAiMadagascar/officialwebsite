@@ -14,7 +14,7 @@ et ce projet adhère au [Versioning Sémantique](https://semver.org/lang/fr/).
 - Ajout des leçons JavaScript bases
 - Ajout d'une page pour faire des quiz
 
-## [0.6.0] - en Developpement
+## [0.6.1] - en Developpement
 - Optimiser l'apparence de barre de navigateur header
 - Lien vers les pages principal dans les pages leçons
 - Optimiser l'enregistrement des progression
